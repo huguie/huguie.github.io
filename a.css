@@ -1,0 +1,11 @@
+       		 *{ 
+    	   padding:0px;
+    	   margin:0px; }
+            #box {
+		float:left;
+                background-color:grey;
+                width: 30%;
+                padding-top: 30%;
+				border-radius: 5%;
+				margin:1%;
+            }
