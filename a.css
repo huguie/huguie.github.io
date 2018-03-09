@@ -2,6 +2,7 @@
     	   padding:0px;
     	   margin:0px; }
             #box {
+             ::-webkit-scrollbar {display:none}
 		float:left;
                 background-color:grey;
                 width: 30%;
