@@ -1,0 +1,168 @@
+*{	padding:0px;
+	margin:0px;}
+	body {
+		padding-top:60px;}
+	.box {
+		width:"100%";
+		height:2000px;
+		overflow:hidden;}
+	.box0 {
+		float:left;
+		width:100%;
+		height:60px;
+		background-color:#5fc0cd;
+		position:fixed;	 
+		top:0;
+		z-index:20;}/*header*/
+	.box1 {
+		width:40%;
+		height:40px;
+		border:3px solid #5fc0cd;
+		border-radius:10px;
+		position:fixed;
+		left:3%;
+		bottom:3%;
+		color:#5fc0cd;
+		font-size:18px;
+		z-index: 15;}/*footer left*/
+	.box2 {
+		width:40%;
+		height:40px;
+		border:3px solid #5fc0cd;
+		border-radius:10px;
+		position:fixed;
+		right:3%;
+		bottom:3%;
+		background-color:#5fc0cd;
+		z-index: 15;}/*footer right*/
+	.word {
+		line-height:60px;
+		color:white;
+		position:absolute;
+		left:50%;
+		margin-left:-32px;}
+	.word1 {
+		line-height:40px;
+		position: relative;
+		left:50%;
+		margin-left:-18px;}
+	.word2 {
+		color:white;
+		line-height:40px;
+		position: relative;
+		left:50%;
+		margin-left:-18px;}	
+	.img1 {
+		width:100%;
+		position: absolute;
+		z-index:1;}/*背景图*/
+	.img2 {
+		width:70px;
+		position:relative;
+		top:40px;
+		left:25px;
+		z-index:5;}/*人物头像*/
+	.img3 {
+		width:12px;
+		position:relative;
+		left:-50px;
+		top:25px;
+		z-index:5;} /*定位LOGO*/
+	.img4 {
+		width:15px;
+		position:relative;
+		left:20px;
+		top:23px;
+		/*定位星标*/}
+	.box3 {
+		width: 100%;
+		height: 1000px;
+		background-color:white;
+		position:absolute;
+		top:205px;
+		z-index:10;}
+	.box4 {
+		font-size:16px;
+		color:white;
+		position:relative;
+		z-index:8;
+		left:40px;} /*徐士林*/
+	.box5 {
+		font-size:14px;
+		color:white;
+		position:relative;
+		z-index:8;
+		left:-40px;
+		top:22px;} /*地址*/
+	.box6 {
+		position:relative;
+		top:15px;
+		left:10px;
+		width:3px;
+		height:16px;
+		border-radius:1.5px;
+		background-color:#5fc0cd;}/*小蓝条*/
+	.word3 {
+		font-size:14px;
+		position: relative;
+		top:-5px;
+		left: 20px;}
+	.line1 {
+		position:relative;
+		top:10px;}
+	.line2 {
+		width:98%;
+		position:relative;
+		top:36px;
+		left:1%;}
+	.line3 {
+		width:98%;
+		position:relative;
+		top:80px;
+		left:1%;}	
+	.word4 {
+		font-size:14px;
+		position:relative;
+		left:18px;
+		top:21px;}
+	.word5 {
+		color:grey;
+		font-size:12px;
+		position:relative;
+		left:22px;
+		top:43px;}
+	.box7 {
+		width:1px;
+		height:18px;
+		background-color:grey;
+		position: relative;
+		left:80px;
+		top:25px;	}
+	.word6 {
+		font-size:14px;		
+		position: relative;
+		left:90px;
+		top:5px;}
+	.line4 {
+		width:98%;
+		position:relative;
+		top:66px;
+		left:1%;}
+	.word7 {
+		color:grey;
+		font-size:12px;
+		position:relative;
+		left:22px;
+		top:30px;}
+	.word8 {
+		font-size:14px;		
+		position: relative;
+		left:90px;
+		top:-9px;}
+	.box8 {
+		width:1px;
+		height:18px;
+		background-color:grey;
+		position: relative;
+		left:80px;
+		top:13px;}
