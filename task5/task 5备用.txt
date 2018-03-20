@@ -1,0 +1,192 @@
+    	<div class="box3" >
+    		<span class="box4" ></span>
+    		<span class="word5">专业技能</span>
+    		<img class="img4" src="images/5-星标.png">
+    		<span class="word6" >住家</span>
+    		<img class="img5" src="images/5-星标.png">
+    		<span class="word7">不含餐</span>
+    		<span class="word8">从业年限</span>
+    		<span class="box5"></span>
+    		<span class="word9"> 0~3年</span>
+    		<span class="word10">工作时间</span>
+    		<span class="box6"></span>
+    		<span class="word11">全天</span>
+    		<span class="word12">服务价格</span>
+    		<span class="box7"></span>
+    		<span class="word13">25元/小时</span>
+    		<span class="word14">自我介绍</span>
+    		<span class="word15">老娘今年58岁 身高158，体重158。爱好广泛,特别擅长广场舞。老伴早亡，有一儿子，已成家立业。现孤身一人，寂寞不堪，寻一18岁小伙凑合过下半辈子。
+					可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。可以洗衣做饭照顾老人。</span>
+    		<hr class="line1">    		
+    		<hr class="line2">
+    		<hr class="line3">
+    		<hr class="line4">
+    		<hr class="line5">
+    		<hr class="line6">
+    	</div>
+
+
+
+
+
+
+
+
+
+style
+	.box3 {
+		width: 100%;
+		height: 1000px;
+		position: absolute;
+		top: 210px;}
+	.box4 {
+		width: 2px;
+		height: 16px;
+		background-color: #5fc0cd;
+		position: absolute;
+		left: 15px;
+		top:  25px;
+		margin-top: -8px;}
+	.box5 {
+		width: 1px;
+		height: 20px;
+		background-color: grey;
+		position: absolute;
+		top: 122px;
+		left: 85px;}
+	.box6 {
+		width: 1px;
+		height: 20px;
+		background-color: grey;
+		position: absolute;
+		top: 172px;
+		left: 85px;}
+	.box7 {
+		width: 1px;
+		height: 20px;
+		background-color: grey;
+		position: absolute;
+		top: 225px;
+		left: 85px;}
+
+
+
+
+	
+	.img4{
+		position: absolute;
+		width: 16px;
+		left: 25px;
+		top: 78px;
+		margin-top: -8px;}
+	.img5{
+		position: absolute;
+		width: 16px;
+		left: 81px;
+		top: 78px;
+		margin-top: -8px;}	
+
+
+
+
+
+
+
+
+
+	.word5 {
+		font-size: 14px;
+		position: absolute;
+		left: 25px;
+		top: 15px;}
+	.word6 {
+		font-size: 14px;
+		position: absolute;
+		left: 45px;
+		top: 68px;}	
+	.word7 {
+		font-size: 14px;
+		position: absolute;
+		left: 100px;
+		top: 68px;}		
+	.word8 {
+		color: grey;
+		font-size: 14px;
+		position: absolute;
+		left: 25px;
+		top: 122px;}		
+	.word9 {
+		font-size: 14px;
+		position: absolute;
+		left: 100px;
+		top: 122px;}	
+	.word9 {
+		font-size: 14px;
+		position: absolute;
+		left: 100px;
+		top: 122px;}	
+	.word10{
+		color: grey;
+		font-size: 14px;
+		position: absolute;
+		left: 25px;
+		top: 172px;}
+	.word11 {
+		font-size: 14px;
+		position: absolute;
+		left: 105px;
+		top: 172px;}
+	.word12 {
+		color: grey;
+		font-size: 14px;
+		position: absolute;
+		left: 25px;
+		top: 225px;}
+	.word13 {
+		color: red;
+		font-size: 14px;
+		position: absolute;
+		left: 95px;
+		top: 225px;}
+	.word14 {
+		color: grey;
+		font-size: 14px;
+		position: absolute;
+		left: 25px;
+		top: 297px;}
+	.word15 {
+		color: black;
+		font-size: 14px;
+		position: absolute;
+		left: 95px;
+		top: 277px;}
+	.line1{
+		width: 100%
+		height: 1px;
+		position: relative;
+		top: 51px;}
+	.line2{
+		width: 100%
+		height: 1px;
+		position: relative;
+		top: 102px;}
+	.line3{
+		width: 100%
+		height: 1px;
+		position: relative;
+		top: 153px;}
+	.line4{
+		width: 100%
+		height: 1px;
+		position: relative;
+		top: 204px;}
+	.line5{
+		width: 100%
+		height: 1px;
+		position: relative;
+		top: 255px;}	
+	.line6{
+		width: 100%
+		height: 1px;
+		position: relative;
+		top: 365px;}
