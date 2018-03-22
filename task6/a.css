@@ -81,7 +81,7 @@
 		float: right;
 		width: 42px;
 		height: 44px;
-		margin: 18px 10px 0 0;
+		margin: 18px 20px 0 0;
 		background: url(images/5-1.png) -259px -190px;}/*定位图标*/
     .img5 {
         position: absolute;
@@ -140,27 +140,44 @@
 		width: 200px;
 		position: relative;
     	top: -58px;
-    	left: 60px;}
+    	left: 60px;
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;}
     .word3 {
     	color: grey;
 		font-family: heiti TC;
 		font-size: 26px;
     	position: relative;
     	top: -10px;
-    	left: 54px}
+    	left: 54px;
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;}
 	.word4 {
 		color: red;
 		font-family: heiti TC;
 		font-size: 26px;
     	position: relative;
     	top: -96px;
-    	left:83%;}
+    	left:83%;
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;}
     .word5 {
 		font-family: heiti TC;
+        width: 60%;
 		font-size: 28px;
 		position: relative;
 		top: -126px;
-		left: 62px;}
+		left: 62px;
+        width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;}
     .a {
         position: absolute;
         left: 33.33333333%;}
