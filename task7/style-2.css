@@ -29,15 +29,18 @@
         border: 5px solid white;
         background-color: #f5c97b;}
     .box7 {
+    	border: none;
+    	background-color: #f5c97b;
         font-size: 30px;
-        width: 100%;
+        width: 126px;
         height: 99px;
         line-height: 99px;
-        text-align: center; }
+        text-align: center;
+        outline: medium; }
     .box8 {
         font-size: 23px;
         color: white;
-        width: 100%;
+        width: 126px;
         height: 27px;
         line-height: 27px;
         text-align: center;
@@ -59,6 +62,23 @@
         width: 490px;
         height: 87px;
         background-color: #fbb435;}
+    .box11 {
+    	width: 126px;
+    	height: 60px;}
+    .dropdown {
+    	display: inline-block;
+    	position: relative;}
+    .hiddenbox {
+    	position: absolute;
+    	top: 146px;
+    	left: -5px;
+    	display: none;
+    	width: 136px;
+    	height: 30px;}
+    .dropdown:hover .hiddenbox{ display: block; }
+
+
+
 
 
 
@@ -85,20 +105,19 @@
         background: url(images/7-10.png);}/*倒三角*/
     .img4 {
         position: relative;
-        top: 15px;
-        right: -1%;
+        top: -65px;
+        right: 2%;
         float: right;
         width: 52px;
         height: 52px;
+        border: none;
+        outline: medium;
         background: url(images/7-7.png);
         background-size: cover;}/*播放*/
     .img5 {
-        position: relative;
-        top: 20px;
-        right: 5px;
-        width: 135px;
-        height: 30px;
-        background: url(images/7-3.png);}
+    	margin:0 0.5px;
+    	width: 30px;
+    	height: 30px;}
 
 
 
