@@ -25,7 +25,8 @@
         width: 80%;
         height: 776px;
         background-color: white;
-        border: 1px solid grey; }/*版本列表*/
+        border: 1px solid grey;
+        margin-top: }/*版本列表*/
     .box5 {
         color: #fdd793;
         line-height: 89px;
@@ -37,6 +38,7 @@
     .box6 {
         width: 100%;
         height: 640px;
+        background-color: white;
         display: flex;
         flex-direction: column;
         align-items: center;}/*列表容器*/
@@ -54,35 +56,18 @@
         height: 50PX;
         display: flex;
         justify-content: center;}
-    #box10 {
-    	position: relative;
-    	top: 10px;
+    .box9 {
+        margin: 10px 5px 5px 5px;
+        width: 16px;
+        height: 16px;
+        border-radius: 8px; 
+        background-color: #69d1e9;}
+    .box10 {
+        margin: 10px 5px 5px 5px;
         width: 16px;
         height: 16px;
         border-radius: 8px; 
         background-color: #e4e4e4;}
-    .box11 {
-    	width: 100%;
-    	height: 776px;
-    	background-color: white;}
-    .box12 {
-    	width: 100%;
-    	height: 776px;
-    	background-color: white;}
-    .box13 {
-    	width: 100%;
-    	height: 776px;
-    	background-color: white;}
-    .box14 {
-    	width: 100%;
-    	height: 776px;
-    	background-color: white;}
-    #box10:hover{
-    	background-color: #69d1e9;
-
-    }
-
-
 
 
     .word1 {

@@ -1,0 +1,17 @@
+
+    		<div class="box5">捉鬼游戏</div><!抓鬼header>
+    		<div class="box6">
+    			<div class="box7">简化版</div>
+    			<div class="word1">有1133个用户正在玩此款游戏</div>
+    			<div class="box7">猜词版</div>
+    			<div class="word1">有1133个用户正在玩此款游戏</div>
+    			<div class="box7">白痴版</div>
+    			<div class="word1">有1133个用户正在玩此款游戏</div>
+    		</div><!篮筐列表>
+    		<div class="box8">
+    			<div class="box9"></div>
+    			<div class="box10"></div>
+    			<div class="box10"></div>
+    			<div class="box10"></div>
+    		</div>
+    		<div class="img1"></div>
