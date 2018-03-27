@@ -29,7 +29,8 @@
 		border-bottom: 2px solid grey;
 		display: flex;
 		justify-content: center;
-		position: relative;}
+		position: relative;
+		white-space: nowrap;}
 	.box6 {
 		width: 100%;
 		background-color: rgba(41, 189, 224,0.5);
@@ -107,7 +108,6 @@
 		text-align: center;}
 	.word4 {
 		font-size: 26px;
-		max-width: 500px;
 		color: white;
 		width: 70%;
 		position: absolute;
