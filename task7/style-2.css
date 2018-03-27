@@ -65,6 +65,14 @@
     .box11 {
     	width: 126px;
     	height: 60px;}
+    .box12 {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;}
+
+
     .dropdown {
     	display: inline-block;
     	position: relative;}
@@ -85,7 +93,7 @@
     .img1 {
         width: 39px;
         height: 40px;
-        background: url(images/7-8.png);
+        background: url(images/7.png) -213px -285px;
         position: relative;
         left: 2%;
         top: 36px;} 
@@ -96,13 +104,13 @@
         position: relative;
         right: 2%;
         top: -50px;
-        background: url(images/7-6.png);}/*叉叉*/
+        background: url(images/7.png) -10px -357px;}/*叉叉*/
     .img3 {
         position: relative;
         left: 10%;
         width: 15px;
         height: 13px;
-        background: url(images/7-10.png);}/*倒三角*/
+        background: url(images/7.png) -381px -146px ;}/*倒三角*/
     .img4 {
         position: relative;
         top: -65px;
@@ -112,8 +120,7 @@
         height: 52px;
         border: none;
         outline: medium;
-        background: url(images/7-7.png);
-        background-size: cover;}/*播放*/
+        background: url(images/7.png) -10px -285px;}/*播放*/
     .img5 {
     	margin:0 0.5px;
     	width: 30px;
