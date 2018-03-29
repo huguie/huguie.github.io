@@ -70,7 +70,7 @@ body  {
         height: 70px;
         border: 1px solid grey ;
         border-radius: 35px;
-        box-shadow: 0px 0px 3px #333333;
+        box-shadow: 0px 0px 1px #333333;
         text-align: center;
         line-height: 70px;
         color: #29b078;}
@@ -148,6 +148,8 @@ body  {
         position: relative;
         background-color: #26a26f;}
     .box24 {
+        text-align: center;
+        line-height: 31px;
         width: 100%;
         height: 31px;
         border: 1px solid #32c086;
@@ -171,7 +173,20 @@ body  {
         position: absolute;
         right: 18%;}
     .word2 span {
-        padding: 0 31px;}
+        display: inline-block;
+        width: 99px;
+        height: 99px;
+        text-align: center;}
+    .word2 span:hover{
+        display: inline-block;
+        width: 99px;
+        height: 3px;
+        background-color: white;
+        cursor: pointer;
+        z-index: 100;}
+
+
+
     .word3 {
         font-size: 40px;
         color: white;
@@ -228,8 +243,10 @@ body  {
         position: absolute;
         top: 20%;
         left: 30%;
+        text-align: left;
         font-size: 14px;
-        color: grey;}
+        color: grey;
+        padding: 0 15% 0 0;}
     .word12 {
         font-size: 18px;
         position: absolute;
@@ -283,6 +300,11 @@ body  {
         position: absolute;
         top: 55%;
         left: 42%;}
+    .word167 {
+        width: 100px;
+        position: absolute;
+        top: -30%;
+        left: -3px;}
 
 
 
@@ -296,6 +318,7 @@ body  {
         min-height: 40%;
         background: url(images/1-14.png) no-repeat;
         position: relative;}
+
     .img2  {
         position: absolute;
         top: 7px;
@@ -388,3 +411,35 @@ body  {
         width: 100%;
         height: 176px;
         background: url(images/1-4.png); }
+    .img12 {
+        width: 33px;
+        height: 31px;
+        background: url(images/1-9.png);
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        right:0%;}
+    .img13 {
+        width: 92px;
+        height: 92px;
+        background: url(images/1-16.png) no-repeat;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        right: 20%;}
+    #img14 {
+        position: absolute;
+        top: 50%;
+        margin-top: -23px;
+        left: 200px;
+        width: 27px;
+        height: 46px;
+        background: url(images/1-22.png);}
+    #img15 {
+        top: 50%;
+        margin-top: -23px;
+        position: absolute;
+        right: 200px;
+        width: 27px;
+        height: 46px;
+        background: url(images/1-23.png);}
