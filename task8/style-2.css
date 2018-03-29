@@ -1,0 +1,193 @@
+*{ margin: 0;
+	padding: 0;}
+body  {}
+    .box1 {
+        width: 100%;
+        height: 39px;
+        background-color: white;
+        line-height: 39px;
+        position: relative;}
+    .box2 {
+        width: 100%;
+        height: 99px;
+        background-color: #29b078;
+        line-height: 99px;
+        position: relative;}
+    .box3 {
+        width: 100%;
+        height: 3000px;
+        position: relative;}
+    .box4 {
+        width: 64%;
+        height: 3000px;
+        position: absolute;
+        left: 18%;
+        right: 18%;
+        background-color: lightblue;}
+    .box5 {
+        width: 100%;
+        height: 81px;
+        border-bottom: 1px solid grey;
+        line-height: 81px;
+        font-size: 16px;}
+    .box5 span  {
+        color: #29b078;}
+    .box6 {
+        line-height: 61px;
+        width: 100%;
+        height: 61px;
+        border-bottom: 1px solid grey;}
+    .box6 span {
+        margin-right: 20px;}
+    .box7 {
+        width: 100%;
+        height: 575px;
+        position: relative;}
+    .box8 {
+        width: 100%;
+        height: 81px;
+        border-bottom: 1px solid grey;
+        line-height: 81px;
+        font-size: 16px;}
+    .box9 {
+        position: absolute;
+        top: 130px;
+        width: 100%;
+        height: 455px;
+        background-color: lightpink;
+        margin: 0;
+        padding: 0}
+    .box9child {
+        width: 100%;
+        height: 455px;}
+    .box10 {
+        width: 97%;
+        height: 444px;
+        box-shadow: 1px 1px 4px;
+        position: absolute;
+        top: 5px;}
+
+
+
+
+    .box23 {
+        width: 100%;
+        height: 202px;
+        font-size: 16px;
+        color: white;
+        position: relative;
+        background-color: #26a26f;}
+    .box24 {
+        text-align: center;
+        line-height: 31px;
+        width: 100%;
+        height: 31px;
+        border: 1px solid #32c086;
+        position: absolute;
+        bottom: 0;}
+
+
+
+
+    .word1 {
+        font-size: 14px;
+        color: #29b078;
+        position: absolute;
+        left: 20%;}
+    .word2 {
+        font-size: 16px;
+        color: white;
+        position: absolute;
+        right: 18%;}
+    .word2 span {
+        display: inline-block;
+        width: 99px;
+        height: 99px;
+        text-align: center;}
+    .word2 span:hover{
+        display: inline-block;
+        width: 99px;
+        height: 3px;
+        background-color: white;
+        cursor: pointer;
+        z-index: 100;}
+    .word3 {
+        color: grey;}
+    .word4 {
+        color: white;
+        padding: 5px;
+        background-color: #29b078;}
+
+
+
+
+
+
+    .word16 {
+        position: absolute;
+        top: 15%;
+        left: 18%;}
+    .word161 {
+        position: absolute;
+        top: 55%;
+        left: 18%;}
+    .word162 {
+        position: absolute;
+        top: 15%;
+        left: 35%;}
+    .word163 {
+        position: absolute;
+        top: 35%;
+        left: 35%;}
+    .word164 {
+        position: absolute;
+        top: 35%;
+        left: 42%;}
+    .word165 {
+        position: absolute;
+        top: 55%;
+        left: 35%;}
+    .word166 {
+        position: absolute;
+        top: 55%;
+        left: 42%;}
+    .word167 {
+        width: 100px;
+        position: absolute;
+        top: -30%;
+        left: -3px;}
+
+
+
+
+
+
+    .img2  {
+        position: absolute;
+        top: 7px;
+        right: 19%;
+        width: 25px;
+        height: 24px;
+        background: url(images/1-19.png);}
+    .img3 {
+        position: absolute;
+        top: 7px;
+        right: 22%;
+        width: 25px;
+        height: 24px;
+        background: url(images/1-20.png);}
+    .img4 {
+        position: absolute;
+        top: 7px;
+        right: 25%;
+        width: 25px;
+        height: 24px;
+        background: url(images/1-21.png);}
+    .img13 {
+        width: 92px;
+        height: 92px;
+        background: url(images/1-16.png) no-repeat;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        right: 20%;}
