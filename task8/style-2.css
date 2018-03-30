@@ -15,15 +15,14 @@ body  {}
         position: relative;}
     .box3 {
         width: 100%;
-        height: 3000px;
+        height: 3100px;
         position: relative;}
     .box4 {
         width: 64%;
         height: 3000px;
         position: absolute;
         left: 18%;
-        right: 18%;
-        background-color: lightblue;}
+        right: 18%;}
     .box5 {
         width: 100%;
         height: 81px;
@@ -43,6 +42,11 @@ body  {}
         width: 100%;
         height: 575px;
         position: relative;}
+    .box7secondline {
+        width: 100%;
+        height: 1070px;
+        position: relative;}
+
     .box8 {
         width: 100%;
         height: 81px;
@@ -54,21 +58,152 @@ body  {}
         top: 130px;
         width: 100%;
         height: 455px;
-        background-color: lightpink;
         margin: 0;
-        padding: 0}
+        padding: 0;}
+    .box9secondline {
+        position: absolute;
+        top: 130px;
+        width: 100%;
+        height: 1010px;
+        margin: 0;
+        padding: 0;}
+
+
     .box9child {
         width: 100%;
         height: 455px;}
+    .box10father {
+        width: 100%;
+        height: 444px;}
     .box10 {
         width: 97%;
         height: 444px;
         box-shadow: 1px 1px 4px;
         position: absolute;
-        top: 5px;}
+        top: 5px;
+        border-radius: 3PX;
+        background-color: white;}
+    .box10secondline {
+        width: 97%;
+        height: 444px;
+        box-shadow: 1px 1px 4px;
+        position: absolute;
+        top: 500px;
+        border-radius: 3PX;
+        background-color: white;}
+    .box10left {
+        position: absolute;
+        right: -15px;}
+    .box10center {
+        position: absolute;
+        right: -7.5px;} 
+    .box10hidden {
+        display: none;
+        width: 100%;
+        height: 444px;
+        border-radius: 3px;
+        background-color: rgba(10,10,10,.6);
+        position: absolute;
+        z-index: 10;}
+    .box10:hover .box10hidden{
+        display: block;}
+    .box10secondline:hover .box10hidden{
+        display: block;}
 
-
-
+    .box11 {
+        width: 100%;
+        height: 280px;
+        border-top: 1px solid grey;
+        position: absolute;
+        bottom: 0; 
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        white-space: nowrap;
+        color: grey;}
+    .box12 {
+        width: 50%;
+        height: 42px;
+        border-right: 1px solid grey;
+        line-height: 42px;
+        position: relative;}
+    .box13 {
+        width: 50%;
+        height: 42px;
+        line-height: 42px;
+        position: relative;}
+    .box13 {
+        width: 50%;
+        height: 42px;
+        line-height: 42px;
+        border: 1px 1px 1px solid grey;
+        position: relative;}
+    .box14 {
+        width: 50%;
+        height: 42px;
+        line-height: 42px;
+        border: 1px solid grey;
+        border-left: none;
+        position: relative;}
+    .box14 span {
+        color: red;
+        margin-left: 5%;}
+    .box15 {
+        width: 50%;
+        height: 42px;
+        line-height: 42px;
+        border: 1px solid grey;
+        border-left: none;
+        border-right: none;
+        position: relative;}
+    .box15 span {
+        color: red;
+        margin-left: 5%;}
+    .box15 div .black {
+        display: inline-block;
+        color: black;}
+    .box16 {
+        width: 100%;
+        height: 106px;}
+    .box17 {
+        width: 30%;
+        height: 105px;
+        border-right: 1px solid grey;
+        border-bottom: 1px solid grey;
+        line-height: 105px;
+        text-align: center;
+        float: left;}
+    .box18 {
+        width: 70%;
+        height: 35px;
+        border-bottom: 1px solid grey;
+        line-height: 35px;
+        float: left;
+        position: relative;
+        color: black;}
+    .box18 span {
+        margin-left: 10%;}
+    .box18 div  {
+        display: inline-block;
+        position: absolute;
+        right: 10%;}
+    .box19 {
+        color: black;
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        border-bottom: 1px solid grey;
+        font-weight: bold;}
+    .box19 div {
+        margin-left: 3%;}
+    .box19 span {
+        color: red;}
+    .box20 {
+        line-height: 40px;
+        width: 100%;
+        height: 40px;
+        font-size: 12px;
+        padding: 0 12px;}
 
     .box23 {
         width: 100%;
@@ -103,23 +238,55 @@ body  {}
         display: inline-block;
         width: 99px;
         height: 99px;
-        text-align: center;}
-    .word2 span:hover{
-        display: inline-block;
+        text-align: center;
+        cursor: pointer;}
+    .word2hidden {
+        display: none;
         width: 99px;
         height: 3px;
         background-color: white;
-        cursor: pointer;
+        position: absolute;
+        bottom: 0;
         z-index: 100;}
+
+
+    .word2 span:hover .word2hidden{
+        display: block;}
+
     .word3 {
         color: grey;}
     .word4 {
         color: white;
         padding: 5px;
         background-color: #29b078;}
-
-
-
+    .word5 {
+        font-size:16px;
+        font-weight: bold;
+        position: absolute;
+        left: 40%;
+        top: 5%}
+    .word6 {
+        width: 60%;
+        font-size: 14px;
+        position: absolute;
+        left: 40%;
+        top: 14%;}
+    .word7 {
+        position: absolute;
+        left: 10%;}
+    .word8 {
+        position: absolute;
+        left: 10%;}
+    .word9 {
+        padding: 12%;
+        padding-top: 30%;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;}
+    .word9 div {
+        text-align: left;
+    }
 
 
 
@@ -183,6 +350,37 @@ body  {}
         width: 25px;
         height: 24px;
         background: url(images/1-21.png);}
+    .img5 {
+        width: 139px;
+        height: 139px;
+        background: url(images/1-17.png);
+        position: absolute;
+        top: 2%;
+        left: 2%;}
+    .img6 {
+        width: 16px;
+        height: 15px;
+        background: url(images/1-15.png);
+        position: absolute;
+        left: 30%;
+        top: 50%;
+        margin-top: -7px;}
+    .img7 {
+        width: 16px;
+        height: 15px;
+        background: url(images/1-15.png);
+        position: absolute;
+        left: 45%;
+        top: 50%;
+        margin-top: -7px;}
+    .img8 {
+        width: 16px;
+        height: 15px;
+        background: url(images/1-15.png);
+        position: absolute;
+        left: 57%;
+        top: 50%;
+        margin-top: -7px;}
     .img13 {
         width: 92px;
         height: 92px;

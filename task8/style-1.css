@@ -176,14 +176,20 @@ body  {
         display: inline-block;
         width: 99px;
         height: 99px;
-        text-align: center;}
-    .word2 span:hover{
-        display: inline-block;
+        text-align: center;
+        cursor: pointer;}
+    .word2hidden {
+        display: none;
         width: 99px;
         height: 3px;
         background-color: white;
-        cursor: pointer;
+        position: absolute;
+        bottom: 0;
         z-index: 100;}
+
+
+    .word2 span:hover .word2hidden{
+        display: block;}
 
 
 
