@@ -67,8 +67,6 @@ body  {}
         height: 1010px;
         margin: 0;
         padding: 0;}
-
-
     .box9child {
         width: 100%;
         height: 455px;}
@@ -109,7 +107,6 @@ body  {}
         display: block;}
     .box10secondline:hover .box10hidden{
         display: block;}
-
     .box11 {
         width: 100%;
         height: 280px;
@@ -224,6 +221,16 @@ body  {}
 
 
 
+
+
+
+
+
+
+
+
+
+
     .word1 {
         font-size: 14px;
         color: #29b078;
@@ -234,12 +241,14 @@ body  {}
         color: white;
         position: absolute;
         right: 18%;}
-    .word2 span {
+    .word2 a {
         display: inline-block;
         width: 99px;
         height: 99px;
         text-align: center;
-        cursor: pointer;}
+        cursor: pointer;
+        color: white;
+        text-decoration: none;}
     .word2hidden {
         display: none;
         width: 99px;
@@ -250,7 +259,7 @@ body  {}
         z-index: 100;}
 
 
-    .word2 span:hover .word2hidden{
+    .word2 a:hover .word2hidden{
         display: block;}
 
     .word3 {
@@ -285,11 +294,7 @@ body  {}
         font-weight: bold;
         text-align: center;}
     .word9 div {
-        text-align: left;
-    }
-
-
-
+        text-align: left;}
     .word16 {
         position: absolute;
         top: 15%;
@@ -323,6 +328,21 @@ body  {}
         position: absolute;
         top: -30%;
         left: -3px;}
+    .word17 {
+        font-size: 38px;
+        position: absolute;
+        color: white;
+        font-family: 造字工房朗倩（非商用）;
+        left: 18%;}
+    .word18 {
+        font-size: 10px;
+        position: absolute;
+        color: white;
+        font-family: 造字工房朗倩（非商用）;
+        left: 18%;
+        top: 26%;}
+
+
 
 
 
