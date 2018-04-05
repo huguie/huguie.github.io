@@ -23,8 +23,7 @@ body  {
     .box4 {
         width: 1228px;
         height: 100%;
-        position: relative;
-        background-color: lightgrey;}
+        position: relative;}
     .box5 {
         width: 100%;
         height: auto;}
@@ -119,21 +118,6 @@ body  {
         height: 41px;
         display: flex;
         justify-content: space-between;}
-
-
-    @media screen and (max-width: 700px)
-    {
-        .box19 {
-            height: 500px;}
-        .box20 {
-            margin-left:  calc( 50% - 100px );
-            width: 200px;
-            height: 100px;
-            background-color: white;
-            flex-wrap: wrap;
-            }}
-
-
     .box21 {
         width: 4px;
         height: 4px;
@@ -167,42 +151,70 @@ body  {
         justify-content: center;
         align-items: center;
         float: left;}
-    @media screen and (max-width: 1000px)
-    {
+    .box26 {
+        width: 1228px;
+        height: 170px;
+        position: absolute;
+        left: 50%;
+        margin-left: -614px;}
+    @media screen and (max-width: 1200px){
         .box16{
         height: 1000px;}
         .box141 {
             left: 50%;
             margin-left: -135px;
-            margin-bottom: 50px;}}
-    @media screen and (max-width: 1200px){
+            margin-bottom: 50px;}
+        .box7 {
+            margin-top: -120px;
+            margin-bottom: -100px;}
         .box17{
             height: 450px;}
         .box18{
-            height: 352px;}}
-    @media screen and (max-width: 700px){
+            height: 352px;}
+        .box19 {
+            height: 200px;}
+        .box23 {
+            width: 100%;
+            height: 500px;
+            position: relative;}
+        .box24 {
+            height: 60px;}
+        .box26 {
+            width: 100%;
+            height: 450px;
+            left: 0;
+            top:0;
+            margin: 0;
+            }}
+    @media screen and (max-width: 750px){
+        .box10 {
+            height: 700px;
+        }
         .box17{
-            height: 900px;}
+            height: 1000px;}
         .box18{
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 900px;}}
-
-    @media screen and (max-width: 1000px)
-    {
-        .box10 {
-            height: 700px;}
-        .box7 {
-            margin-top: -100px;
-            margin-bottom: -90px;}}
-    @media screen and (max-width: 770px)
-    {
+            box-shadow: none;
+            height: 900px;}
+        .box19 {
+            height: 500px;}
+        .box20 {
+            margin-left:  calc( 50% - 100px );
+            width: 200px;
+            height: 200px;
+            flex-wrap: wrap;}
         .box16{
         height: 1900px;}
         
         .box9 {
-            border: none;}}
+            border: none;}
+        }
+
+
+
+
 
 
 
@@ -325,31 +337,31 @@ body  {
     .word16 {
         position: absolute;
         top: 15%;
-        left: 18%;}
+        left: 5%;}
     .word161 {
         position: absolute;
         top: 55%;
-        left: 18%;}
+        left: 5%;}
     .word162 {
         position: absolute;
         top: 15%;
-        left: 35%;}
+        left: 25%;}
     .word163 {
         position: absolute;
         top: 35%;
-        left: 35%;}
+        left: 25%;}
     .word164 {
         position: absolute;
         top: 35%;
-        left: 42%;}
+        left: 34%;}
     .word165 {
         position: absolute;
         top: 55%;
-        left: 35%;}
+        left: 25%;}
     .word166 {
         position: absolute;
         top: 55%;
-        left: 42%;}
+        left: 34%;}
     .word167 {
         width: 100px;
         position: absolute;
@@ -368,9 +380,6 @@ body  {
         font-family: 造字工房朗倩（非商用）;
         left: 18%;
         top: 26%;}
-
-
-
 
 
 
@@ -441,31 +450,6 @@ body  {
         position: absolute;
         top: 68%;
         left: 20%;}
-        @media screen and (max-width: 770px)
-    {
-        .word7 {}
-        .img8 {
-            left: 35%;}
-        .img9 {
-            left: 35%;}
-        .word7 {
-            left: 43%;}
-        .word8 {
-            left: 37%;}
-        .word9 {
-            left: 43%;}
-        .word10 {
-            left: 37%;}
-        }
-
-
-
-
-
-
-
-
-
     .img10 {
         position: absolute;
         left: 50%;
@@ -502,6 +486,22 @@ body  {
         width: 175px;
         height: 65px;
         background: url(images/1-4-5.png); }
+    .img111 {
+        width: 175px;
+        height: 65px;
+        background: url(images/1-4-4.png); }
+    .img112 {
+        width: 175px;
+        height: 65px;
+        background: url(images/1-4-3.png); }
+    .img113 {
+        width: 175px;
+        height: 65px;
+        background: url(images/1-4-2.png); }
+    .img114 {
+        width: 175px;
+        height: 65px;
+        background: url(images/1-4-1.png); }
     .img12 {
         width: 33px;
         height: 31px;
@@ -517,7 +517,9 @@ body  {
         position: absolute;
         top: 50%;
         margin-top: -50px;
-        right: 20%;}
+        right: 5%;}
+    .img14hidden {
+        display: none;}
     #img14 {
         position: absolute;
         top: 50%;
@@ -534,3 +536,56 @@ body  {
         width: 27px;
         height: 46px;
         background: url(images/1-23.png);}
+
+    @media screen and (max-width: 1200px)
+    {
+    .img8 {
+            left: 35%;}
+    .img9 {
+            left: 35%;}
+    .img13 {
+            top: 20%;}
+    .word7 {
+            left: 43%;}
+    .word8 {
+            left: 37%;}
+    .word9 {
+            left: 43%;}
+    .word10 {
+            left: 37%;}
+    .word14 {
+        height: 60px;}
+    .word16 {
+        position: absolute;
+        top: 5%;
+        left: 5%;}
+    .word161 {
+        position: absolute;
+        top: 15%;
+        left: 5%;}
+    .word162 {
+        position: absolute;
+        top: 25%;
+        left: 5%;}
+    .word163 {
+        position: absolute;
+        top: 35%;
+        left: 5%;}
+    .word164 {
+        position: absolute;
+        top: 45%;
+        left: 5%;}
+    .word165 {
+        position: absolute;
+        top: 55%;
+        left: 5%;}
+    .word166 {
+        position: absolute;
+        top: 65%;
+        left: 5%;}
+    .word167 {
+        width: 100px;
+        position: absolute;
+        top: -30%;
+        left: -3px;}
+        }

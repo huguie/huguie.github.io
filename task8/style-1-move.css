@@ -69,6 +69,31 @@ body  {
         width: 25px;
         height: 24px;
         background: url(images/1-19.png);}
+    .img14 {
+        width: 39px;
+        height: 40px;
+        background: url(images/1-24.png);
+        position: absolute;
+        top: 50%;
+        margin-top: -20px;
+        right: 10%;
+        border: none;
+        outline: medium;}
+    .img14hidden {
+        display: none;
+        width: 150px;
+        height: 200px;
+        background-color: lightgrey;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 10;}
+    .content {
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        text-align: center;
+        line-height: 50px;}
     #img14 {
         position: absolute;
         top: 50%;
