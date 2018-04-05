@@ -13,6 +13,9 @@ body  {
         background-color: #29b078;
         line-height: 60px;
         position: relative;}
+    .box5 {
+    	height: 1400px;
+    }
     .box10 {
             height: 700px;}
     .box17{
@@ -26,7 +29,7 @@ body  {
     .box19 {
             height: 500px;}
     .box20 {
-            margin-left:  calc( 50% - 100px );
+            margin-left: calc( 50% - 100px );
             width: 200px;
             height: 200px;
             flex-wrap: wrap;}
@@ -96,7 +99,7 @@ body  {
         border: none;}
     .img14hidden {
         position: absolute;
-        left: 65%;
+        left: 60%;
         display: none;
         width: 150px;
         height: 200px;
