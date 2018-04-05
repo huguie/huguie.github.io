@@ -1,6 +1,9 @@
 *{ margin: 0;
 	padding: 0;}
-body  {}
+body  {
+    width: 100%;
+    height: 100%;
+}
     .box1 {
         width: 100%;
         height: 39px;
@@ -15,14 +18,14 @@ body  {}
         position: relative;}
     .box3 {
         width: 100%;
-        height: 3100px;
-        position: relative;}
+        height: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;}
     .box4 {
-        width: 64%;
-        height: 3000px;
-        position: absolute;
-        left: 18%;
-        right: 18%;}
+        width: 1228px;
+        height:100%;
+        position: relative;}
     .box5 {
         width: 100%;
         height: 81px;
@@ -40,13 +43,14 @@ body  {}
         margin-right: 20px;}
     .box7 {
         width: 100%;
-        height: 575px;
+        height: 600px;
         position: relative;}
     .box7secondline {
         width: 100%;
         height: 1070px;
-        position: relative;}
-
+        position: relative;
+        border-bottom: none;
+        border-top: none;}
     .box8 {
         width: 100%;
         height: 81px;
@@ -70,23 +74,21 @@ body  {}
     .box9child {
         width: 100%;
         height: 455px;}
-    .box10father {
-        width: 100%;
-        height: 444px;}
     .box10 {
-        width: 97%;
+        width: 382px;
         height: 444px;
         box-shadow: 1px 1px 4px;
         position: absolute;
-        top: 5px;
         border-radius: 3PX;
         background-color: white;}
+    .box10father {
+        height: 444px;
+        margin: 10px 0;}
     .box10secondline {
-        width: 97%;
+        width: 382px;
         height: 444px;
         box-shadow: 1px 1px 4px;
         position: absolute;
-        top: 500px;
         border-radius: 3PX;
         background-color: white;}
     .box10left {
@@ -201,7 +203,6 @@ body  {}
         height: 40px;
         font-size: 12px;
         padding: 0 12px;}
-
     .box23 {
         width: 100%;
         height: 202px;
@@ -214,11 +215,25 @@ body  {}
         line-height: 31px;
         width: 100%;
         height: 31px;
-        border: 1px solid #32c086;
         position: absolute;
+        border-top:1px solid grey;
         bottom: 0;}
+    .box25 {
+        width: 100%;
+        height: 650px;
+        position: relative;
+        margin-bottom: 20px;}
 
-
+    @media screen and (max-width: 1000px){
+        .box7 {
+            height: 1025px;}
+        .box7secondline {
+            height: 1470px;}
+        .box23 {
+            width: 100%;
+            height: 500px;
+            position: relative;}
+        }
 
 
 
@@ -409,3 +424,5 @@ body  {}
         top: 50%;
         margin-top: -50px;
         right: 20%;}
+    .btn {
+        display: none;}

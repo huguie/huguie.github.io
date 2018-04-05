@@ -145,12 +145,21 @@ body  {
         position: absolute;
         bottom: 0;}
     .box25 {
-        width: 241px;
+        width: 245px;
         height: 176px;
         display: flex;
         justify-content: center;
         align-items: center;
         float: left;}
+    .box25hidden {
+        display: none;
+        width: 245px;
+        height: 176px;
+        box-shadow: 0 0 4px grey;
+        position: absolute;}
+    .box25:hover .box25hidden{
+        display: block;}
+
     .box26 {
         width: 1228px;
         height: 170px;
@@ -184,36 +193,7 @@ body  {
             height: 450px;
             left: 0;
             top:0;
-            margin: 0;
-            }}
-    @media screen and (max-width: 750px){
-        .box10 {
-            height: 700px;
-        }
-        .box17{
-            height: 1000px;}
-        .box18{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            box-shadow: none;
-            height: 900px;}
-        .box19 {
-            height: 500px;}
-        .box20 {
-            margin-left:  calc( 50% - 100px );
-            width: 200px;
-            height: 200px;
-            flex-wrap: wrap;}
-        .box16{
-        height: 1900px;}
-        
-        .box9 {
-            border: none;}
-        }
-
-
-
+            margin: 0;}}
 
 
 
@@ -390,7 +370,6 @@ body  {
     .img1 {
         width: 1920px;
         height: 600px;}
-
     .img2  {
         position: absolute;
         top: 7px;
@@ -518,7 +497,7 @@ body  {
         top: 50%;
         margin-top: -50px;
         right: 5%;}
-    .img14hidden {
+    .btn {
         display: none;}
     #img14 {
         position: absolute;
@@ -537,55 +516,5 @@ body  {
         height: 46px;
         background: url(images/1-23.png);}
 
-    @media screen and (max-width: 1200px)
+    @media screen and (max-width: 700px)
     {
-    .img8 {
-            left: 35%;}
-    .img9 {
-            left: 35%;}
-    .img13 {
-            top: 20%;}
-    .word7 {
-            left: 43%;}
-    .word8 {
-            left: 37%;}
-    .word9 {
-            left: 43%;}
-    .word10 {
-            left: 37%;}
-    .word14 {
-        height: 60px;}
-    .word16 {
-        position: absolute;
-        top: 5%;
-        left: 5%;}
-    .word161 {
-        position: absolute;
-        top: 15%;
-        left: 5%;}
-    .word162 {
-        position: absolute;
-        top: 25%;
-        left: 5%;}
-    .word163 {
-        position: absolute;
-        top: 35%;
-        left: 5%;}
-    .word164 {
-        position: absolute;
-        top: 45%;
-        left: 5%;}
-    .word165 {
-        position: absolute;
-        top: 55%;
-        left: 5%;}
-    .word166 {
-        position: absolute;
-        top: 65%;
-        left: 5%;}
-    .word167 {
-        width: 100px;
-        position: absolute;
-        top: -30%;
-        left: -3px;}
-        }
