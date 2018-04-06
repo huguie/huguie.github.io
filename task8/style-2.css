@@ -1,21 +1,24 @@
 *{ margin: 0;
 	padding: 0;}
-body  {
-    width: 100%;
-    height: 100%;
-}
     .box1 {
-        width: 100%;
+        width: 1200px;
         height: 39px;
-        background-color: white;
         line-height: 39px;
-        position: relative;}
+        position: relative;
+        left: 50%;
+        margin-left: -600px;}
     .box2 {
         width: 100%;
         height: 99px;
         background-color: #29b078;
         line-height: 99px;
         position: relative;}
+    .box2child {
+        width: 1200px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -600px;}
     .box3 {
         width: 100%;
         height: 100%;
@@ -23,7 +26,7 @@ body  {
         display: flex;
         justify-content: center;}
     .box4 {
-        width: 1228px;
+        width: 1200px;
         height:100%;
         position: relative;}
     .box5 {
@@ -216,13 +219,29 @@ body  {
         width: 100%;
         height: 31px;
         position: absolute;
-        border-top:1px solid grey;
+        border-top:1px solid #32c086;
         bottom: 0;}
     .box25 {
         width: 100%;
         height: 650px;
         position: relative;
         margin-bottom: 20px;}
+    .box26 {
+        width: 1200px;
+        height: 170px;
+        position: absolute;
+        left: 50%;
+        margin-left: -600px;}
+    .box26hidden {
+        display: none;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        border-bottom: 1px solid white;}
+    .box26 div:hover .box26hidden{
+        display: block;
+    }
 
     @media screen and (max-width: 1000px){
         .box7 {
@@ -248,14 +267,12 @@ body  {
 
     .word1 {
         font-size: 14px;
-        color: #29b078;
-        position: absolute;
-        left: 20%;}
+        color: #29b078;}
     .word2 {
         font-size: 16px;
         color: white;
         position: absolute;
-        right: 18%;}
+        right: -34px;}
     .word2 a {
         display: inline-block;
         width: 99px;
@@ -272,8 +289,6 @@ body  {
         position: absolute;
         bottom: 0;
         z-index: 100;}
-
-
     .word2 a:hover .word2hidden{
         display: block;}
 
@@ -313,31 +328,31 @@ body  {
     .word16 {
         position: absolute;
         top: 15%;
-        left: 18%;}
+        left: 0%;}
     .word161 {
         position: absolute;
         top: 55%;
-        left: 18%;}
+        left: 0%;}
     .word162 {
         position: absolute;
         top: 15%;
-        left: 35%;}
+        left: 25%;}
     .word163 {
         position: absolute;
         top: 35%;
-        left: 35%;}
+        left: 25%;}
     .word164 {
         position: absolute;
         top: 35%;
-        left: 42%;}
+        left: 34%;}
     .word165 {
         position: absolute;
         top: 55%;
-        left: 35%;}
+        left: 25%;}
     .word166 {
         position: absolute;
         top: 55%;
-        left: 42%;}
+        left: 34%;}
     .word167 {
         width: 100px;
         position: absolute;
@@ -347,14 +362,12 @@ body  {
         font-size: 38px;
         position: absolute;
         color: white;
-        font-family: 造字工房朗倩（非商用）;
-        left: 18%;}
+        font-family: 造字工房朗倩（非商用）;}
     .word18 {
         font-size: 10px;
         position: absolute;
         color: white;
         font-family: 造字工房朗倩（非商用）;
-        left: 18%;
         top: 26%;}
 
 
@@ -367,21 +380,21 @@ body  {
     .img2  {
         position: absolute;
         top: 7px;
-        right: 19%;
+        right: 0;
         width: 25px;
         height: 24px;
         background: url(images/1-19.png);}
     .img3 {
         position: absolute;
         top: 7px;
-        right: 22%;
+        right: 3%;
         width: 25px;
         height: 24px;
         background: url(images/1-20.png);}
     .img4 {
         position: absolute;
         top: 7px;
-        right: 25%;
+        right: 6%;
         width: 25px;
         height: 24px;
         background: url(images/1-21.png);}

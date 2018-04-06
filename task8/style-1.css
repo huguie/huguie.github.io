@@ -1,19 +1,24 @@
 *{ margin: 0;
 	padding: 0;}
-body  {
-    background-color: rgb(200,200,200);}
     .box1 {
-        width: 100%;
+        width: 1200px;
         height: 39px;
-        background-color: white;
         line-height: 39px;
-        position: relative;}
+        position: relative;
+        left: 50%;
+        margin-left: -600px;}
     .box2 {
         width: 100%;
         height: 99px;
         background-color: #29b078;
         line-height: 99px;
         position: relative;}
+    .box2child {
+        width: 1200px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -600px;}
     .box3 {
         width: 100%;
         height: 100%;
@@ -21,7 +26,7 @@ body  {
         display: flex;
         justify-content: center;}
     .box4 {
-        width: 1228px;
+        width: 1200px;
         height: 100%;
         position: relative;}
     .box5 {
@@ -63,7 +68,6 @@ body  {
     .box12 {
         width: 70px;
         height: 70px;
-        border: 1px solid lightgrey ;
         border-radius: 35px;
         box-shadow: 0px 0px 3px #999999;
         text-align: center;
@@ -107,8 +111,7 @@ body  {
         text-align: center;}
     .box18 {
         width: 100%;
-        height: 176px;
-        box-shadow: .5px .5px 1px #c1c1c1;}
+        height: 176px;}
     .box19 {
         width: 100%;
         height: 112px;
@@ -145,7 +148,7 @@ body  {
         position: absolute;
         bottom: 0;}
     .box25 {
-        width: 245px;
+        width: 240px;
         height: 176px;
         display: flex;
         justify-content: center;
@@ -159,13 +162,24 @@ body  {
         position: absolute;}
     .box25:hover .box25hidden{
         display: block;}
-
     .box26 {
-        width: 1228px;
+        width: 1200px;
         height: 170px;
         position: absolute;
         left: 50%;
-        margin-left: -614px;}
+        margin-left: -600px;}
+    .box26hidden {
+        display: none;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        border-bottom: 1px solid white;}
+    .box26 div:hover .box26hidden{
+        display: block;
+    }
+
+
     @media screen and (max-width: 1200px){
         .box16{
         height: 1000px;}
@@ -201,14 +215,12 @@ body  {
 
     .word1 {
         font-size: 14px;
-        color: #29b078;
-        position: absolute;
-        left: 20%;}
+        color: #29b078;}
     .word2 {
         font-size: 16px;
         color: white;
         position: absolute;
-        right: 18%;}
+        right: -34px;}
     .word2 a {
         display: inline-block;
         width: 99px;
@@ -317,11 +329,11 @@ body  {
     .word16 {
         position: absolute;
         top: 15%;
-        left: 5%;}
+        left: 0%;}
     .word161 {
         position: absolute;
         top: 55%;
-        left: 5%;}
+        left: 0%;}
     .word162 {
         position: absolute;
         top: 15%;
@@ -351,14 +363,12 @@ body  {
         font-size: 38px;
         position: absolute;
         color: white;
-        font-family: 造字工房朗倩（非商用）;
-        left: 18%;}
+        font-family: 造字工房朗倩（非商用）;}
     .word18 {
         font-size: 10px;
         position: absolute;
         color: white;
         font-family: 造字工房朗倩（非商用）;
-        left: 18%;
         top: 26%;}
 
 
@@ -373,21 +383,21 @@ body  {
     .img2  {
         position: absolute;
         top: 7px;
-        right: 19%;
+        right: 0;
         width: 25px;
         height: 24px;
         background: url(images/1-19.png);}
     .img3 {
         position: absolute;
         top: 7px;
-        right: 22%;
+        right: 3%;
         width: 25px;
         height: 24px;
         background: url(images/1-20.png);}
     .img4 {
         position: absolute;
         top: 7px;
-        right: 25%;
+        right: 6%;
         width: 25px;
         height: 24px;
         background: url(images/1-21.png);}

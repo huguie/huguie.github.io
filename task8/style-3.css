@@ -1,27 +1,33 @@
 f*{ margin: 0;
 	padding: 0;}
-body  {}
     .box1 {
-        width: 100%;
+        width: 1200px;
         height: 39px;
-        background-color: white;
         line-height: 39px;
-        position: relative;}
+        position: relative;
+        left: 50%;
+        margin-left: -600px;}
     .box2 {
         width: 100%;
         height: 99px;
         background-color: #29b078;
         line-height: 99px;
         position: relative;}
+    .box2child {
+        width: 1200px;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        margin-left: -600px;}
     .box3 {
         width: 100%;
         position: relative;}
     .box4 {
-        width: 1228px;
+        width: 1200px;
         height: 100%;
         position: relative;
         left: 50%;
-        margin-left: -614px;}
+        margin-left: -600px;}
     .box5 {
         width: 100%;
         height: 78px;
@@ -36,21 +42,21 @@ body  {}
     .box7 {
         width: 26%;
         height: 708px;
-        box-shadow: 0px 0px 1px;
+        box-shadow: 0px 0px 2px lightgrey;
         position: absolute;
         top: 0;
         left: 0}
     .box8 {
         width: 70%;
         height: 1101px;
-        box-shadow: 0px 0px 1px;
+        box-shadow: 0px 0px 2px lightgrey;
         position: absolute;
         right: 0;
         top: 0;}
     .box9 {
         width: 100%;
         height: 50px;
-        border-bottom: 1px solid lightgrey;
+        border-bottom: 1px solid #e6e6e6;
         text-align: center;
         line-height: 50px;
         font-weight: bold;
@@ -107,7 +113,7 @@ body  {}
         width: 100%;
         height: 156px;
         position: relative;
-        border-bottom: 1px solid lightgrey;}
+        border-bottom: 1px solid #e6e6e6;}
     .box14 {
         width: 100%;
         height: 945px;
@@ -135,6 +141,22 @@ body  {}
         border: 1px solid #32c086;
         position: absolute;
         bottom: 0;}
+    .box26 {
+        width: 1200px;
+        height: 170px;
+        position: absolute;
+        left: 50%;
+        margin-left: -600px;}
+    .box26hidden {
+        display: none;
+        width: 100%;
+        height: 20px;
+        position: absolute;
+        top: 0;
+        border-bottom: 1px solid white;}
+    .box26 div:hover .box26hidden{
+        display: block;
+    }
     .btn {
         display: none;
     }
@@ -155,14 +177,12 @@ body  {}
 
     .word1 {
         font-size: 14px;
-        color: #29b078;
-        position: absolute;
-        left: 20%;}
+        color: #29b078;}
     .word2 {
         font-size: 16px;
         color: white;
         position: absolute;
-        right: 18%;}
+        right: -34px;}
     .word2 a {
         display: inline-block;
         width: 99px;
@@ -192,31 +212,31 @@ body  {}
     .word16 {
         position: absolute;
         top: 15%;
-        left: 18%;}
+        left: 0%;}
     .word161 {
         position: absolute;
         top: 55%;
-        left: 18%;}
+        left: 0%;}
     .word162 {
         position: absolute;
         top: 15%;
-        left: 35%;}
+        left: 25%;}
     .word163 {
         position: absolute;
         top: 35%;
-        left: 35%;}
+        left: 25%;}
     .word164 {
         position: absolute;
         top: 35%;
-        left: 42%;}
+        left: 34%;}
     .word165 {
         position: absolute;
         top: 55%;
-        left: 35%;}
+        left: 25%;}
     .word166 {
         position: absolute;
         top: 55%;
-        left: 42%;}
+        left: 34%;}
     .word167 {
         width: 100px;
         position: absolute;
@@ -226,14 +246,12 @@ body  {}
         font-size: 38px;
         position: absolute;
         color: white;
-        font-family: 造字工房朗倩（非商用）;
-        left: 18%;}
+        font-family: 造字工房朗倩（非商用）;}
     .word18 {
         font-size: 10px;
         position: absolute;
         color: white;
         font-family: 造字工房朗倩（非商用）;
-        left: 18%;
         top: 26%;}
 
 
@@ -253,21 +271,21 @@ body  {}
     .img2  {
         position: absolute;
         top: 7px;
-        right: 19%;
+        right: 0;
         width: 25px;
         height: 24px;
         background: url(images/1-19.png);}
     .img3 {
         position: absolute;
         top: 7px;
-        right: 22%;
+        right: 3%;
         width: 25px;
         height: 24px;
         background: url(images/1-20.png);}
     .img4 {
         position: absolute;
         top: 7px;
-        right: 25%;
+        right: 6%;
         width: 25px;
         height: 24px;
         background: url(images/1-21.png);}
