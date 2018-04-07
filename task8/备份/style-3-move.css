@@ -6,75 +6,37 @@
         position: relative;
         margin: 0;
         left: 0;}
-    .box1{
-        display: none;}
-    .boxm1 {
-        display: block;
-        width: 100%;
-        height: 39px;
-        background-color: white;
-        padding: 0 15px;
-        line-height: 39px;
-        font-size: 20px;
-        text-align: right;
-        position: relative;}
-    .boxm1 span {
-        margin-right: 10px;}
-    .boxm1line {
-        width: 1px;
-        height: 31px;
-        background-color: #29b078;
-        position: absolute;
-        top: 4px;
-        right: 72px;}
     .box2 {
-        display: none;}
-    nav {
-        display: block;
-        border: none;}
-    .navbox {
+        width: 100%;
+        height: 60px;
         background-color: #29b078;
-        text-align: center;
-        margin-bottom: 0;
-        border: none;}
-    .navbar-header {
-        height: 60px;}
-    .navbar-collapse {
-        border: none;}
-    .navbar-toggle {
-        height: 40px;
-        background-color: none;}
-    ul li {
-        height: 50px;}
-    .navbar-default .navbar-nav>li>a {
-        color: white;
-        font-size: 20px;}
-
+        line-height: 60px;
+        position: relative;}
+    .box2child {
+        width: 100%;
+        margin: 0;
+        left: 0;}
     .box4 {
         width: 100%;
         margin: 0;
         left: 0;}
     .box6 {
-        height: 850px;}
+        height: 800px;}
     .box7 {
-        width: 90%;
-        height: 758px;
-        border: 1px solid lightgrey;
-        left: 5%;
+        width: 100%;
+        border: none;
         box-shadow: none;}
     .box8 {
         display: none;}
     .box9 {
-        height: 80px;
         font-size: 30px;
-        line-height: 80px;
         font-weight: normal;}
     .box23 {
             width: 100%;
-            height: 590px;
+            height: 500px;
             position: relative;}
     .box24 {
-            height: 90px;}
+            height: 60px;}
     .box26 {
             width: 100%;
             height: 450px;
@@ -132,15 +94,15 @@
         position: absolute;
         color: white;
         font-family: 造字工房朗倩（非商用）;
-        top: 10px;
-        left: 30px;}
+        left: 30px;
+        top: -5%;}
     .word18 {
         font-size: 10px;
         position: absolute;
         color: white;
         font-family: 微软雅黑;
         left: 30px;
-        top: 35px;}
+        top: 25%;}
 
 
 
@@ -168,8 +130,8 @@
         height: 24px;
         background: url(images/1-19.png);}
     .img13 {
-            top: 93%;
-            left: 5%;}
+            right: 5%;
+            top: 20%;}
     .img14 {
         width: 39px;
         height: 40px;
