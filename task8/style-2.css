@@ -20,7 +20,8 @@
         height: 100%;
         position: absolute;
         left: 50%;
-        margin-left: -600px;}
+        margin-left: -600px;
+        overflow: hidden;}
     nav {
         display: none;}
     .box3 {
@@ -50,11 +51,9 @@
         margin-right: 20px;}
     .box7 {
         width: 100%;
-        height: 600px;
         position: relative;}
     .box7secondline {
         width: 100%;
-        height: 1070px;
         position: relative;
         border-bottom: none;
         border-top: none;}
@@ -65,19 +64,15 @@
         line-height: 81px;
         font-size: 16px;}
     .box9 {
-        position: absolute;
-        top: 130px;
         width: 100%;
-        height: 455px;
+        height: auto;
         margin: 0;
-        padding: 0;}
+        padding: 60px 0 0 0;}
     .box9secondline {
-        position: absolute;
-        top: 130px;
         width: 100%;
-        height: 1010px;
+        height: auto;
         margin: 0;
-        padding: 0;}
+        padding: 60px 0 0 0;}
     .box9child {
         width: 100%;
         height: 455px;}
@@ -244,19 +239,8 @@
         top: 0;
         border-bottom: 1px solid white;}
     .box26 div:hover .box26hidden{
-        display: block;
-    }
+        display: block;}
 
-    @media screen and (max-width: 1000px){
-        .box7 {
-            height: 1025px;}
-        .box7secondline {
-            height: 1470px;}
-        .box23 {
-            width: 100%;
-            height: 590px;
-            position: relative;}
-        }
 
 
 

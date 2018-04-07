@@ -49,23 +49,22 @@
     .navbar-default .navbar-nav>li>a {
         color: white;
         font-size: 20px;}
-
     .box5 {
-    	height: 1400px;}
+        padding-bottom: 200px;
+    }
+    .box7 {
+        height: 300px;}
     .box10 {
             height: 700px;}
     .box9 {
             border: none;}
     .box16{
         height: 1900px;}
-    .box17{
-            height: 1000px;}
     .box18{
             display: flex;
             flex-direction: column;
             align-items: center;
-            box-shadow: none;
-            height: 900px;}
+            box-shadow: none;}
     .box19 {
             height: 500px;}
     .box20 {
@@ -74,8 +73,16 @@
             height: 200px;
             flex-wrap: wrap;}
     .box24 {
-        height: 90px;}
-    
+        height: 60px;}
+    .box23 {
+            width: 100%;
+            height: 590px;}
+    .box26 {
+            width: 100%;
+            height: 450px;
+            left: 0;
+            top:0;
+            margin: 0;}
 
 
 
