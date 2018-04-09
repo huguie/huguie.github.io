@@ -14,12 +14,21 @@
             line-height: 99px;
             left: 0;
             margin: 0;
-            padding: 0 0 0 15px;}
+            padding: 0 0 0 15px;
+            overflow: hidden;}
+    .box4 {
+        width: 90%;}
+    .box13 {
+        display: flex;
+        justify-content: center;}
     .box26 {
             width: 100%;
             left: 0;
             top:0;
             margin: 0;}
+
+
+
 
 
 
@@ -44,6 +53,9 @@
         width: 25px;
         height: 24px;
         background: url(images/1-21.png);}
+    .img13 {
+        right: 50px;}
+
 
 
     .word2 {
