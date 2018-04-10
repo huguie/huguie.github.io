@@ -50,8 +50,7 @@
         color: white;
         font-size: 20px;}
     .box5 {
-        padding-bottom: 200px;
-    }
+        padding-bottom: 200px;}
     .box7 {
         height: 300px;}
     .box10 {
@@ -87,6 +86,9 @@
 
     .word2 {
         display: none;}
+    .word11 {
+        top: 30%;
+    }
     .word17 {
         font-size: 22px;
         position: absolute;

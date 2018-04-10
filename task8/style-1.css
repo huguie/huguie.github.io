@@ -70,6 +70,7 @@
     .box12 {
         width: 70px;
         height: 70px;
+        margin: 5px;
         border-radius: 35px;
         box-shadow: 0px 0px 3px #999999;
         text-align: center;
@@ -154,7 +155,7 @@
         position: relative;
         background-color: white;
         display: inline-block;
-        margin: 20px 0 ;}
+        margin: 2px 5px ;}
     .box25hidden {
         display: none;
         width: 220px;
@@ -267,7 +268,7 @@
         left: 22%;}
     .word11 {
         position: absolute;
-        top: 20%;
+        top: 25%;
         left: 95px;
         text-align: left;
         font-size: 14px;
@@ -498,7 +499,7 @@
         background: url(images/1-9.png);
         position: absolute;
         top: 50%;
-        margin-top: -15px;
+        margin-top: -20px;
         right:0%;}
     .img13 {
         width: 92px;
