@@ -54,7 +54,6 @@
  	.container{
  		width: 100%;
  		padding: 0;}
-
  	.box8 {
  		margin-top: 48px;
  		width: 382px;
@@ -62,6 +61,31 @@
  		position: relative;
  		font-size: 16px;
  		box-shadow: 0 0 4px;}
+ 	.box8hidden {
+ 		width: 382px;
+ 		height: 444px;
+ 		background-color: rgba(20,20,20,.5);
+ 		color: white;
+ 		display: flex;
+ 		flex-direction: column;
+ 		align-items: center;
+ 		position: absolute;
+ 		font-size: 16px;
+ 		top: 48px;
+ 		display: none;}
+ 	.box8hidden span {
+ 		display: inline-block;
+ 		height: 20px;
+ 		padding-top: 80px;}
+ 	.box8hidden div {
+ 		width: 80%;
+ 		padding-top: 50px;}
+	.col-lg-4:hover .box8hidden {
+		display: flex;}
+	.col-md-6:hover .box8hidden {
+		display: flex;}
+	.col-xs-12:hover .box8hidden {
+		display: flex;}
     .box9 {
         width: 100%;
         position: absolute;
@@ -134,7 +158,6 @@
         text-align: center;
         line-height: 31px;
         width: 100%;
-        height: 31px;
         position: absolute;
         border-top:1px solid #32c086;
         bottom: 0;}
@@ -302,4 +325,4 @@
         position: absolute;
         top: 50%;
         margin-top: -50px;
-        right: 20%;}
+       right: 5%;}

@@ -43,29 +43,18 @@
     .navbar-default .navbar-nav>li>a {
         color: white;
         font-size: 20px;}
-
-    .box6{
-    	height: 120px;
-    }
     .box8 {
-        width: 90%;
+        width: 100%;
+        height: 464px;}
+    .box8hidden {
+        width: calc( 100% - 24px );
         height: 464px;}
 
-    .box13 {
-        width: 40%;}
-    .box14 {
-        width: 60%;}
-    .box15 div div {
-        line-height: 30px;}
-    .row{
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;}
+    .box6{
+    	height: 120px;}
     .col-xs-12 {
-        width: 90%;
-        padding: 0;}
-
+    	display: flex;
+    	justify-content: center;}
     .box23 {
         height: 550px;}
     .box26 {
@@ -83,10 +72,6 @@
         left: 30px;}
     .word2 {
         display: none;}
-    .word4{
-        width: 40%;
-        font-size: 12px;
-        word-break:break-all;}
     .word17 {
         font-size: 22px;
         position: absolute;

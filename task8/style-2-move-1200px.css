@@ -16,18 +16,28 @@
             margin: 0;
             padding: 0 0 0 15px;
             overflow: hidden;}
+    .box5 {
+        text-align: left;
+        padding-left: 5px;}
+    .box8 {
+        width: 90%;
+        height: 464px;}
+    .box8hidden {
+        width: calc( 90% - 24px);
+        height: 464px;}
+    .box13 {
+        width: 40%;}
+    .box14 {
+        width: 60%;}
+    .box15 div div {
+        line-height: 30px;}
+    .row{
+        margin: 0;}
     .box26 {
             width: 100%;
             left: 0;
             top:0;
             margin: 0;}
-    .col-md-6 {
-        display: flex;
-        justify-content: center;}
-    .row{
-        margin: 0;}
-    .box5 {
-        text-align: center;}
 
 
     .img2  {
@@ -54,8 +64,16 @@
     .img13 {
             right:50px;}
 
+
+
+
+
     .word2 {
         right: -15px;}
+    .word4{
+        width: 45%;
+        font-size: 14px;
+        word-break:break-all;}
     .word16 {
         position: absolute;
         top: 15%;
