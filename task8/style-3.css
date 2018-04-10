@@ -18,7 +18,8 @@ f*{ margin: 0;
         height: 100%;
         position: absolute;
         left: 50%;
-        margin-left: -600px;}
+        margin-left: -600px;
+        overflow: hidden;}
     .boxm1 {
         display: none;}
     nav {
@@ -152,11 +153,9 @@ f*{ margin: 0;
         top: 0;
         border-bottom: 1px solid white;}
     .box26 div:hover .box26hidden{
-        display: block;
-    }
+        display: block;}
     .btn {
-        display: none;
-    }
+        display: none;}
 
 
 

@@ -20,7 +20,8 @@
         height: 100%;
         position: absolute;
         left: 50%;
-        margin-left: -600px;}
+        margin-left: -600px;
+    	overflow: hidden;}
     nav {
         display: none;}
  	.box3 {
@@ -52,8 +53,13 @@
  		color: white;
  		background-color: #29b078}
  	.container{
+ 		margin: 0;
+ 		padding: 0;
+ 	 	width: 100%;}
+ 	.row {
  		width: 100%;
- 		padding: 0;}
+ 		margin-left: -7.5px;}
+
  	.box8 {
  		margin-top: 48px;
  		width: 382px;
