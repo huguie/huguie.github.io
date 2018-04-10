@@ -83,8 +83,7 @@
         bottom: 0;}
     .box14 {
         width: 100%;
-        height: 375px;
-        background-color: white;}
+        height: 375px;}
     .box141 {
         margin: 2px 2px 0 2px ;
         width: 270px;
@@ -153,7 +152,9 @@
         width: 220px;
         height: 176px;
         position: relative;
-        display: inline-block;}
+        background-color: white;
+        display: inline-block;
+        margin: 20px 0 ;}
     .box25hidden {
         display: none;
         width: 220px;
