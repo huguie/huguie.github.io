@@ -33,9 +33,15 @@
 
     .main {
         display: flex;
-        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         width: 100%;}
-        .main .content{
+        .topbackground {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                background-color: grey;}
+        .main .topcontent{
             width: 1200px;}
             .liuchengtubtn {
                 font-size: 16px;
@@ -44,11 +50,12 @@
                 .liuchengtubtn div {
                     position: relative;
                     padding: 6px 10px;
-                    margin: 30px 0 30px 60px;
+                    margin: 34px 0 34px 60px;
                     border-radius: 3px;
                     box-shadow: 0 0 1px;
                     background-color: white;}
                 .liuchengtubtn .hiddencontent {
+                    display: none;
                     position: absolute;
                     top: 0;
                     left: 0;
@@ -56,12 +63,59 @@
                     height: 100%;
                     text-align: center;
                     line-height: 34px;
-                    border-radius: 3px;
+                    border-radius: 2px;
                     color: white;
                     background-color: #1d7ad9;}
-
-
-
+                .liuchengtubtn div:hover .hiddencontent {
+                    display: block;}
+        .main .content {
+            width: 1200px;
+            background-color: grey;
+            height: 300px;}
+            .liuchengtu {
+                display: flex;
+                justify-content: flex-end;}
+                .liuchenghao {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    text-align: center;}
+                .liuchenghao:hover.liuchenghao .hiddencontent {
+                    display: block;
+                }
+                .liuchenghao .hiddencontent {
+                    display: none;
+                    position: absolute;
+                    color: orange;  }
+                    .liuchenghao .hiddencontent div {
+                        background-color: orange;}
+                    .liuchenghao .hiddencontent .henggang {
+                        border-radius: 2.5px;}
+                    .henggang {
+                        display: flex;
+                        justify-content: center;
+                        margin-top: 48px; 
+                        width: 159px;
+                        height: 5px;
+                        background-color: #cccccc;}
+                    .qianyuandaojiao {
+                        border-radius: 2.5px 0 0 2.5px;}
+                    .houyuandaojiao {
+                        border-radius: 0 2.5px 2.5px 0;}
+                    .yuanxing {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: -9px;
+                        width: 24px;
+                        height: 24px;
+                        font-size: 16px;
+                        color: white;
+                        border-radius: 12px;
+                        background-color: #cccccc}
+                    .liuchengming {
+                        display: inline-block;
+                        margin-top: 34px;}
 
 
 
