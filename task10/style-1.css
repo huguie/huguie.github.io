@@ -40,7 +40,7 @@
                 display: flex;
                 justify-content: center;
                 width: 100%;
-                background-color: grey;}
+                background-color: lightgrey;}
         .main .topcontent{
             width: 1200px;}
             .liuchengtubtn {
@@ -69,9 +69,7 @@
                 .liuchengtubtn div:hover .hiddencontent {
                     display: block;}
         .main .content {
-            width: 1200px;
-            background-color: grey;
-            height: 300px;}
+            width: 1200px;}
             .liuchengtu {
                 display: flex;
                 justify-content: flex-end;}
@@ -81,8 +79,7 @@
                     flex-direction: column;
                     text-align: center;}
                 .liuchenghao:hover.liuchenghao .hiddencontent {
-                    display: block;
-                }
+                    display: block;}
                 .liuchenghao .hiddencontent {
                     display: none;
                     position: absolute;
@@ -115,7 +112,56 @@
                         background-color: #cccccc}
                     .liuchengming {
                         display: inline-block;
-                        margin-top: 34px;}
+                        margin: 34px 0 54px 0;}
+            .buzhou {
+                display: flex;
+                flex-wrap: wrap;}
+                .shutiao{
+                    width: 4px;
+                    height: 21px;
+                    border-radius: 2px;
+                    background-color: #1d7ad9;}
+                .buzhouwenben {
+                    padding: 0 0 16px 10px;
+                }
+            .tiaojian{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+                height: 44px;
+                font-size: 22px;
+                color: #1d7ad9;
+                background-color: #f3f3f3;}
+                .xiangxing {
+                    margin: 0 20px;
+                    width: 19px;
+                    height: 15px;
+                    background: url(images/1.png);}
+            .tiaojiankuang {
+                display: flex;
+                flex-wrap: wrap;}
+                .tiaojiankuang .btn-group{
+                    position: relative;}
+                .tiaojiankuang .btn {
+                    padding: 0;
+                    width: 16px;
+                    height: 16px;
+                    border: none;
+                    border-radius: 8px;}
+                .tiaojiankuang .dropdown-menu {
+                    position: absolute;
+                    top: 0;
+                    padding: 0;
+                    margin: 0;
+                    min-width: 16px;
+                    widows: 16px;
+                    height: 16px;
+                    border: 6px solid #1d7ad9;
+                    border-radius: 8px;
+                    background-color: white;}
+
 
 
 
