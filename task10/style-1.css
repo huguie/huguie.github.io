@@ -5,7 +5,6 @@
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 40px;
         background-color: #1d7ad9;}
         .header .content{
             display: flex;
@@ -18,12 +17,13 @@
             white-space: nowrap;}
         .login {
             display: flex;
-            width: 157px;
             border-left: 1px solid white;
             border-right: 1px solid white;}
             .login span {
                 white-space: nowrap;
-                padding: 0 10px;}
+                text-align: center;
+                padding: 0 10px;
+                width: 110px;}
             .login div {
                 width: 110px;
                 text-align: center;
@@ -68,12 +68,17 @@
                     background-color: #1d7ad9;}
                 .liuchengtubtn div:hover .hiddencontent {
                     display: block;}
+            nav {
+                display: none;}
         .main .content {
-            width: 1200px;}
+            width: 1200px;
+            color: #666666;}
             .liuchengtu {
                 display: flex;
                 justify-content: flex-end;
-                flex-wrap: wrap;}
+                flex-wrap: wrap;
+                font-size: 18px;
+                color: #cccccc;}
                 .liuchenghao {
                     display: flex;
                     align-items: center;
@@ -217,6 +222,15 @@
                         font-size: 18px;}
                     .btnanddigittiao div span {
                         padding-left: 17px;}
+                    .digittiao {
+                    margin-left: -15px;
+                    margin-right: 60px;
+                    display: inline-block;
+                    font-size: 18px;}
+                    .digit {
+                    width: 70px;
+                    height: 30px;
+                    border: 1px solid lightgrey;}
 
                     .seconddigittiao{
                     margin-top: 20px;
@@ -232,15 +246,6 @@
                     border-bottom: none;}
                     .third .btnteam {
                         margin: 58px 0 64px 45px;}
-                .digittiao {
-                    margin-left: -15px;
-                    margin-right: 60px;
-                    display: inline-block;
-                    font-size: 18px;}
-                    .digit {
-                    width: 70px;
-                    height: 30px;
-                    border: 1px solid lightgrey;}
             .listbottom{
                 display: flex;
                 justify-content: center;
@@ -308,20 +313,75 @@
         .main .content {
             width: 100%;} 
             .digittiao{
+                margin-right: 40px;
                 margin-bottom: 10px;}
             .btnanddigittiao div {
                 margin-bottom: 20px;}
             select {
-                padding-left: 0;
-                width: auto;
-                height: auto;
-                background: none;}
+                flex-shrink: 0}
         .main .bottomcontent {
             width: 100%;}/*footer*/}
-    @media screen and (max-width:786px){
+    @media screen and (max-width:767px){
+        .telephone {
+            display: none;}
+        .login {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            font-size: 20px;}
+            .login span {
+                width: 50%;}
+            .login div {
+                width: 50%;}
+        .liuchengtubtn {
+            display: none;}
+        nav {
+            display: block;}
+            .navbar-header {
+                height: 60px;}
+            .navbar-toggle {
+                height: 40px;}    
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-size: 20px;}
+                nav ul li {
+                    padding: 10px;}
+        .liuchengtu {
+            justify-content: center;}
+            .henggang {
+                width: 80%;
+                border-radius: 2.5px;}
+        .liuchenghao {
+            white-space: nowrap;
+            min-width: 20%;
+            font-size: 16px;}
+            .hiddencontent {
+                min-width: 20%;}
+                .hiddencontent .henggang {
+                    margin-left: 10%;}
+        .btnteam {
+            margin-left: 20px;
+            width: 200px;}
+            .btnteam div {
+                margin-right: 10px;}
+        .btnanddigittiao {
+            margin-left: 20px;
+            width: 255px;}
+            .btnanddigittiao span {
+                margin-left: 0；}
+            select {
+                width: 130px;
+                margin-right: 5px;}
+        .third .btnteam {
+                white-space: nowrap;
+                margin-left: 20px;}
         .main .bottomcontent {
             display: flex;
             flex-direction: column;
             height: 400px;
             padding-top: 20px;
-            padding-bottom: 20px;}}
+            padding-bottom: 20px;}
+        .main .bottomcontent div {
+            margin-left: 10px;}}

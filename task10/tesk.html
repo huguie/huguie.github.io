@@ -8,73 +8,34 @@
 	   	<script src="js/bootstrap/3.3.6/bootstrap.min.js"></script>
     <title>test</title>
     <style type="text/css">
-    	.btn-group {
-    		position: relative;}
-    	.btn {
-    		padding: 0;
-    		width: 16px;
-    		height: 16px;
-    		border-radius: 8px;}
-    	.dropdown-menu {
-    		position: absolute;
-    		top: 0;
-    		padding: 0;
-    		margin: 0;
-    		min-width: 16px;
-    		height: 16px;
-    		border-radius: 8px;
-    		background-color: red;}
-    	.listbutton {
-    		width: 16px;
-    		height: 16px;
-    		border-radius: 50%;
-    		position: relative;}
-    	.listbutton:before, .listbutton:after {
-    		content: '';
-    		display: block;
-    		position: absolute;
-    		border-radius: 50%;
-    		transition: .3s ease;}
-    	.listbutton:before {
-    		top: 0;
-    		left: 0;
-    		width: 16px;
-    		height: 16px;
-    		background-color: grey;
-    		border: 1px solid #000;}
-    	.listbutton:after {
-    		top: 0;
-    		left: 0;
-    		width: 16px;
-    		height: 16px;
-    		background-color: blue;}
-    	.listbutton:checked:after {
-    		top: 4px;
-    		left: 4px;
-    		width: 12px;
-    		height: 12px;
-    		background-color:#ea879a; }
-    	.listbutton:checked:before {
-    		border-color:#ea879a; }
+    	select {
+    		
+    		padding-left: 20px;}
 
     </style>
 
 </head>
 <body>	
-	<div class="btn-group">
-    <button type="button" class="btn dropdown-toggle "  data-toggle="dropdown">
-    </button>
-    <div class="dropdown-menu" role="menu">
-    </div>
-	</div>  
 
-	<input type="radio" class="listbutton" name="xiangxing" checked>
-	<input type="radio" class="listbutton" name="xiangxing">
-
-	<input type="text" name="digit">
-
-
-
+	<nav class="navbar navbar-default" role="navigation">
+		<div class="container-fluid"> 
+		<div class="navbar-header">
+		<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#example-navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		</div>
+		<div class="collapse navbar-collapse" id="example-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li><a href="https://www.baidu.com/">iOS</a></li>
+			<li><a href="https://www.baidu.com/">SVN</a></li>
+			<li><a href="https://www.baidu.com/">Java </li>
+		</ul>
+		</div>
+		</div>
+	</nav>
 
 
 </body>
