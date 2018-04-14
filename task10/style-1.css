@@ -324,15 +324,25 @@
     @media screen and (max-width:767px){
         .telephone {
             display: none;}
+        .navbar {
+            margin-bottom: 0;}
         .login {
+            display: flex;
+            justify-content: flex-end;
             width: 100%;
-            height: 60px;
-            line-height: 60px;
-            font-size: 20px;}
+            height: 40px;
+            font-size: 20px;
+            background-color: #f9f9f9;}
             .login span {
-                width: 50%;}
+                margin-right: 10px;
+                width: 80px;
+                border-radius: 5px;
+                background-color: #1d7ad9;}
             .login div {
-                width: 50%;}
+                margin-right: 10px;
+                width: 80px;
+                border: 2px solid #cacaca;
+                border-radius: 5px;}
         .liuchengtubtn {
             display: none;}
         nav {
@@ -361,27 +371,39 @@
                 min-width: 20%;}
                 .hiddencontent .henggang {
                     margin-left: 10%;}
-        .btnteam {
-            margin-left: 20px;
-            width: 200px;}
-            .btnteam div {
-                margin-right: 10px;}
+        .tiaojiankuang {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;}
         .btnanddigittiao {
-            margin-left: 20px;
-            width: 255px;}
-            .btnanddigittiao span {
-                margin-left: 0；}
+            justify-content: center;
+            width: 100%;
+            margin-left: 0;}
             select {
-                width: 130px;
-                margin-right: 5px;}
+                margin-bottom: 20px;}
+        .third  {
+            flex-direction: column;
+            justify-content: center;}
         .third .btnteam {
-                white-space: nowrap;
-                margin-left: 20px;}
+                width: 560px;
+                margin-left: 10px;}
         .main .bottomcontent {
             display: flex;
             flex-direction: column;
             height: 400px;
             padding-top: 20px;
             padding-bottom: 20px;}
-        .main .bottomcontent div {
-            margin-left: 10px;}}
+            .main .bottomcontent div {
+                margin-left: 10px;}}
+    @media screen and (max-width:569px){
+        .btnanddigittiao {
+            justify-content: flex-start;
+            margin-left: 45px;
+            width: calc( 100% - 45px);}
+            .digittiao {
+                width: 100%;}
+                .digit {
+                    width: 80%;}
+        .third .btnteam {
+            justify-content: center;
+            width: 90%;}}
