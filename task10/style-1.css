@@ -87,7 +87,6 @@
                 .liuchenghao:hover.liuchenghao .hiddencontent {
                     display: block;}
                 .liuchenghao .hiddencontent {
-                    display: none;
                     position: absolute;
                     color: orange;  }
                     .liuchenghao .hiddencontent div {
@@ -119,6 +118,16 @@
                     .liuchengming {
                         display: inline-block;
                         margin: 34px 0 54px 0;}
+                        .orangehref1 {
+                            text-decoration: none;
+                            color: orange;}
+                        .orangehref1:hover{
+                            color: orange;}
+                        .orangehref2 {
+                            text-decoration: none;
+                            color: #cccccc;}
+                        .orangehref2:hover{
+                            color: #cccccc;}
             .buzhou {
                 display: flex;
                 flex-wrap: wrap;}
