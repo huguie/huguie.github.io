@@ -77,7 +77,7 @@
         color: #999999;
         font-size: 28px;}
         .leftside {
-            @include flex(flex-start,none);
+            @include flex(flex-start,center);
             flex-wrap: wrap;
             width: 380px;
             max-width: 63%;}
@@ -96,7 +96,7 @@
                 margin: 0 16px 0 32px; 
                 @include img(19px,23px,url(images/5-1.png) -230px -190px);}
         .rightside {
-            @include flex(flex-start,none);}
+            @include flex(flex-start,center);}
             .rightside span {
                 color: red;
                 white-space: nowrap;}
@@ -135,13 +135,35 @@
             .homebutton span {
                 color: #5fc0cd;}
 
+@media screen and (max-width:600px){
+        .box3 {
+            font-size: 24px;}  
+            .box3 ul {
+                font-size: 22px;}}
 
-@media screen and (max-width:580px){
+@media screen and (max-width:430px){
+        .box1 {
+            justify-content: flex-start;}
+            .bigbutton{
+                width: 200px;
+                height: 50px;
+                margin-left: 10px;}
+            %button {
+            width: 100px;
+            height: 50px;}
+        .xiala {
+            font-size: 16px;}
         .img10{
             margin-right: 10px;
-            margin-left: 9px;
-        }
-    }
+            margin-left: 9px;}
+        .img8 {
+            margin: 0 0 0 10px;}
+        .img9 {
+            margin: 0 0 0 12px;}
+        .box3 {
+            font-size: 16px;}  
+            .box3 ul {
+                font-size: 18px;}}
 
 
 
