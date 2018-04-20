@@ -95,18 +95,15 @@ body {
 
 .fz36 {
   color: white;
-  font-family: Heiti TC;
   font-size: 36px; }
 
 .fz28 {
   color: white;
-  font-family: Heiti TC;
   font-size: 28px;
   padding-left: 20px; }
 
 .fz24 {
   color: white;
-  font-family: Heiti TC;
   font-size: 24px; }
 
 .list1 {
@@ -117,7 +114,6 @@ body {
   margin: 0 0;
   padding-left: 0;
   white-space: nowrap;
-  font-family: Heiti TC;
   font-size: 32px;
   border-bottom: 1px solid #e1e5e7; }
 
@@ -136,7 +132,6 @@ body {
   margin: 0 20px;
   padding-left: 43px;
   white-space: nowrap;
-  font-family: Heiti TC;
   font-size: 32px;
   border-bottom: 1px solid #e1e5e7;
   width: calc( 100% - 83px ); }
@@ -169,7 +164,6 @@ body {
   margin: 0 20px;
   padding-left: 43px;
   white-space: nowrap;
-  font-family: Heiti TC;
   font-size: 32px;
   border-bottom: 1px solid #e1e5e7;
   margin-bottom: 300px;

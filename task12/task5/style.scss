@@ -76,7 +76,6 @@
     			background: url(images/1.png)}
     		@mixin word($fz){
     			color: white;
-    			font-family: Heiti TC;
     			font-size: $fz;}
     			.fz36{
     				@include word(36px);}
@@ -93,7 +92,6 @@
    		margin: 0 $left;
    		padding-left: $padding-left;
    		white-space: nowrap;
-   		font-family: Heiti TC;
    		font-size: 32px;
    		border-bottom: 1px solid #e1e5e7;}
    		.list1{ 
