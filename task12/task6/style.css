@@ -4,7 +4,8 @@
   padding: 0; }
 
 body {
-  padding-top: 88px; }
+  padding-top: 88px;
+  padding-bottom: 150px; }
 
 .box1 {
   display: flex;
@@ -47,8 +48,8 @@ body {
 
 .GPSicon {
   position: absolute;
-  right: 0;
-  margin-right: 30px;
+  right: 30px;
+  none: none;
   width: 42px;
   height: 44px;
   background: url(images/5-1.png) -259px -190px; }
@@ -67,39 +68,16 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding-left: calc( 16.6666% - 42px);
   width: 33.33333%;
   height: 100%;
   color: #999999;
-  font-size: 28px; }
-
-.xialacontent {
-  display: none;
-  position: absolute;
-  top: 168px;
-  width: 33.33333%;
-  height: 80px;
-  background-color: grey;
-  z-index: 100; }
-
-.xiala:hover .xialacontent {
-  display: block; }
-
-.img2 {
-  position: absolute;
-  right: 0;
-  margin-right: 12px;
-  width: 13px;
-  height: 7px;
-  background: url(images/5-1.png) -279px -100px; }
-
-/*下拉符号*/
-.greybar {
-  position: absolute;
-  right: 0;
-  none: none;
-  width: 1px;
-  height: 80px;
-  background: url(images/5-1.png) -316px -10px; }
+  font-size: 28px;
+  background: url(images/5.png) no-repeat center right;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none; }
 
 /*列表头*/
 .box3 {
@@ -110,15 +88,14 @@ body {
   height: 180px;
   border-bottom: 1px solid #e1e5e7;
   color: #999999;
-  font-size: 28px;
-  font-family: heiti TC; }
+  font-size: 28px; }
 
 .leftside {
   display: flex;
   justify-content: flex-start;
   align-items: none;
   flex-wrap: wrap;
-  width: 370px;
+  width: 380px;
   max-width: 63%; }
 
 .leftside span {
@@ -205,5 +182,10 @@ body {
 
 .homebutton span {
   color: #5fc0cd; }
+
+@media screen and (max-width: 580px) {
+  .img10 {
+    margin-right: 10px;
+    margin-left: 9px; } }
 
 /*# sourceMappingURL=style.css.map */

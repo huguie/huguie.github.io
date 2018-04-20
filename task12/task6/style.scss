@@ -2,7 +2,8 @@
 *{ margin: 0;
 	padding: 0;}
 	body{
-		padding-top: 88px;}
+		padding-top: 88px;
+        padding-bottom: 150px;}
     @mixin flex($justify,$align) {
         display: flex;
         justify-content: $justify;
@@ -45,7 +46,7 @@
                 color: #5fc0cd;
                 background-color: white;}
         .GPSicon {
-            @include position(absolute,right,0,margin-right,30px);
+            @include position(absolute,right,30px,none,none);
             @include img(42px,44px,url(images/5-1.png) -259px -190px);}/*header*/
     .box2 {
         @include flex(flex-start,center);
@@ -55,28 +56,18 @@
         %xiala {
             @include flex(center,center);
             position: relative;
+            padding-left: calc( 16.6666% - 42px);
             width: 33.33333%;
             height: 100%;
             color: #999999;
-            font-size: 28px;}
+            font-size: 28px;
+            background: url(images/5.png) no-repeat center right;
+            border: none;
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;}
         .xiala {
             @extend %xiala;}
-            .xialacontent {
-                display: none;
-                position: absolute;
-                top: 168px;
-                width: 33.33333%;
-                height: 80px;;
-                background-color: grey;
-                z-index: 100;}
-            .xiala:hover .xialacontent{
-                display: block;}
-        .img2 {
-            @include position(absolute,right,0,margin-right,12px);
-            @include img(13px,7px,url(images/5-1.png) -279px -100px);}/*下拉符号*/
-        .greybar {
-            @include position(absolute,right,0,none,none);
-            @include img(1px,80px,url(images/5-1.png) -316px -10px);}
             /*列表头*/
     .box3 {
         @include flex(space-between,center);
@@ -84,12 +75,11 @@
         height: 180px;
         border-bottom: 1px solid #e1e5e7;
         color: #999999;
-        font-size: 28px;
-        font-family: heiti TC;}
+        font-size: 28px;}
         .leftside {
             @include flex(flex-start,none);
             flex-wrap: wrap;
-            width: 370px;
+            width: 380px;
             max-width: 63%;}
             .leftside span {
                 color: black;
@@ -146,6 +136,12 @@
                 color: #5fc0cd;}
 
 
+@media screen and (max-width:580px){
+        .img10{
+            margin-right: 10px;
+            margin-left: 9px;
+        }
+    }
 
 
 
