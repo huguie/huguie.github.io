@@ -52,7 +52,7 @@ body {
   none: none;
   width: 42px;
   height: 44px;
-  background: url(images/5-1.png) -259px -190px; }
+  background: url(images/6.png) no-repeat no-repeat; }
 
 /*header*/
 .box2 {
@@ -112,13 +112,13 @@ body {
   margin: 0 15px 0 30px;
   width: 24px;
   height: 24px;
-  background: url(images/5-1.png) -186px -190px; }
+  background: url(images/5-1.png) -186px -190px no-repeat; }
 
 .img9 {
   margin: 0 16px 0 32px;
   width: 19px;
   height: 23px;
-  background: url(images/5-1.png) -230px -190px; }
+  background: url(images/5-1.png) -230px -190px no-repeat; }
 
 .rightside {
   display: flex;
@@ -133,7 +133,7 @@ body {
   margin: 0 32px 0 24px;
   width: 19px;
   height: 33px;
-  background: url(images/2.png); }
+  background: url(images/2.png) no-repeat no-repeat; }
 
 .box4 {
   position: fixed;
@@ -154,20 +154,20 @@ body {
 .img5 {
   width: 94px;
   height: 94px;
-  background: url(images/5-1.png) -10px -190px; }
+  background: url(images/7.png) center no-repeat; }
 
 /*填写按钮*/
 .img6 {
   width: 46px;
   height: 40px;
-  background: url(images/5-1.png) -174px -100px;
+  background: url(images/9.png) bottom no-repeat;
   color: #5fc0cd; }
 
 /*小房子*/
 .img7 {
-  width: 50px;
+  width: 42px;
   height: 41px;
-  background: url(images/5-1.png) -120px -190px;
+  background: url(images/8.png) bottom no-repeat;
   color: grey; }
 
 /*小人*/
@@ -184,15 +184,6 @@ body {
   color: #5fc0cd; }
 
 @media screen and (max-width: 600px) {
-  .box3 {
-    font-size: 24px; }
-
-  .box3 ul {
-    font-size: 22px; } }
-@media screen and (max-width: 430px) {
-  .box1 {
-    justify-content: flex-start; }
-
   .bigbutton {
     width: 200px;
     height: 50px;
@@ -202,18 +193,38 @@ body {
     width: 100px;
     height: 50px; }
 
-  .xiala {
+  .box3 {
+    font-size: 24px; }
+
+  .box3 ul {
+    font-size: 22px; }
+
+  .box4 {
     font-size: 16px; }
 
+  .GPSicon {
+    right: 0;
+    top: 32px;
+    background-size: 70% 70%; }
+
+  .xiala {
+    font-size: 18px; }
+
+  .img5 {
+    background-size: 70% 70%; }
+
+  .img6 {
+    background-size: 70% 70%; }
+
+  .img7 {
+    background-size: 70% 70%; } }
+@media screen and (max-width: 430px) {
+  .leftside {
+    max-width: 65%; }
+
   .img10 {
-    margin-right: 10px;
-    margin-left: 9px; }
-
-  .img8 {
-    margin: 0 0 0 10px; }
-
-  .img9 {
-    margin: 0 0 0 12px; }
+    margin: 10px 10px 0 9px;
+    background-size: 70% 70%; }
 
   .box3 {
     font-size: 16px; }

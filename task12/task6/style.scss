@@ -11,7 +11,7 @@
     @mixin img($width,$height,$url) {
         width: $width;
         height: $height;
-        background: $url;}
+        background: $url no-repeat;}
     @mixin position($position,$side,$sidevalue,$marginside,$marginsidevalue) {
         position: $position;
         #{$side}: $sidevalue;
@@ -47,7 +47,7 @@
                 background-color: white;}
         .GPSicon {
             @include position(absolute,right,30px,none,none);
-            @include img(42px,44px,url(images/5-1.png) -259px -190px);}/*header*/
+            @include img(42px,44px,url(images/6.png) no-repeat);}/*header*/
     .box2 {
         @include flex(flex-start,center);
     	width: 100%;
@@ -102,7 +102,7 @@
                 white-space: nowrap;}
             .img10 {
                 margin: 0 32px 0 24px;
-                @include img(19px,33px,url(images/2.png));}
+                @include img(19px,33px,url(images/2.png) no-repeat);}
 
 
 
@@ -117,12 +117,12 @@
         font-size: 20px;
     	z-index: 10;} /*footer*/
         .img5 {
-            @include img(94px,94px,url(images/5-1.png) -10px -190px);}/*填写按钮*/
+            @include img(94px,94px,url(images/7.png) center);}/*填写按钮*/
         .img6 {
-            @include img(46px,40px,url(images/5-1.png) -174px -100px);
+            @include img(46px,40px,url(images/9.png) bottom);
             color: #5fc0cd;}/*小房子*/
         .img7 {
-            @include img(50px,41px,url(images/5-1.png) -120px -190px);
+            @include img(42px,41px,url(images/8.png) bottom);
             color: grey;}/*小人*/
         .homebutton {
             display: flex;
@@ -135,31 +135,49 @@
             .homebutton span {
                 color: #5fc0cd;}
 
-@media screen and (max-width:600px){
-        .box3 {
-            font-size: 24px;}  
-            .box3 ul {
-                font-size: 22px;}}
 
-@media screen and (max-width:430px){
-        .box1 {
-            justify-content: flex-start;}
-            .bigbutton{
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:600px){
+        .bigbutton{
                 width: 200px;
                 height: 50px;
                 margin-left: 10px;}
             %button {
             width: 100px;
             height: 50px;}
-        .xiala {
+        .box3 {
+            font-size: 24px;}  
+            .box3 ul {
+                font-size: 22px;}
+        .box4 {
             font-size: 16px;}
+        .GPSicon {
+            right: 0;
+            top: 32px;
+            background-size: 70% 70%;}
+        .xiala {
+            font-size: 18px;}
+        .img5 { 
+            background-size: 70% 70%;}
+        .img6 { 
+            background-size: 70% 70%;}
+        .img7 { 
+            background-size: 70% 70%;}}
+
+@media screen and (max-width:430px){
+        .leftside {
+            max-width: 65%;}
         .img10{
-            margin-right: 10px;
-            margin-left: 9px;}
-        .img8 {
-            margin: 0 0 0 10px;}
-        .img9 {
-            margin: 0 0 0 12px;}
+            margin: 10px 10px 0 9px;
+            background-size: 70% 70%;}
         .box3 {
             font-size: 16px;}  
             .box3 ul {
