@@ -28,6 +28,15 @@
   font-size: 32px;
   color: #ffffff;
   background-color: #69d1e9;}
+%ball {
+  margin: 14px 5px 9px 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;}
+@mixin greyball($bgcolor){
+  @extend %ball;
+  background-color: $bgcolor;}
+
 
 .header {
   width: 100%;
@@ -41,6 +50,7 @@
 .main {
   @include flex(center,center);
   flex-wrap: wrap;
+  padding-bottom: 61px;
   background-color: #f0f0f0;}
   .mainheader {
     @include flex(center,center);
@@ -66,3 +76,9 @@
     .playerquality {
       font-size: 24px;
       padding-top: 27px;}
+    .ball {
+      @include flex(center,center);}
+    .blueball {
+      @include greyball(#69d1e9);}
+    .greyball {
+  @include greyball(#f0f0f0);}
