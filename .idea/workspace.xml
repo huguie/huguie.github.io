@@ -27,37 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task7-1.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task13/task7-1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="44" column="26" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style-1.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task13/style-1.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="166" column="15" lean-forward="true" selection-start-line="166" selection-start-column="15" selection-end-line="166" selection-end-column="15" />
-              <folding>
-                <element signature="e#1024#1153#0" />
-                <element signature="e#1166#1283#0" />
-                <element signature="e#1296#1356#0" />
-                <element signature="e#1371#1475#0" />
-                <element signature="e#1609#1713#0" />
-                <element signature="e#1728#1832#0" />
-                <element signature="e#1839#2032#0" />
-                <element signature="e#2042#2150#0" />
-                <element signature="e#2160#2249#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -196,16 +166,15 @@
       <workItem from="1524629812173" duration="2830000" />
       <workItem from="1524702818388" duration="9189000" />
       <workItem from="1524724119299" duration="12463000" />
-      <workItem from="1524795727167" duration="4666000" />
+      <workItem from="1524795727167" duration="5274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29148000" />
+    <option name="totallyTimeSpent" value="29756000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="347" y="49" width="1404" height="974" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24927954" />
       <window_info anchor="bottom" id="TODO" order="6" />
