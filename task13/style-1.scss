@@ -119,6 +119,7 @@ input[type="checkbox"]:checked ~ label {
     @include box(#9a9a9a,35px,42px 0);}
     .img2 {
       position: absolute;
+      top: 42px;
       right: 20px;
       @include img(24px,40px,url(images/2.png));}
   .maincontent {
@@ -162,12 +163,12 @@ input[type="checkbox"]:checked ~ label {
   .img7 {
     top: calc( 50% - 7px );
     right: 0px;
-    background-size: 50%;
-  }
+    background-size: 50%;}
   .mainheader {
     font-size: 20px;}
     .img2 {
       background-size: 70%;
+      top: 32px;
       right: 10px;}
   .contenttitle{
     font-size: 26px;}
