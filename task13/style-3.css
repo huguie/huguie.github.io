@@ -1,13 +1,16 @@
 body {
-  background-color: #29bde0; }
+  padding-top: 588px; }
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: relative;
+  position: fixed;
+  top: 0;
   width: 100%;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+  background-color: #29bde0;
+  z-index: 2; }
 
 .title {
   margin: 44px 0 19px 0;
@@ -25,6 +28,13 @@ body {
   height: 40px;
   background: url(images/10.png) no-repeat center;
   margin: 32px 18px 0 0; }
+
+.fixedandcolor {
+  position: fixed;
+  top: 98px;
+  width: 100%;
+  background-color: #29bde0;
+  z-index: 2; }
 
 .img3 {
   width: 351px;

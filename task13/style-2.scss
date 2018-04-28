@@ -15,12 +15,16 @@
 
 
 body {
+  padding-top: 91px ;
   padding-bottom: 400px;
   background-color: #29bde0;}
 .header{
   @include flex(space-between,flex-start);
-  position: relative;
-  width: 100%;}
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #29bde0;
+  z-index: 2;}
   .title {
     margin : 38px 0 19px 0;
     font-size: 34px;
