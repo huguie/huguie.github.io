@@ -1,0 +1,49 @@
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;}
+@mixin img($width,$height,$url) {
+  width: $width;
+  height: $height;
+  background: $url no-repeat center;}
+@mixin position($position,$side1,$side1value,$side2,$side2value) {
+  position: $position;
+  #{$side1}: $side1value;
+  #{$side2}: $side2value;}
+@mixin font($fz,$cl){
+  font-size: $fz;
+  color: $cl;}
+
+
+
+body {
+  background-color: lightgrey;}
+.header {
+  width: 100%;
+  background-color: white;}
+  .headercontent {
+    @include flex(space-between,center);
+    margin-left: calc( 50% - 600px );
+    padding: 12px 0;
+    width: 1200px;
+    @include font(14px,#29b078);}
+  .headercontent > div > img {
+    margin-left: 10px;}
+.navigationbar {
+  background-color: #29b078;}
+  .navigationbar>.content{
+    @include flex(flex-end,center);
+    margin-left: calc( 50% - 600px );
+    width: 1200px;
+    padding: 41px 0;
+    @include font(16px,white);}
+  .navigationbar>.content>div{
+    padding: 0 31px;}
+.main{
+  width: 100%;
+  height: 500px;
+  background-color: lightblue;
+}
+
+
+

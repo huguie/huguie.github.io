@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	      	    <meta content="width=device-height, initial-scale=1" name="viewport">
+        <title>234</title>
+        <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;}
+            #contain{
+            	margin: 300px;
+                width: 400px; 
+                height: 400px;
+                background-color: pink;
+                position: relative;}
+                #box {
+                    width: 40px;
+                    height: 40px;
+                    background-color: lightblue;     
+                    position: absolute;}}
+        </style>
+</head>
+<body>
+<div id="contain">
+    <div id="box"></div>
+</div>
+<script type="text/javascript">
+    var t = setInterval(move,1000);
+    var pos = 0;
+    var box = document.getElementById("box");
+    function move() {
+        if (pos >= 370) {
+            clearInterval(t);
+        }
+        else {
+            pos += 100;
+            box.style.left = pos + "px";
+        }
+    }
+
+
+
+
+</script> 
+
+
+</body></html>
