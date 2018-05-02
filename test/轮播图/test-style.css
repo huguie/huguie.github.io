@@ -1,14 +1,10 @@
             *{
                 margin: 0;
-                padding: 0;
-            }
+                padding: 0;}
             ul,ol{
-                list-style: none;
-            }
+                list-style: none;}
             /*消除图片底部3像素距离*/
-            img{
-                vertical-align: top;
-            }
+
             .scroll{
                 width: 500px;
                 height: 200px;
@@ -17,31 +13,25 @@
                 color: white;
                 overflow: hidden;
                 position: relative;
-                background-color: pink;
-            }
+                background-color: pink;}
             .box{
                 width: 500px;
                 height: 200px;
                 overflow: hidden;
                 position: relative;
-                background-color: lightblue;
-            }
+                background-color: lightblue;}
             .box ul{
                 width: 600%;
                 position: absolute;
                 background-color: lightyellow;
                 left: 0;
-                top: 0;
-            }
+                top: 0;}
             .box ul li{
-                float: left;
-            }
+                float: left;}
             .scroll ol{
                 position: absolute;
                 right: 10px;
-                bottom: 10px;
-
-            }
+                bottom: 10px;}
             .scroll ol li{
                 float: left;
                 width: 20px;
@@ -51,11 +41,10 @@
                 border-radius: 50%;
                 background-color: pink;             
                 margin-left:10px ;
-                cursor: pointer;
-            }
+                cursor: pointer;}
             .scroll ol li.current{
                 background-color: purple;}
-            .red {
+            .red{
                 width: 500px;
                 height: 200px;
                 background-color: purple;}

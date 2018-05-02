@@ -26,17 +26,111 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-left: calc( 50% - 600px );
-  width: 1200px;
-  padding: 41px 0;
+  width: 1200px; }
+
+.navigationbar > .content > a {
+  font-size: 16px;
+  color: white;
+  position: relative;
+  padding: 41px 33px; }
+
+.hiddencontent_whitebar {
+  display: none;
+  position: absolute;
+  top: 94px;
+  left: 10px;
+  width: 80px;
+  height: 4px;
+  background-color: white; }
+
+.navigationbar > .content > a:hover .hiddencontent_whitebar {
+  display: block; }
+
+.footer {
+  width: 100%;
+  background-color: #26a26f;
   font-size: 16px;
   color: white; }
 
-.navigationbar > .content > div {
-  padding: 0 31px; }
+.footer > .footercontent {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  margin-left: calc( 50% - 600px); }
 
-.main {
+.footercontent > .footertext, .footertextsecond, .footertextlast {
+  padding-top: 38px;
+  padding-bottom: 33px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column; }
+
+.footertext {
+  margin-right: 155px; }
+
+.footertextsecond {
+  margin-right: 34px; }
+
+.footertextlast {
+  padding-top: 80px;
+  height: 58px; }
+
+.footer > .footercontent span {
+  position: relative; }
+
+.footer > .footercontent span:hover .hiddencontent_whitebar2 {
+  display: block; }
+
+.hiddencontent_whitebar2 {
+  display: none;
   width: 100%;
-  height: 500px;
-  background-color: lightblue; }
+  height: 1px;
+  background-color: white;
+  position: absolute; }
+
+.erweima {
+  width: 96px;
+  height: 114px;
+  background: url(images/1-16.png) no-repeat center;
+  position: absolute;
+  right: 0;
+  top: 39px; }
+
+.footer > .copyright {
+  padding: 8px 0;
+  text-align: center;
+  border: 1px solid #32c086; }
+
+@media screen and (max-width: 1200px) {
+  .footer > .footercontent, .headercontent, .navigationbar > .content {
+    width: 100%;
+    margin-left: 0; }
+
+  .footer > .footercontent {
+    width: calc( 100% - 20px );
+    margin-left: 20px;
+    flex-direction: column; }
+
+  .footercontent > .footertext, .footertextsecond, .footertextlast {
+    padding: 10px 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column; }
+
+  .footercontent > .footertext, .footertextlast {
+    margin-right: 0;
+    height: 56px; }
+
+  .footertextlast {
+    margin-bottom: 150px; }
+
+  .erweima {
+    left: 0;
+    top: 280px; } }
 
 /*# sourceMappingURL=common.css.map */
