@@ -7,6 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="common.css">
 		<link rel="stylesheet" type="text/css" href="style-1.css">
         <link rel="stylesheet" href="lunbotu-style.css">
+        <link rel="stylesheet" href="dropdown_manu.css">
         <script src="lunbotu.js"></script>
     <title>首页</title>
 </head>
@@ -19,6 +20,8 @@
 			<img src="images/1-20.png">
 			<img src="images/1-21.png">
 			</div>
+            <span class="blackline">登陆</span>
+            <span>注册</span>
 		</div>
 	</div><!header>
 	<div class="navigationbar">
@@ -39,10 +42,35 @@
                 <div>关于</div>
                 <div class="hiddencontent_whitebar"></div>
             </a>
+            <div class="title">技能树
+                <div>www.jnshu.com</div>
+            </div>
 		</div>
 	</div><!navigationbar>
-
-
+    <div class="dropdown_manu">
+        <aside>
+            <div class="dropdown_aside">
+                <a href="#">
+                    <div>首页</div>
+                </a>
+                <a href="#">
+                    <div>职业</div>
+                </a>
+                <a href="#">
+                    <div>推荐</div>
+                </a>
+                <a href="#">
+                    <div>关于</div>
+                </a>
+            </div>
+        </aside>
+    </div>
+    <div class="section">
+        <input type="checkbox" id="myInput">
+        <label for="myInput">
+            <div class="dropdown_img"></div>
+        </label>
+        <div class="dropdown_content">
 	<div class="main">
         <div id="scroll" class="scroll">
             <div id="box" class="box">
@@ -252,8 +280,6 @@
         </div>
         </div>
     </div><!maincontent>
-
-
 	<div class="footer">
 		<div class="footercontent">
             <div class="footertext">
@@ -287,5 +313,7 @@
         </div>
         <div class="copyright">Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP备13005880号</div>
 	</div><!footer>
+        </div>
+    </div>
 </body>
 </html>	

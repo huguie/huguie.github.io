@@ -37,12 +37,10 @@ ul,ol{
     margin-left:10px;
     border: 2px solid #c2c0c5;
     cursor: pointer;}
-.scroll ol li img{
+.scroll img{
     width: auto;
     height: auto;
-    max-width: 100%;
-    max-height: 100%;
-}
+    max-width: 100%;}
 
 .scroll ol li.current{
     background-color: white;}

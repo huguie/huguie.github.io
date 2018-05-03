@@ -31,9 +31,12 @@ body {
     @include font(14px,#29b078);}
   .headercontent > div > img {
     margin-left: 10px;}
+  .headercontent>span{
+    display: none;}
 .navigationbar {
   background-color: #29b078;}
   .navigationbar>.content{
+    position: relative;
     @include flex(flex-end,center);
     margin-left: calc( 50% - 600px );
     width: 1200px;}
@@ -41,6 +44,13 @@ body {
     @include font(16px,white);
     position: relative;
     padding: 41px 33px;}
+  .navigationbar>.content>.title{
+    @include position(absolute,left,20px,top,18px);
+    @include font(38px,white);
+    font-family: 造字工房朗倩（非商用）;
+    z-index: 2;}
+    .navigationbar>.content>.title>div{
+      font-size: 10px ;}
   .hiddencontent_whitebar{
     display: none;
     @include position(absolute,top,94px,left,10px);
@@ -102,7 +112,21 @@ body {
     width: 100%;
     margin-left: 0;}
   .footer>.footercontent , .headercontent, .navigationbar>.content{
-    @extend %onehundred;}
+     @extend %onehundred;}
+    .headercontent{
+      padding: 8px 0;
+      justify-content: flex-end;
+     @include font(20px,#29b078);}
+    .headercontent>div{
+      display: none;}
+    .headercontent>span{
+      display: block;
+      padding: 3px;}
+    .blackline{
+      border-right:  1px solid black;}
+
+
+
   .footer>.footercontent{
     width: calc( 100% - 20px );
     margin-left: 20px;
@@ -119,6 +143,16 @@ body {
     margin-bottom: 150px;}
   .erweima{
     left: 0;
-    top: 280px;}
+    top: 280px;}}
 
- }
+
+@media screen and (max-width:768px){
+  .navigationbar>.content>a{
+    display: none;}
+  .navigationbar>.content>.title{
+    top: 10px;
+    font-size: 20px;}
+  .navigationbar>.content>.title>div{
+    font-size: 10px ;}
+}
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   background-color: lightgrey; }
 
@@ -18,10 +19,14 @@ body {
 .headercontent > div > img {
   margin-left: 10px; }
 
+.headercontent > span {
+  display: none; }
+
 .navigationbar {
   background-color: #29b078; }
 
 .navigationbar > .content {
+  position: relative;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -33,6 +38,18 @@ body {
   color: white;
   position: relative;
   padding: 41px 33px; }
+
+.navigationbar > .content > .title {
+  position: absolute;
+  left: 20px;
+  top: 18px;
+  font-size: 38px;
+  color: white;
+  font-family: 造字工房朗倩（非商用）;
+  z-index: 2; }
+
+.navigationbar > .content > .title > div {
+  font-size: 10px; }
 
 .hiddencontent_whitebar {
   display: none;
@@ -109,6 +126,22 @@ body {
     width: 100%;
     margin-left: 0; }
 
+  .headercontent {
+    padding: 8px 0;
+    justify-content: flex-end;
+    font-size: 20px;
+    color: #29b078; }
+
+  .headercontent > div {
+    display: none; }
+
+  .headercontent > span {
+    display: block;
+    padding: 3px; }
+
+  .blackline {
+    border-right: 1px solid black; }
+
   .footer > .footercontent {
     width: calc( 100% - 20px );
     margin-left: 20px;
@@ -132,5 +165,15 @@ body {
   .erweima {
     left: 0;
     top: 280px; } }
+@media screen and (max-width: 768px) {
+  .navigationbar > .content > a {
+    display: none; }
+
+  .navigationbar > .content > .title {
+    top: 10px;
+    font-size: 20px; }
+
+  .navigationbar > .content > .title > div {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=common.css.map */

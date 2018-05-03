@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	   	<meta content="width=device-width, initial-scale=1" name="viewport">
+     	<link rel="stylesheet" type="text/css" href="style.css" /> 
+        <link rel="stylesheet" type="text/css" href="reset.css" /> 
+    <title>test for task15</title>
+    <style type="text/css">
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: pink;}
+aside {
+  background-color: lightgreen;
+  position: fixed;
+  width: 100%;
+  height: 200px;
+  z-index: 1;}
+label {
+  position: fixed;		
+  cursor: pointer;
+  z-index: 3;
+  margin: 10px;}
+.section {
+  margin-top: 50px;		
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: lightblue;}
+.content{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+	z-index: 2;
+	transition: transform .5s ease-in-out;}
+.img{
+	width: 39px;
+	height: 40px;
+	background: url(images/label.png);
+}	
+input{
+	margin-top: 20px;}
+input[type="checkbox"]:checked ~ .content {
+  transform: translatey(20%);}
+select{
+  width: 100%;
+  height: 30px;
+  background-color: green;}
+    </style>
+
+
+</head>
+<body>	
+  <aside>
+  	<div>this is aside content PS：aside会覆盖其他内容1</div>
+  </aside>	
+  <div class="section">
+  	<input type="checkbox" id="myInput">
+  	<label for="myInput">
+  		<div class="img">Label3</div>
+  	</label>
+  	<div class="content">
+  		<div>content in the section2</div>
+  	</div>
+  </div>
+
+</body>
+</html>	
