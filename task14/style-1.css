@@ -15,7 +15,8 @@
   flex-wrap: wrap;
   font-size: 16px;
   color: #999999;
-  margin-bottom: 70px; }
+  margin-bottom: 70px;
+  background-color: #fafafa; }
 
 .intro_icon, .studen_quality {
   display: flex;
@@ -40,6 +41,12 @@
 .studen_quality span {
   font-size: 18px;
   color: #26a26f; }
+
+.howtolearn {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column; }
 
 .howtolearn > .content {
   display: flex;
@@ -129,8 +136,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-bottom: 114px;
-  box-shadow: 0 0 1px grey; }
+  margin-bottom: 114px; }
 
 .cooperate > .content > .imagebox {
   position: relative;
@@ -184,7 +190,10 @@
     width: 100%;
     margin-left: 0; }
 
-  .processbox {
+  .howtolearn > .content {
+    max-width: 900px; }
+
+  .howtolearn > .content > .processbox {
     width: 318px; }
 
   .showingbar {

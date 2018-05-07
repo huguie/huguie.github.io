@@ -30,7 +30,8 @@
     @include flex(space-around,flex-start);
     flex-wrap: wrap;
     @include font(16px,#999999);
-    margin-bottom: 70px}
+    margin-bottom: 70px;
+    background-color: #fafafa;}
     .intro_icon{
       @include flex(center,center);
       margin-top: 162px;
@@ -47,6 +48,11 @@
       margin-bottom: 15px;}
       .studen_quality span{
       @include font(18px,#26a26f);}
+  .howtolearn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;}
   .howtolearn>.title{
     @extend %title;}
     .howtolearn>.content{
@@ -109,8 +115,7 @@
     .cooperate>.content{
       @include flex(center,center);
       flex-wrap: wrap;
-      margin-bottom: 114px;
-      box-shadow: 0 0 1px grey;}
+      margin-bottom: 114px;}
       .cooperate>.content>.imagebox{
         position: relative;
         @include flex(center,center);
@@ -155,7 +160,9 @@
     margin-left: 0;}
   .main>.content{
     @extend %onehundred;}
-  .processbox{
+  .howtolearn>.content{
+    max-width: 900px;}
+  .howtolearn>.content>.processbox{
     width: 318px;}
   .showingbar{
     justify-content: center;}

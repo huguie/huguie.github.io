@@ -140,7 +140,17 @@ body {
     padding: 3px; }
 
   .blackline {
-    border-right: 1px solid black; }
+    border-right: 1px solid black; } }
+@media screen and (max-width: 768px) {
+  .navigationbar > .content > a {
+    display: none; }
+
+  .navigationbar > .content > .title {
+    top: 10px;
+    font-size: 20px; }
+
+  .navigationbar > .content > .title > div {
+    font-size: 10px; }
 
   .footer > .footercontent {
     width: calc( 100% - 20px );
@@ -165,15 +175,5 @@ body {
   .erweima {
     left: 0;
     top: 280px; } }
-@media screen and (max-width: 768px) {
-  .navigationbar > .content > a {
-    display: none; }
-
-  .navigationbar > .content > .title {
-    top: 10px;
-    font-size: 20px; }
-
-  .navigationbar > .content > .title > div {
-    font-size: 10px; } }
 
 /*# sourceMappingURL=common.css.map */

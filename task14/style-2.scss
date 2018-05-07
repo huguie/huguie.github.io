@@ -36,14 +36,13 @@
   @include font(16px,black);}
   .homepage{
     padding: 31px;
-    margin: 0 10px;
+    padding-left: 0;
     border-bottom: 1px solid #d0d6d9;}
     .homepage>span{
       color: #29b078;}
   .career_choice{
     @include flex(flex-start,center);
     padding: 20px 0;
-    margin: 0 10px;
     border-bottom: 1px solid #edf1f2;
     flex-wrap: wrap;}
     .career_choice>div{
@@ -61,8 +60,7 @@
     width: calc( 100% + 27px );
     margin-bottom: 120px;}
     .contentbox>.title{
-      @extend %title;
-      margin: 0 10px;}
+      @extend %title;}
     .selectcardbox{
       @include flex(flex-start,center);
       flex-wrap: wrap;}
@@ -154,6 +152,8 @@
     margin-left: 0;}
   .main>.content , .contentbox{
     @extend %onehundred;}
+  .homepage ,.career_choice ,.contentbox>.title{
+    margin: 0 10px;}
   .selectcardbox{
     justify-content: center;}}
 
@@ -165,5 +165,4 @@
       height: 464px;
       margin-right: 0;}
       .occupation_intro{
-        width: 145px;}
-}
+        width: 145px;} }
