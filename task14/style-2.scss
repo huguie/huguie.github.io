@@ -60,6 +60,7 @@
     width: calc( 100% + 27px );
     margin-bottom: 120px;}
     .contentbox>.title{
+      width: calc( 100% - 27px);
       @extend %title;}
     .selectcardbox{
       @include flex(flex-start,center);
@@ -150,10 +151,12 @@
   %onehundred{
     width: 100%;
     margin-left: 0;}
-  .main>.content , .contentbox{
+  .main>.content , .contentbox  {
     @extend %onehundred;}
   .homepage ,.career_choice ,.contentbox>.title{
     margin: 0 10px;}
+  .contentbox>.title{
+    width: calc( 100% - 20px);}
   .selectcardbox{
     justify-content: center;}}
 

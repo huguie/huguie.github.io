@@ -50,6 +50,9 @@
   width: calc( 100% + 27px );
   margin-bottom: 120px; }
 
+.contentbox > .title {
+  width: calc( 100% - 27px); }
+
 .selectcardbox {
   display: flex;
   justify-content: flex-start;
@@ -174,6 +177,9 @@
 
   .homepage, .career_choice, .contentbox > .title {
     margin: 0 10px; }
+
+  .contentbox > .title {
+    width: calc( 100% - 20px); }
 
   .selectcardbox {
     justify-content: center; } }
