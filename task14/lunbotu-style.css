@@ -28,7 +28,7 @@ ul,ol{
 .scroll ol{
     position: absolute;
     left: calc( 50% - 36px );
-    bottom: 30px;}
+    bottom: 10px;}
 .scroll ol li{
     float: left;
     width: 10px;
