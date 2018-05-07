@@ -39,20 +39,19 @@
       width: 225px;}
       .keyword{
         @include font(18px,#333333);
+        text-align: center;
         padding: 34px 0;}
     .studen_quality{
       @extend .intro_icon;
       height: 270px;
       border-left: 1px dashed #dedede;}
+    .studen_quality>div{
+      @include flex(center,center);
+      flex-direction: column;}
       .studen_quality>div>div{
       margin-bottom: 15px;}
       .studen_quality span{
       @include font(18px,#26a26f);}
-  .howtolearn{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;}
   .howtolearn>.title{
     @extend %title;}
     .howtolearn>.content{
@@ -160,11 +159,22 @@
     margin-left: 0;}
   .main>.content{
     @extend %onehundred;}
+  .intro_icon>div{
+    width: 225px;}
+  .intro_icon{
+    width: 49%;
+    min-width: 240px;}
+  .howtolearn , .show_goodstudent{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;}
   .howtolearn>.content{
     max-width: 900px;}
   .howtolearn>.content>.processbox{
     width: 318px;}
   .showingbar{
+    max-width: 700px;
     justify-content: center;}
     .showingstudent{
       margin: 20px;}

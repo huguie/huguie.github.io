@@ -182,11 +182,13 @@
     width: calc( 100% - 20px); }
 
   .selectcardbox {
-    justify-content: center; } }
-@media screen and (max-width: 768px) {
+    padding-left: calc( 50% - 409px); } }
+@media screen and (max-width: 900px) {
   .selectcardbox {
-    flex-direction: column; }
-
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0; } }
+@media screen and (max-width: 768px) {
   .selectcard {
     width: 300px;
     height: 464px;

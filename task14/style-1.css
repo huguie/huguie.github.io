@@ -29,11 +29,18 @@
 .keyword {
   font-size: 18px;
   color: #333333;
+  text-align: center;
   padding: 34px 0; }
 
 .studen_quality {
   height: 270px;
   border-left: 1px dashed #dedede; }
+
+.studen_quality > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
 
 .studen_quality > div > div {
   margin-bottom: 15px; }
@@ -41,12 +48,6 @@
 .studen_quality span {
   font-size: 18px;
   color: #26a26f; }
-
-.howtolearn {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column; }
 
 .howtolearn > .content {
   display: flex;
@@ -190,6 +191,19 @@
     width: 100%;
     margin-left: 0; }
 
+  .intro_icon > div, .studen_quality > div {
+    width: 225px; }
+
+  .intro_icon, .studen_quality {
+    width: 49%;
+    min-width: 240px; }
+
+  .howtolearn, .show_goodstudent {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column; }
+
   .howtolearn > .content {
     max-width: 900px; }
 
@@ -197,6 +211,7 @@
     width: 318px; }
 
   .showingbar {
+    max-width: 700px;
     justify-content: center; }
 
   .showingstudent {

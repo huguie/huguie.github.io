@@ -62,9 +62,9 @@
     .contentbox>.title{
       width: calc( 100% - 27px);
       @extend %title;}
-    .selectcardbox{
-      @include flex(flex-start,center);
-      flex-wrap: wrap;}
+      .selectcardbox{
+        @include flex(flex-start,center);
+        flex-wrap: wrap;}
       .selectcard{
         @include flex(flex-start,flex-start);
         align-content: flex-start;
@@ -158,11 +158,15 @@
   .contentbox>.title{
     width: calc( 100% - 20px);}
   .selectcardbox{
-    justify-content: center;}}
+    padding-left: calc( 50% - 409px);}}
+
+@media screen and (max-width:900px){
+  .selectcardbox{
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 0;}}
 
 @media screen and (max-width:768px){
-  .selectcardbox{
-    flex-direction: column;}
     .selectcard{
       width: 300px;
       height: 464px;
