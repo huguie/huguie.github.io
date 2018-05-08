@@ -48,16 +48,17 @@
       color: #29b078;}
   .leftside{
     width: 25%;
-    height: 708px;
     color: #29b078;
+    background-color: white;
+    @include flex(flex-start,center);
+    flex-direction: column;
     box-shadow: 0 0 2px grey;}
   .leftside>.title{
+    width: 100%;
     @extend %title;}
   .leftside>.content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0;}
+    width: 100px;
+    padding: 33px 0;}
     .company_box{
       margin-bottom: 37px;
       position: relative;}
@@ -75,7 +76,8 @@
     width: 72.5%;
     box-shadow: 0 0 2px grey;
     @include font(14px,#999);
-    line-height: 26px;}
+    line-height: 26px;
+    background-color: white;}
     .company_intro{
       @include flex(center,center);
       border-bottom: 1px solid #e6e6e6;}
@@ -101,7 +103,6 @@
     align-items: center;}
     .leftside{
       width: 90%;
-      height: 600px;
       margin-bottom: 30px;}
       .company_box{
         margin-bottom: 30px;}

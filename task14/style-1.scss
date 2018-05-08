@@ -83,8 +83,10 @@
         @include flex(flex-start,center);
         flex-direction: column;
         width: 270px;
-        height: 369px;
-        box-shadow: 0 0 5px black};
+        height: 369px;};
+        .showingstudent:hover{
+          box-shadow: 0 0 5px black
+        };
         .showingstudent>img{
           margin: 19px 0 36px 0;}
         .showingstudent>.studentname{
@@ -172,6 +174,7 @@
   .howtolearn>.content{
     max-width: 900px;}
   .howtolearn>.content>.processbox{
+    padding-left: 20px;
     width: 318px;}
   .showingbar{
     max-width: 700px;

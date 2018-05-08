@@ -30,15 +30,20 @@
 
 .leftside {
   width: 25%;
-  height: 708px;
   color: #29b078;
-  box-shadow: 0 0 2px grey; }
-
-.leftside > .content {
+  background-color: white;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  padding: 40px 0; }
+  box-shadow: 0 0 2px grey; }
+
+.leftside > .title {
+  width: 100%; }
+
+.leftside > .content {
+  width: 100px;
+  padding: 33px 0; }
 
 .company_box {
   margin-bottom: 37px;
@@ -61,7 +66,8 @@
   box-shadow: 0 0 2px grey;
   font-size: 14px;
   color: #999;
-  line-height: 26px; }
+  line-height: 26px;
+  background-color: white; }
 
 .company_intro {
   display: flex;
@@ -93,7 +99,6 @@
 
   .leftside {
     width: 90%;
-    height: 600px;
     margin-bottom: 30px; }
 
   .company_box {

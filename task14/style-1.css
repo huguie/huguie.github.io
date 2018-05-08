@@ -94,7 +94,9 @@
   align-items: center;
   flex-direction: column;
   width: 270px;
-  height: 369px;
+  height: 369px; }
+
+.showingstudent:hover {
   box-shadow: 0 0 5px black; }
 
 .showingstudent > img {
@@ -208,6 +210,7 @@
     max-width: 900px; }
 
   .howtolearn > .content > .processbox {
+    padding-left: 20px;
     width: 318px; }
 
   .showingbar {
