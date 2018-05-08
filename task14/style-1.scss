@@ -85,8 +85,7 @@
         width: 270px;
         height: 369px;};
         .showingstudent:hover{
-          box-shadow: 0 0 5px black
-        };
+          box-shadow: 0 0 5px black};
         .showingstudent>img{
           margin: 19px 0 36px 0;}
         .showingstudent>.studentname{
@@ -175,7 +174,9 @@
     max-width: 900px;}
   .howtolearn>.content>.processbox{
     padding-left: 20px;
-    width: 318px;}
+    width: 298px;}
+  .processbox>img{
+    margin-left: 4px}
   .showingbar{
     max-width: 700px;
     justify-content: center;}

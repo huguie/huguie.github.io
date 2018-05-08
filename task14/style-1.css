@@ -211,7 +211,10 @@
 
   .howtolearn > .content > .processbox {
     padding-left: 20px;
-    width: 318px; }
+    width: 298px; }
+
+  .processbox > img {
+    margin-left: 4px; }
 
   .showingbar {
     max-width: 700px;

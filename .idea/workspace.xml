@@ -28,20 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task7-3.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task14/task7-3.html">
+      <file leaf-file-name="style-3.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/task14/style-3.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="729">
-              <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+            <state relative-caret-position="377">
+              <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style-3.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/task14/style-3.scss">
+      <file leaf-file-name="style-1.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/task14/style-1.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+            <state relative-caret-position="465">
+              <caret line="178" column="20" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -73,13 +73,13 @@
       <find>1200</find>
       <find>100</find>
       <find>left</find>
-      <find>proce</find>
       <find>show</find>
       <find>shad</find>
       <find>showing</find>
       <find>600</find>
       <find>paddiong</find>
       <find>padding</find>
+      <find>proce</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -105,8 +105,8 @@
         <option value="$PROJECT_DIR$/task14/task7-1.html" />
         <option value="$PROJECT_DIR$/task14/task7-2.html" />
         <option value="$PROJECT_DIR$/task14/style-2.scss" />
-        <option value="$PROJECT_DIR$/task14/style-1.scss" />
         <option value="$PROJECT_DIR$/task14/style-3.scss" />
+        <option value="$PROJECT_DIR$/task14/style-1.scss" />
       </list>
     </option>
   </component>
@@ -199,12 +199,12 @@
       <workItem from="1525492984911" duration="15418000" />
       <workItem from="1525656799574" duration="14983000" />
       <workItem from="1525688679810" duration="787000" />
-      <workItem from="1525747880199" duration="1661000" />
+      <workItem from="1525747880199" duration="2355000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111262000" />
+    <option name="totallyTimeSpent" value="111956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="475" y="55" width="1361" height="939" extended-state="0" />
@@ -575,13 +575,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task14/style-1.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="88" column="10" selection-start-line="88" selection-start-column="10" selection-end-line="88" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task14/task7-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="32">
@@ -598,8 +591,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/task14/style-3.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state relative-caret-position="377">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task14/style-1.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="178" column="20" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
         </state>
       </provider>
     </entry>
