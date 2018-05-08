@@ -40,8 +40,8 @@
       <file leaf-file-name="style-1.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/task14/style-1.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="178" column="20" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
+            <state relative-caret-position="66">
+              <caret line="144" column="11" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -199,15 +199,15 @@
       <workItem from="1525492984911" duration="15418000" />
       <workItem from="1525656799574" duration="14983000" />
       <workItem from="1525688679810" duration="787000" />
-      <workItem from="1525747880199" duration="2355000" />
+      <workItem from="1525747880199" duration="3006000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111956000" />
+    <option name="totallyTimeSpent" value="112607000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="475" y="55" width="1361" height="939" extended-state="0" />
+    <frame x="475" y="55" width="1361" height="939" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24907748" />
@@ -596,10 +596,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/task14/images/1/1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/task14/style-1.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="178" column="20" selection-start-line="178" selection-start-column="20" selection-end-line="178" selection-end-column="20" />
+        <state relative-caret-position="66">
+          <caret line="144" column="11" selection-start-line="144" selection-start-column="11" selection-end-line="144" selection-end-column="11" />
         </state>
       </provider>
     </entry>
