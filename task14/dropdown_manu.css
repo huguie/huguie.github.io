@@ -53,7 +53,7 @@ input{
     display: none;
     margin-top: 0px;}
 input[type="checkbox"]:checked ~ .dropdown_content {
-    transform: translatey(calc( 33% - 30px));}
+    transform: translatey(220px);}
 
 
 
