@@ -83,7 +83,8 @@
         @include flex(flex-start,center);
         flex-direction: column;
         width: 270px;
-        height: 369px;};
+        height: 369px;
+        background-color: #fafafa;}
         .showingstudent:hover{
           box-shadow: 0 0 5px black};
         .showingstudent>img{

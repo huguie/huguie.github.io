@@ -126,11 +126,17 @@ body {
     width: 100%;
     margin-left: 0; }
 
+  .footertext > span {
+    margin-left: 10px; }
+
   .headercontent {
     padding: 8px 0;
     justify-content: flex-end;
     font-size: 20px;
     color: #29b078; }
+
+  .erweima {
+    right: 10px; }
 
   .headercontent > div {
     display: none; }
@@ -164,6 +170,9 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     flex-direction: column; }
+
+  .footertext > span {
+    margin-left: 0; }
 
   .footercontent > .footertext, .footertextlast {
     margin-right: 0;

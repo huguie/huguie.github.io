@@ -113,20 +113,22 @@ body {
     margin-left: 0;}
   .footer>.footercontent , .headercontent, .navigationbar>.content{
      @extend %onehundred;}
+  .footertext>span{
+     margin-left: 10px;}
     .headercontent{
       padding: 8px 0;
       justify-content: flex-end;
      @include font(20px,#29b078);}
+   .erweima{
+     right: 10px;
+   }
     .headercontent>div{
       display: none;}
     .headercontent>span{
       display: block;
       padding: 3px;}
     .blackline{
-      border-right:  1px solid black;}
-
-
-}
+      border-right:  1px solid black;} }
 
 
 @media screen and (max-width:768px){
@@ -146,6 +148,8 @@ body {
     height: 100px;
     @include flex(space-between,flex-start);
     flex-direction: column;}
+  .footertext>span{
+    margin-left: 0;}
   .footercontent>.footertext , .footertextlast{
     margin-right: 0;
     height: 56px;}
