@@ -9,6 +9,13 @@ var getRandomColor = function(){
 
 var mytime = null;//声明空定时器
 
+function threecolor1(){
+    threebox[a[0]].style.backgroundColor = getRandomColor();
+    threebox[a[1]].style.backgroundColor = getRandomColor();
+    threebox[a[2]].style.backgroundColor = getRandomColor();
+}
+
+
 function start(){
 
   clearInterval(mytime); //每次点击之前先清理一次定时器，以防加速
@@ -27,10 +34,7 @@ function start(){
 
   for (var i = 0; i < 9; i++) {
     threebox[i].style.backgroundColor = "orange";}  //给格子上颜色之前，先将所有颜色统一。
-
-    threebox[a[0]].style.backgroundColor = getRandomColor();
-    threebox[a[1]].style.backgroundColor = getRandomColor();
-    threebox[a[2]].style.backgroundColor = getRandomColor();
+    threecolor1();
     console.log(a);}//点击修改颜色
   }//开始闪事件。
 
