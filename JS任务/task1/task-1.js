@@ -20,7 +20,7 @@ function start(){
       var w = a.length;
       var x,y
         while(w){ 
-                y = Math.floor(Math.random()*w--);
+                y = Math.floor(Math.random()*(w--));
                 x = a[w];
                 a[w] = a[y];
                 a[y] = x;}//洗牌算法。
