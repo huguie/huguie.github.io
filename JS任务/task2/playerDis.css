@@ -22,13 +22,13 @@ body{
   	margin-bottom: 0;
 	display: flex;
 	width: 500px;
-	max-width: calc( 100% - 20px );
-	height: 200px;}
+	max-width: calc( 100% - 20px );}
 	  .distribution>.title{
 	  	display: flex;
 	  	justify-content: center;
 	  	align-items: center;
 	  	margin-right: 2px;
+	  	padding: 20px 0;
 	  	width: 20%;
 	  	background-color: white;
 	  	writing-mode: tb-rl;
@@ -37,15 +37,19 @@ body{
 	  	width: 80%;}	
 	  	.content>.player_numbers{
 	  		display: flex;
-	  		justify-content: space-around;
+	  		justify-content: flex-start;
 	  		align-items: center;
-	  		height: 170px;
+	  		flex-wrap: wrap;
+	  		height: calc(100% - 30px);
 	  		font-size: 20px;
 	  		color: grey;
 	  		background-color: rgb(251,251,251);}
 	  	  .player_numbers>.player{
 	  	  	display: flex;
-	  	  	align-items: center;}	
+	  	  	align-items: center;
+	  	  	margin-left: 10%;
+	  	  	width: 35%;
+	  	  	height: 40px;}	
 	  	  	.player>div>span{
 	  	  		color: orange;}
 	  	  .orangebox,.bluebox{
