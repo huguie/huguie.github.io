@@ -1,0 +1,4 @@
+sort.random获取数组范围内的伪随机数：https://blog.csdn.net/qq282465134/article/details/70186941
+JS的两种基本类型的用法（string）：https://www.jianshu.com/p/110677ccc7aa
+形参与实参：https://blog.csdn.net/liu_shi_jun/article/details/51967436
+作用域：https://blog.csdn.net/liujie19901217/article/details/52225025

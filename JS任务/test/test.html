@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  	<meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>test</title>
+</head>
+<body>
+	<form name="fool">
+	<input type="text" name="x1" id="nm"></input>
+	<input type="button" name="button" value="获取" onclick="va()" />  
+	</form>
+	<script >
+
+
+		var obj = {name:'obj',age:12}
+		
+		function myfunc(objdbc){
+    	objdbc.name='func';
+    	console.log(objdbc.age);} //12
+
+		myfunc(obj);
+		console.log(obj.name);  //func
+
+
+
+
+
+
+	</script>
+
+</body></html>
