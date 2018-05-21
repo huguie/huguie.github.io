@@ -1,0 +1,27 @@
+body {
+  background-color: #69d1e9; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 90px;
+  font-size: 34px;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35); }
+
+.header > img {
+  margin-top: 20px; }
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.identify {
+  width: 452px;
+  height: 644px;
+  background-color: #ffedc5; }
+
+/*# sourceMappingURL=view.css.map */

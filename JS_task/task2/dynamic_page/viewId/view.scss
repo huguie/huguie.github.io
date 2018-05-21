@@ -1,0 +1,43 @@
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;}
+@mixin img($width,$height,$url) {
+  width: $width;
+  height: $height;
+  background: $url no-repeat center;}
+@mixin position($position,$side1,$side1value,$side2,$side2value) {
+  position: $position;
+  #{$side1}: $side1value;
+  #{$side2}: $side2value;}
+@mixin font($fz,$cl){
+  font-size: $fz;
+  color: $cl;}
+@mixin box($width,$height,$bg){
+  width: $width;
+  height: $height;
+  background-color: $bg;}
+%title{
+  font-size: 18px;
+  color: #333333;
+  margin-bottom: 70px;
+  text-align: center;}
+
+body {
+  background-color: #69d1e9;
+}
+.header{
+  @include flex(space-between,center);
+  padding: 0 15px;
+  height: 90px;
+  @include font(34px,white);
+  border-bottom: 1px solid rgba(255,255,255,.35);}
+  .header>img{
+    margin-top: 20px;}
+
+.main{
+  @include flex(center,center);}
+  .identify{
+    @include box(452px,644px,#ffedc5);
+  }
+
