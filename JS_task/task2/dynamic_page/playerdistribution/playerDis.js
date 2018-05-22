@@ -17,19 +17,24 @@ function rangeWord(){
 	word.value = x.value;//输入栏value等于滑条的value
     killerNum.innerHTML = Math.floor(word.value/3);       
     civilianNum.innerHTML = Math.ceil(word.value * 2 / 3);
-    console.log(x);
-}
+    console.log(word.value);
+    sessionStorage.setItem("wordStorage",word.value);}
+
 function plus(){
     x.value++;
     word.value = x.value;
     killerNum.innerHTML = Math.floor(word.value/3);
     civilianNum.innerHTML = Math.ceil(word.value * 2 / 3);
-    console.log(x);
+    console.log();
     }
 function less(){
     x.value--;
     word.value = x.value;
     killerNum.innerHTML = Math.floor(word.value/3);
     civilianNum.innerHTML = Math.ceil(word.value * 2 / 3);
-    console.log(x);
+    console.log();
     }
+document.getElementById("viewId").onclick = function(){
+    window.location.href="../viewId/view.html";
+}
+

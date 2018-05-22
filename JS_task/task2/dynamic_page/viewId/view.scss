@@ -32,12 +32,26 @@ body {
   height: 90px;
   @include font(34px,white);
   border-bottom: 1px solid rgba(255,255,255,.35);}
-  .header>img{
+  .close,.return{
     margin-top: 20px;}
+  .close{
+    width: 30px;
+  }
 
 .main{
-  @include flex(center,center);}
+  @include flex(center,center);
+  flex-direction: column;}
   .identify{
-    @include box(452px,644px,#ffedc5);
-  }
+    @include flex(center,center);
+    margin-top: 50px;
+    @include box(225px,320px,#ffedc5);
+    border: 3px solid white;}
+
+  .yellowbutton{
+    @include flex(center,center);
+    margin-top: 40px;
+    width: 245px;
+    height: 50px;
+    @include font(26px,white);
+    background-color: #fbb435;}
 

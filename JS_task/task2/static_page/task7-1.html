@@ -46,7 +46,7 @@
 		<div class="maincontent">
 			<a href="task7-2.html" target="blanke"><div class="img7"></div></a>
 			<div class="contenttitle">抓鬼游戏</div>
-			<div onclick="playerDis()" class="gameversion">简化版</div>
+			<div  id="playerDis" class="gameversion">简化版</div>
 			<div class="playerquality">有1133个用户正在玩此款游戏</div>
 			<div class="gameversion">猜词版</div>
 			<div class="playerquality">有1133个用户正在玩此款游戏</div>
@@ -65,8 +65,8 @@
 		</div>
 	</div>
 	<script>
-	  function playerDis(){
-　　    window.location.href="../dynamic_page/playerdistribution/playerDis.html"}
+	  document.getElementById('playerDis').onclick = function(){
+          window.location.href="../dynamic_page/playerdistribution/playerDis.html";}
 	</script>
 </body>
 </html>	
