@@ -10,7 +10,6 @@ function sjcolor(){
   var a = [0,1,2,3,4,5,6,7,8];
   var w = a.length;
   var x,y
-
   for( ; w ; ){ 
     y = Math.floor(Math.random()*(w--));
     x = a[w];
