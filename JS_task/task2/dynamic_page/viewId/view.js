@@ -10,7 +10,6 @@ let player = [];
 let num1 = 1;
 let num2 = 1;
 
-console.log(killerNum);
 
 for (let i = 0; i<killerNum; i++){
     player.push('杀手');}//获取动态杀手数量
@@ -36,11 +35,11 @@ idButton.onclick = function (){
           }
     else if (num1 = player.length) {
         hiddenId.style.zIndex = 2;
-        hiddenButton.innerHTML = '法官';
-        headerNum.innerHTML;
+        hiddenButton.innerHTML = '法官日记';
+        hiddenButton.onclick = function(){
+            window.location.href="../judgeDiary/judgeDiary.html";};
     }
-    console.log(num1);
-    console.log(player);
+    sessionStorage.setItem('playerNum',JSON.stringify(player));
 };
 
 hiddenButton.onclick = function(){

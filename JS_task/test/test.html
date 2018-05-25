@@ -1,32 +1,24 @@
-<!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  	<meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>test</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="js.js"></script>
 </head>
 <body>
-	<form name="fool">
-	<input type="text" name="x1" id="nm"></input>
-	<input type="button" name="button" value="获取" onclick="va()" />  
-	</form>
-	<script >
+
+<p>你可以使用点号（.）来访问 JSON 对象的值：</p>
+
+<p id="demo"></p>
+
+<script>
+
+    let myObj, x;
+    myObj = { "name":"runoob", "alexa":10000, "site":null };
+    x = myObj.name;
+    document.getElementById("demo").innerHTML = x;
+
+</script>
 
 
-		var obj = {name:'obj',age:12}
-		
-		function myfunc(objdbc){
-    	objdbc.name='func';
-    	console.log(objdbc.age);} //12
+</body>
+</html>
 
-		myfunc(obj);
-		console.log(obj.name);  //func
-
-
-
-
-
-
-	</script>
-
-</body></html>
