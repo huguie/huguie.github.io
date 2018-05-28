@@ -80,7 +80,10 @@ if (murderOrVote == 'murder'){
         ;
     }
 confirmBtn.click(function(){
-    if (selected === 1){
+    if (playerStatus[index].status == 'killed'){
+            confirm('不能鞭尸')
+        }
+    else if (selected === 1){
             let kill = confirm("确定要杀掉他吗？");
             if (kill === true){
                 playerStatus[index].status = 'killed';
@@ -88,13 +91,11 @@ confirmBtn.click(function(){
                 arrOfkilled.push(index);
             }
         }
-        else if (selected == 0) {console.log(playerStatus)
+    else if (selected == 0) {console.log(playerStatus)
             //不杀人也没警报
         }
-    // sessionStorage.setItem('indexAfMurder',index);
     sessionStorage.setItem('playerStatusAfCli',JSON.stringify(playerStatus));
     sessionStorage.setItem('afPush',JSON.stringify(arrOfkilled));
-
 }
 );
 }
@@ -119,7 +120,10 @@ if(murderOrVote == 'vote'){
     // $(playerId[indexAfMurder]).css('background-color','#83b09a');
     // $(playerNum[indexAfMurder]).css('width','78px'); //有个问题为什么还要加一个$()进去。
     confirmBtn.click(function(){
-        if (selected === 1){
+        if (playerStatus[index].status == 'killed'){
+                confirm('不能鞭尸')
+            }
+        else if (selected === 1){
             playerStatus[index].status = 'killed';
             window.location.href = "../firstDay/firstDay.html";
             arrOfkilled.push(index);

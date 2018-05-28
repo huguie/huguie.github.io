@@ -5,7 +5,7 @@ let day = $('.day'),
     lastWords =  $(murder[1]),
     speak =  $(murder[2]),
     vote =  $(murder[3]),
-    daytimeMurderStatus = {status:'cli,ck'},
+    daytimeMurderStatus = {status:'click'},
     lastWordsStatus = {status:'click'},
     speakStatus = {status:'click'},
     voteStatus = {status:'click'},
@@ -65,37 +65,52 @@ for (let i = 0; i <= days-1 ; i++ ) {
 
 
 let dayContentOne = $('.dayContent-1'),
-    dayOne = $('.day-1');
+    dayOne = $('.day-1'),
+    greenBackOne = $('.greenBack-1');
 
-dayContentOne.hide();
+dayContentOne.hide()
+;
 dayOne.click(function(){
-    $(this).next(dayContentOne).toggle();
+    $(this).next(dayContentOne).toggle()
+    ;
 });//结束页面中的页面折叠，当前页面的切换
 
-day.text('第' + (days+1) + '天');
-
-
+day.text('第' + (days+1) + '天')
+;
 day.click(function(){
-  dayContent.toggle();
+  dayContent.toggle()
+  ;
 });//页面折叠
+greenBackOne.click(function () {
+    confirm('请进行游戏下一项活动')
+    ;
+});
+
 
 
 daytimeMurder.click(function(){
+    if (daytimeMurderStatus.status == 'click') {
   window.location.href="../murder&vote/murderVote.html"
     ;
   murderOrVote.step = 'murder'
     ;
   daytimeMurderStatus.status = 'afterClick'
     ;
-  sessionStorage.setItem('afterDaytimeMurder',daytimeMurderStatus.status)
-    ;
   sessionStorage.setItem('murderOrVote',murderOrVote.step)
     ;
+  sessionStorage.setItem('daytimeMurderStatus',JSON.stringify(daytimeMurderStatus))
+    ;
+    }
+    else{
+        alert('caji');
+    }
 });//杀手杀人
 
-let afterDaytimeMurder = sessionStorage.getItem('afterDaytimeMurder');
 
-if (afterDaytimeMurder == 'afterClick'){
+if  (JSON.parse(sessionStorage.getItem('daytimeMurderStatus'))){
+daytimeMurderStatus = JSON.parse(sessionStorage.getItem('daytimeMurderStatus'));}
+
+if (daytimeMurderStatus.status == 'afterClick'){
 daytimeMurder.removeClass('murder')
   ;
 daytimeMurder.addClass('greenBack')
@@ -103,32 +118,37 @@ daytimeMurder.addClass('greenBack')
 firstTriangle.removeClass('left_triangle')
   ;
 daytimeMurder.after($('<div></div>').text(index + '号被杀手杀死，真是身份是平民').addClass('underMurder'))
+  ;
 }//存储杀人状态
 
 
-console.log(lastWordsStatus.status);
-
-
 lastWords.click(function(){
-    lastWordsStatus.status = 'afterClick'
-      ;
-    confirm('请死者亮明身份并发表遗言')
-      ;
-    lastWords.removeClass('murder')
-      ;
-    lastWords.addClass('greenBack')
-      ;
-    secondTriangle.removeClass('left_triangle')
-      ;
-    sessionStorage.setItem('afterLastWords',lastWordsStatus.status)
-      ;
+    if (lastWordsStatus.status == 'click') {
+        if (daytimeMurderStatus.status == 'afterClick') {
+            lastWordsStatus.status = 'afterClick'
+            ;
+            confirm('请死者亮明身份并发表遗言')
+            ;
+            lastWords.removeClass('murder')
+            ;
+            lastWords.addClass('greenBack')
+            ;
+            secondTriangle.removeClass('left_triangle')
+            ;
+        }
+        else{
+            confirm('请按顺序操作');
+        }
+    }
+    else{
+        alert('请进行游戏的下一项活动');
+    }
 });//修改当前状态
 
-let afterLastWords = sessionStorage.getItem('afterLastWords');
 
-if(afterLastWords == 'afterClick'){
+if(lastWordsStatus.status == 'afterClick'){
     lastWords.removeClass('murder')
-      ;
+    ;
     lastWords.addClass('greenBack')
       ;
     secondTriangle.removeClass('left_triangle')
@@ -137,6 +157,7 @@ if(afterLastWords == 'afterClick'){
 
 
 speak.click(function(){
+if (lastWordsStatus.status == 'afterClick'){
   speakStatus.status = 'afterClick'
     ;
   speak.removeClass('murder')
@@ -146,13 +167,13 @@ speak.click(function(){
   thirdTriangle.removeClass('left_triangle')
     ;
   alert('玩家依次发言');
-  sessionStorage.setItem('afterspeak',speakStatus.status)
-    ;
+}
+else{
+    confirm('请按顺序操作');
+}
 });
 
-let afterspeak = sessionStorage.getItem('afterspeak');
-
-if(afterspeak == 'afterClick'){
+if(speakStatus.status == 'afterClick'){
   speakStatus.status = 'afterClick'
     ;
   speak.removeClass('murder')
@@ -163,7 +184,9 @@ if(afterspeak == 'afterClick'){
     ;
 }//储存当前状态
 
+
 vote.click(function(){
+if (speakStatus.status == 'afterClick'){
     murderOrVote.step = 'vote'
       ;
     voteStatus.status = 'afterClick'
@@ -182,9 +205,14 @@ vote.click(function(){
       ;
     sessionStorage.removeItem('afterDaytimeMurder')
       ;
+    sessionStorage.removeItem('daytimeMurderStatus')
+      ;
     window.location.href="../murder&vote/murderVote.html"
       ;
-
+}
+else{
+    confirm('请按顺序操作');
+}
 });
 
 
