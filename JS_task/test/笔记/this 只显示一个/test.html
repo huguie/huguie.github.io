@@ -1,0 +1,26 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<div class="pa">
+	<div class="div">111</div>
+	<div class="div">222</div>
+	<div class="div">333</div>
+	<div class="div">444</div>
+</div>
+
+<script src="jquery.js"></script>
+<script>
+	let pa = $('.pa');
+	let div = $('.div');
+	pa.find(div).click(function () {
+	    $(this).show();
+	    $(this).siblings().hide();});
+</script>
+
+
+</body>
+</html>
+

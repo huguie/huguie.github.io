@@ -13,33 +13,38 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="murderVote.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="282">
+              <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firstDay.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firstDay.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>}</find>
-      <find>yelllo</find>
-      <find>none</find>
-      <find>no</find>
-      <find>dis</find>
-      <find>sess</find>
-      <find>hidden</find>
-      <find>num</find>
-      <find>iden</find>
-      <find>cons</find>
-      <find>player`</find>
-      <find>civi</find>
-      <find>input</find>
-      <find>oncli</find>
-      <find>plus</find>
-      <find>fire</find>
-      <find>fioo</find>
-      <find>foote</find>
-      <find>bu</find>
-      <find>pink</find>
-      <find>conso</find>
-      <find>con</find>
-      <find>:</find>
       <find>8</find>
       <find>margin</find>
       <find>lef</find>
@@ -47,6 +52,29 @@
       <find>1</find>
       <find>sun</find>
       <find>mar</find>
+      <find>r</find>
+      <find>kn</find>
+      <find>head</find>
+      <find>player</find>
+      <find>confirm</find>
+      <find>consol</find>
+      <find>vote</find>
+      <find>cons</find>
+      <find>dayConte</find>
+      <find>daytime</find>
+      <find>id</find>
+      <find>after</find>
+      <find>console</find>
+      <find>conso</find>
+      <find>55</find>
+      <find>murder</find>
+      <find>green</find>
+      <find>tri</find>
+      <find>toggle</find>
+      <find>day</find>
+      <find>knif</find>
+      <find>index</find>
+      <find>days</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,19 +111,24 @@
         <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/test.js" />
         <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js" />
         <option value="$PROJECT_DIR$/../test/test-js.js" />
-        <option value="$PROJECT_DIR$/../test/js.js" />
-        <option value="$PROJECT_DIR$/../test/test.html" />
         <option value="$PROJECT_DIR$/../test/dog/fsm.js" />
         <option value="$PROJECT_DIR$/../test/dog/fsm.html" />
         <option value="$PROJECT_DIR$/../test/dog/myFsm.js" />
         <option value="$PROJECT_DIR$/../task2 玩家分配中显示分配效果/playerDis.js" />
         <option value="$PROJECT_DIR$/dynamic_page/viewId/view.js" />
+        <option value="$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.css" />
         <option value="$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.js" />
+        <option value="$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.html" />
+        <option value="$PROJECT_DIR$/../test/js.js" />
+        <option value="$PROJECT_DIR$/../test/笔记/this 只显示一个/test.html" />
+        <option value="$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.scss" />
+        <option value="$PROJECT_DIR$/../test/test.html" />
+        <option value="$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.scss" />
+        <option value="$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.html" />
         <option value="$PROJECT_DIR$/dynamic_page/firstDay/firstDay.css" />
         <option value="$PROJECT_DIR$/dynamic_page/firstDay/firstDay.html" />
         <option value="$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js" />
-        <option value="$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.html" />
-        <option value="$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.scss" />
+        <option value="$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js" />
       </list>
     </option>
   </component>
@@ -109,10 +142,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="167" />
-    <option name="y" value="167" />
-    <option name="width" value="1400" />
-    <option name="height" value="1005" />
+    <option name="x" value="645" />
+    <option name="width" value="930" />
+    <option name="height" value="795" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -131,6 +163,12 @@
               <item name="task2" type="b2602c69:ProjectViewProjectNode" />
               <item name="task2" type="462c0819:PsiDirectoryNode" />
               <item name="dynamic_page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task2" type="462c0819:PsiDirectoryNode" />
+              <item name="dynamic_page" type="462c0819:PsiDirectoryNode" />
+              <item name="murder&amp;vote" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,10 +203,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.murderVote.js">
+    <configuration name="murderVote.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="murderVote.js" working-dir="$PROJECT_DIR$/dynamic_page/murder&amp;vote" />
     <configuration name="view.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" nameIsGenerated="true" path-to-js-file="view.js" working-dir="$PROJECT_DIR$/dynamic_page/viewId" />
+    <list>
+      <item itemvalue="Node.js.view.js" />
+      <item itemvalue="Node.js.murderVote.js" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.murderVote.js" />
         <item itemvalue="Node.js.view.js" />
       </list>
     </recent_temporary>
@@ -194,22 +238,28 @@
       <workItem from="1526895935265" duration="21607000" />
       <workItem from="1526968333177" duration="28329000" />
       <workItem from="1527036172812" duration="49683000" />
-      <workItem from="1527208238472" duration="14483000" />
+      <workItem from="1527208238472" duration="33232000" />
+      <workItem from="1527257386587" duration="715000" />
+      <workItem from="1527294933282" duration="33796000" />
+      <workItem from="1527343537451" duration="58000" />
+      <workItem from="1527381403060" duration="35981000" />
+      <workItem from="1527468581036" duration="17097000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130481000" />
+    <option name="totallyTimeSpent" value="236877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1488" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756888" visible="true" weight="0.5" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756888" weight="0.5" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3792049" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3741403" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3267857" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32462174" />
       <window_info id="Structure" order="1" sideWeight="0.5024311" side_tool="true" weight="1.0" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3278237" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -222,25 +272,6 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3278237" />
     </layout>
-    <layout-to-restore>
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756888" visible="true" weight="0.5" />
-      <window_info id="Structure" order="1" sideWeight="0.5024311" side_tool="true" weight="1.0" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3267857" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3278237" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3278237" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3792049" />
-      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -250,17 +281,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static_page/sad.css.map" />
-    <entry file="file://$PROJECT_DIR$/static_page/lack.css" />
-    <entry file="file://$PROJECT_DIR$/static_page/lack.scss" />
-    <entry file="file://$PROJECT_DIR$/static_page/style-1.css" />
-    <entry file="file://$PROJECT_DIR$/static_page/style-1.scss" />
-    <entry file="file://$PROJECT_DIR$/static_page/style-2.scss" />
-    <entry file="file://$PROJECT_DIR$/static_page/style-3.scss" />
     <entry file="file://$PROJECT_DIR$/static_page/style-three.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -378,31 +402,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/jquery-3.3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1689">
-          <caret line="1" column="941" lean-forward="true" selection-start-line="1" selection-start-column="941" selection-end-line="1" selection-end-column="941" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/jquery-3.3.1.min.js" />
     <entry file="file://$PROJECT_DIR$/../test/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="1" column="1467" selection-start-line="1" selection-start-column="1467" selection-end-line="1" selection-end-column="1467" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/js.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../test/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -427,13 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="50" column="21" lean-forward="true" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -448,6 +445,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../task2 玩家分配中显示分配效果/playerDis.js" />
+    <entry file="file://$PROJECT_DIR$/../task2 玩家分配中显示分配效果/playerDis.html" />
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="39" column="64" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/笔记/this 只显示一个/js.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/笔记/this 只显示一个/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="37" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/jquery3.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="1" column="492" selection-start-line="1" selection-start-column="492" selection-end-line="1" selection-end-column="492" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="313">
@@ -455,87 +496,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/test.js">
+    <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="30" lean-forward="true" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../task2 玩家分配中显示分配效果/playerDis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../task2 玩家分配中显示分配效果/playerDis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        <state relative-caret-position="54">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="756">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.html">
+    <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="36" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+        <state relative-caret-position="414">
+          <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../test/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="90" column="19" lean-forward="true" selection-start-line="90" selection-start-column="19" selection-end-line="90" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/jquery3.2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="195" lean-forward="true" selection-start-line="1" selection-start-column="195" selection-end-line="1" selection-end-column="195" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="126">
+          <caret line="124" column="20" lean-forward="true" selection-start-line="124" selection-start-column="20" selection-end-line="124" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/jquery3.2.js">
+    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="1" column="492" selection-start-line="1" selection-start-column="492" selection-end-line="1" selection-end-column="492" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+        <state relative-caret-position="162">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="126">
+          <caret line="7" column="44" lean-forward="true" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="43" column="36" lean-forward="true" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="79" column="9" lean-forward="true" selection-start-line="79" selection-start-column="9" selection-end-line="79" selection-end-column="9" />
         </state>
       </provider>
     </entry>

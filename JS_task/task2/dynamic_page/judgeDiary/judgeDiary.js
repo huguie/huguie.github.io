@@ -1,4 +1,5 @@
 let playerTotalNum = JSON.parse(sessionStorage.getItem('playerNum'));
+let startGame = $('.yellow_button');
   console.log(playerTotalNum);
 // let oriPlayerTotalNum = sessionStorage.getItem('playerNum');
 // let playerTotalNum = oriPlayerTotalNum.split(',');
@@ -20,3 +21,6 @@ playerId.append(playerNum);
 main.append(playerId)
 ;}
 
+startGame.click(function(){
+    window.location.href="../firstDay/firstDay.html"
+});
