@@ -4,10 +4,12 @@ let civilianNum = document.getElementById('civilianNum');//平民人数
 let  x = document.getElementById("myRange");//获取滑条
 let less = document.getElementById('less');
 let plus = document.getElementById('plus');
+let returm = document.getElementById('return');
+let pageAlert = document.getElementById('pageAlert');
 
 
 function inputWord(){
-	if ( word.value <= 18 && word.value >= 4) {}
+	if (word.value <= 18 && word.value >= 4) {}
 	else{
 		alert("请输入4-18以内的数字");}
 	x.value = word.value;
@@ -35,8 +37,19 @@ function rangeWord(){
     word.value = x.value;
     console.log();
     };//按钮事件，点击一次，滑条value减少，关联输入栏value
+pageAlert.onclick = function(){
+    alert('点我干嘛');
+};
+returm.onclick = function(){
+    window.location.href= '../../static_page/task7-1.html'
+};
 
 document.getElementById("viewId").onclick = function(){
+    if  (word.value <= 18 && word.value >= 4){
     window.location.href="../viewId/view.html";
+    }
+    else {
+        alert('请输入4-18以内的数字 ');
+    }
 };//点击跳转事件
 

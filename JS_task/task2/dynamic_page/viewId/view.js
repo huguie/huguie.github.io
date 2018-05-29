@@ -1,4 +1,4 @@
-let killerNum = sessionStorage.getItem('killerNum');// 获
+let killerNum = sessionStorage.getItem('killerNum');
 let civilianNum = sessionStorage.getItem('civilianNum');
 let idButton = document.getElementById('idButton');
 let hiddenButton = document.getElementById('hiddenButton');
@@ -6,6 +6,7 @@ let hiddenId = document.getElementById('hiddenId');
 let identity = document.getElementById('identity');
 let headerNum = document.getElementById('headerNum');
 let kilOrCil = document.getElementById('kilOrCil');
+let close = document.getElementById('close');
 let player = [];
 let num1 = 1;
 let num2 = 1;
@@ -52,4 +53,10 @@ hiddenButton.onclick = function(){
     }
 };
 
-
+close.onclick = function () {
+    let a = confirm('结束本轮游戏吗');
+    if (a === true){
+        sessionStorage.clear();
+        window.location.href='../../static_page/task7-1.html';
+    }
+};

@@ -1,4 +1,5 @@
 let day = $('.day'),
+    days = 0,
     dayContent = $('.dayContent'),
     murder = $('.murder'),
     daytimeMurder = $(murder[0]),
@@ -13,13 +14,25 @@ let day = $('.day'),
     firstTriangle = $(triangle[0]),
     secondTriangle = $(triangle[1]),
     thirdTriangle = $(triangle[2]),
-    forthTriangle = $(triangle[3]),
-    days = sessionStorage.getItem('afterVoteDays'),
-    // afterClick = $('.greenBack'),
+    murderOrVote = {step:'murder'},
+    closePage = $('#close'),
     playerStatusAfCli = JSON.parse(sessionStorage.getItem('playerStatusAfCli')),
-    afPush = JSON.parse(sessionStorage.getItem('afPush')),
-    index = sessionStorage.getItem('index'),
-    murderOrVote = {step:'murder'};
+    role = sessionStorage.getItem('role'),
+    arrOfkilled = JSON.parse(sessionStorage.getItem('afKillPush')),
+    arrOfVoted = JSON.parse(sessionStorage.getItem('afVotePush'));
+
+
+
+if (sessionStorage.getItem('afterVoteDays')){
+    days = sessionStorage.getItem('afterVoteDays');
+}
+
+closePage.click(function () {
+    let a = confirm('结束本轮游戏游戏吗？');
+    if (a === true){
+        sessionStorage.clear();
+        window.location.href="../../static_page/task7-1.html"}
+})
 
 for (let i = 0; i <= days-1 ; i++ ) {
     day.before(
@@ -34,7 +47,7 @@ for (let i = 0; i <= days-1 ; i++ ) {
             '                        <div>杀手杀人</div>\n' +
             '                        <div class="triangle_greenback-1"></div>\n' +
             '                    </div>\n' +
-            '                    <div class="underMurder-1">' + index + '号被杀手杀死，真是身份是平民</div>\n' +
+            '                    <div class="underMurder-1"></div>\n' +
             '                </div>\n' +
             '                <div class="night-1">\n' +
             '                    <img class="sun-1" src="../../images/20.png" alt="">\n' +
@@ -54,15 +67,16 @@ for (let i = 0; i <= days-1 ; i++ ) {
             '                        <div>全民投票</div>\n' +
             '                        <div class="triangle_greenback-1"></div>\n' +
             '                    </div>\n' +
-            '                    <div class="underMurder-1">某个傻叉被投死了。真实身份是</div>\n' +
+            '                    <div class="underMurder-2"></div>\n' +
             '                </div>\n' +
             '            </div>\n' +
             '        </div>\n' +
             '    </div>')
     );
-    // $($('.dayContentOne')[i-1]).hide();
+    $($('.underMurder-1')[i]).text((parseInt(arrOfkilled[i])+1) + '号被杀手杀死，身份是平民');
+    // }
+    $($('.underMurder-2')[i]).text((parseInt(arrOfVoted[i])+1) + '号被投死了。真实身份是' + playerStatusAfCli[arrOfVoted[i]].role);
 }
-
 
 let dayContentOne = $('.dayContent-1'),
     dayOne = $('.day-1'),
@@ -74,9 +88,10 @@ dayOne.click(function(){
     $(this).next(dayContentOne).toggle()
     ;
 });//结束页面中的页面折叠，当前页面的切换
+if (days){
+day.text('第' + (parseInt(days)+1) + '天')
+;}
 
-day.text('第' + (days+1) + '天')
-;
 day.click(function(){
   dayContent.toggle()
   ;
@@ -85,6 +100,7 @@ greenBackOne.click(function () {
     confirm('请进行游戏下一项活动')
     ;
 });
+
 
 
 
@@ -102,13 +118,15 @@ daytimeMurder.click(function(){
     ;
     }
     else{
-        alert('caji');
+        confirm('请进行游戏下一项活动')
+        ;
     }
 });//杀手杀人
 
 
 if  (JSON.parse(sessionStorage.getItem('daytimeMurderStatus'))){
-daytimeMurderStatus = JSON.parse(sessionStorage.getItem('daytimeMurderStatus'));}
+daytimeMurderStatus = JSON.parse(sessionStorage.getItem('daytimeMurderStatus'));
+}
 
 if (daytimeMurderStatus.status == 'afterClick'){
 daytimeMurder.removeClass('murder')
@@ -117,8 +135,9 @@ daytimeMurder.addClass('greenBack')
   ;
 firstTriangle.removeClass('left_triangle')
   ;
-daytimeMurder.after($('<div></div>').text(index + '号被杀手杀死，真是身份是平民').addClass('underMurder'))
+daytimeMurder.after($('<div></div>').text((parseInt(arrOfkilled[days])+1) + '号被杀手杀死，身份是平民').addClass('underMurder'))
   ;
+
 }//存储杀人状态
 
 
@@ -184,7 +203,6 @@ if(speakStatus.status == 'afterClick'){
     ;
 }//储存当前状态
 
-
 vote.click(function(){
 if (speakStatus.status == 'afterClick'){
     murderOrVote.step = 'vote'
@@ -209,6 +227,7 @@ if (speakStatus.status == 'afterClick'){
       ;
     window.location.href="../murder&vote/murderVote.html"
       ;
+
 }
 else{
     confirm('请按顺序操作');

@@ -1,4 +1,6 @@
 let playerTotalNum = JSON.parse(sessionStorage.getItem('playerNum')),
+    killerNum = Math.floor(playerTotalNum.length/3),
+    civilNum = Math.ceil(playerTotalNum.length*2/3),
     main = $('#main'),
     confirmBtn = $('#confirm'),
     closePage = $('#closePage'),
@@ -7,6 +9,8 @@ let playerTotalNum = JSON.parse(sessionStorage.getItem('playerNum')),
     selectSb = $('#selectSb'),
     playerStatus = [],
     arrOfkilled = [],
+    arrOfVoted = [],
+    noneOp = [],
     selected = 0,
     index,
     murderOrVote = sessionStorage.getItem('murderOrVote'),
@@ -65,13 +69,27 @@ playerId.click(function () {
 
 
 if (murderOrVote == 'murder'){
-    // $(playerId[indexAfvote]).css('background-color','#83b09a');
-    // $(playerNum[indexAfvote]).css('width','78px'); //有个问题为什么还要加一个$()进去。
-    if  (JSON.parse(sessionStorage.getItem('playerStatusAfCli'))){
+    if  (JSON.parse(sessionStorage.getItem('afKillPush'))){
     playerStatus = JSON.parse(sessionStorage.getItem('playerStatusAfCli'))
     ;
-    arrOfkilled = JSON.parse(sessionStorage.getItem('afPush'))
+    arrOfkilled = JSON.parse(sessionStorage.getItem('afKillPush'))
     ;
+    arrOfVoted = JSON.parse(sessionStorage.getItem('afVotePush'))
+    ;
+    noneOp = JSON.parse(sessionStorage.getItem('noneOper'))
+    ;
+    if (sessionStorage.getItem('civilNum')){
+            civilNum = sessionStorage.getItem('civilNum');
+    }
+    if (sessionStorage.getItem('killerNum')){
+            killerNum = sessionStorage.getItem('killerNum');
+    }
+        for (i = 0 ; i < arrOfVoted.length ; i++){
+            $(playerId[arrOfVoted[i]]).css('background-color','#83b09a')
+            ;
+            $(playerNum[arrOfVoted[i]]).css('width','78px')
+            ;
+        }
     }
     for (i = 0 ; i < arrOfkilled.length ; i++){
         $(playerId[arrOfkilled[i]]).css('background-color','#83b09a')
@@ -79,26 +97,40 @@ if (murderOrVote == 'murder'){
         $(playerNum[arrOfkilled[i]]).css('width','78px')
         ;
     }
-confirmBtn.click(function(){
-    if (playerStatus[index].status == 'killed'){
+confirmBtn.click(function() {
+    if (selected === 1) {
+        if (playerStatus[index].status == 'killed'){
             confirm('不能鞭尸')
         }
+    else if (playerStatus[index].role == '杀手'){
+        confirm('自己人')
+    }
     else if (selected === 1){
             let kill = confirm("确定要杀掉他吗？");
             if (kill === true){
+                civilNum--;
+                arrOfkilled.push(index);
+                if (civilNum < 1){
+                    alert('杀手胜利');
+                    window.location.href = '../gameOver/gameOver.html';
+
+                }
+                else if (killerNum < 1){
+                    alert('水民胜利');
+                    window.location.href = '../gameOver/gameOver.html';
+                }
+                else {
                 playerStatus[index].status = 'killed';
                 window.location.href = "../firstDay/firstDay.html";
-                arrOfkilled.push(index);
+                }
             }
-        }
-    else if (selected == 0) {console.log(playerStatus)
-            //不杀人也没警报
-        }
+}}
+    sessionStorage.setItem('civilNum',civilNum);
+    // sessionStorage.setItem('murderIndex',index);
     sessionStorage.setItem('playerStatusAfCli',JSON.stringify(playerStatus));
-    sessionStorage.setItem('afPush',JSON.stringify(arrOfkilled));
-}
-);
-}
+    sessionStorage.setItem('afKillPush',JSON.stringify(arrOfkilled));
+});}
+
 
 
 
@@ -109,37 +141,76 @@ if(murderOrVote == 'vote'){
     ;
     selectSb.text('点击得票数最多的人的头像')
     ;//修改样式
+    arrOfkilled = JSON.parse(sessionStorage.getItem('afKillPush'))
+    ;
     playerStatus = JSON.parse(sessionStorage.getItem('playerStatusAfCli'))
     ;
-    arrOfkilled = JSON.parse(sessionStorage.getItem('afPush'))
-    ;
-    for (i = 0 ; i < arrOfkilled.length ; i++){
-        $(playerId[arrOfkilled[i]]).css('background-color','#83b09a');
-        $(playerNum[arrOfkilled[i]]).css('width','78px');
+    civilNum = sessionStorage.getItem('civilNum');
+    if  (JSON.parse(sessionStorage.getItem('afVotePush'))){
+    arrOfVoted = JSON.parse(sessionStorage.getItem('afVotePush'));
     }
-    // $(playerId[indexAfMurder]).css('background-color','#83b09a');
-    // $(playerNum[indexAfMurder]).css('width','78px'); //有个问题为什么还要加一个$()进去。
+    if (sessionStorage.getItem('killerNum')){
+        killerNum = sessionStorage.getItem('killerNum');
+    }
+    if (sessionStorage.getItem('civilNum')){
+        civilNum = sessionStorage.getItem('civilNum');
+    }
+    for (i = 0 ; i < arrOfkilled.length ; i++){
+        $(playerId[arrOfkilled[i]]).css('background-color','#83b09a')
+        ;
+        $(playerNum[arrOfkilled[i]]).css('width','78px')
+        ;
+    }
+    for (i = 0 ; i < arrOfVoted.length ; i++){
+        $(playerId[arrOfVoted[i]]).css('background-color','#83b09a')
+        ;
+        $(playerNum[arrOfVoted[i]]).css('width','78px')
+        ;
+    }
     confirmBtn.click(function(){
         if (playerStatus[index].status == 'killed'){
                 confirm('不能鞭尸')
             }
         else if (selected === 1){
+            if (playerStatus[index].role == '平民') {
+                civilNum--;
+            }
+            else if (playerStatus[index].role == '杀手') {
+                killerNum--;
+            }
+            arrOfVoted.push(index);
+            if (civilNum < 1){
+                alert('杀手胜利');
+                window.location.href = '../gameOver/gameOver.html';
+            }
+            else if (killerNum < 1){
+                alert('水民胜利');
+                window.location.href = '../gameOver/gameOver.html';
+            }
+            else {
             playerStatus[index].status = 'killed';
             window.location.href = "../firstDay/firstDay.html";
-            arrOfkilled.push(index);
-        }
+            }}
         else if (selected == 0) {
             confirm('caiji');
         }
-        // sessionStorage.setItem('indexAfvote',index);
+        sessionStorage.setItem('civilNum',civilNum);
+        sessionStorage.setItem('killerNum',killerNum);
+        sessionStorage.setItem('role',playerStatus[index].role);
+        // sessionStorage.setItem('voteIndex',index);
         sessionStorage.setItem('playerStatusAfCli',JSON.stringify(playerStatus));
-        sessionStorage.setItem('afPush',JSON.stringify(arrOfkilled));
+        sessionStorage.setItem('afVotePush',JSON.stringify(arrOfVoted));
 }
 );
 }
 
 
 
+
+
 closePage.click(function(){
-    window.location.href = "../playerdistribution/playerDis.html"
+    let a = confirm('结束本轮游戏游戏吗？');
+    if (a === true){
+        sessionStorage.clear();
+        window.location.href = "../playerdistribution/playerDis.html"}
 });

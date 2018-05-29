@@ -1,5 +1,5 @@
-let playerTotalNum = JSON.parse(sessionStorage.getItem('playerNum'));
-let startGame = $('.yellow_button');
+let playerTotalNum = JSON.parse(sessionStorage.getItem('playerNum')),
+    startGame = $('.yellow_button');
   console.log(playerTotalNum);
 // let oriPlayerTotalNum = sessionStorage.getItem('playerNum');
 // let playerTotalNum = oriPlayerTotalNum.split(',');
@@ -15,7 +15,7 @@ let playerId = $('<div></div>')
     .text(playerTotalNum[i])
     .addClass('player_box');
 let playerNum = $('<div></div>')
-    .text(i+1)
+    .text(i+1 + '号')
     .addClass('player_num');
 playerId.append(playerNum);
 main.append(playerId)

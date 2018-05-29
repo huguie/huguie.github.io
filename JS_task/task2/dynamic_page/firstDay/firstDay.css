@@ -100,7 +100,7 @@ body{
           .triangle_greenback{
             position: absolute;
             top: 7px;
-            left: -23px;
+            left: -22px;
             width: 0;
             height: 0;
             border: 8px solid rgba(0,0,0,.0);
@@ -108,7 +108,7 @@ body{
           .left_triangle{
             position: absolute;
             top: 7px;
-            left: -23px;
+            left: -22px;
             width: 0;
             height: 0;
             border: 8px solid rgba(0,0,0,.0);
@@ -178,7 +178,7 @@ body{
   line-height: 30px;
   color: #fff;
   background: #69d1e9;}
-.underMurder-1{
+.underMurder-1, .underMurder-2{
   font-size: 14px;
   color: #000;
   height: 36px;
@@ -186,7 +186,7 @@ body{
 .triangle_greenback-1{
   position: absolute;
   top: 7px;
-  left: -23px;
+  left: -22px;
   width: 0;
   height: 0;
   border: 8px solid rgba(0,0,0,.0);
@@ -194,7 +194,7 @@ body{
 .left_triangle-1{
   position: absolute;
   top: 7px;
-  left: -23px;
+  left: -22px;
   width: 0;
   height: 0;
   border: 8px solid rgba(0,0,0,.0);

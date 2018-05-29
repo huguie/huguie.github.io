@@ -15,13 +15,13 @@
 .img1 {
   width: 51px;
   height: 42px;
-  background: url(../images/9.png) no-repeat center;
+  background: url(../../images/9.png) no-repeat center;
   margin: 31px 0 0 20px; }
 
 .img2 {
   width: 40px;
   height: 40px;
-  background: url(../images/10.png) no-repeat center;
+  background: url(../../images/10.png) no-repeat center;
   margin: 32px 18px 0 0; }
 
 .fixedandcolor {
@@ -32,20 +32,12 @@
 .img3 {
   width: 351px;
   height: 205px;
-  background: url(../images/11.png) no-repeat center;
+  background: url(../../images/11.png) no-repeat center;
   margin-left: calc( 50% - 175px );
   text-align: center;
   line-height: 325px;
   font-size: 48px;
   color: white; }
-
-.congratulation {
-  width: 80%;
-  margin-top: 24px;
-  padding-left: 10%;
-  text-align: center;
-  font-size: 34px;
-  color: #ffc865; }
 
 .gametime {
   margin: 45px 0 0 10%;
@@ -117,12 +109,6 @@
   .footer > a, .footer > span {
     font-size: 28px; }
 
-  .gametime {
-    font-size: 22px; }
-
-  .gametime > div > span {
-    padding-right: 20px; }
-
   .gameprocess {
     font-size: 20px; }
 
@@ -130,4 +116,4 @@
     font-size: 30px;
     text-align: left; } }
 
-/*# sourceMappingURL=style-three.css.map */
+/*# sourceMappingURL=gameOver.css.map */
