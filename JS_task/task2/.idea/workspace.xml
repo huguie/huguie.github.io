@@ -14,20 +14,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="murderVote.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js">
+      <file leaf-file-name="playerDis.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="426">
-              <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+            <state relative-caret-position="624">
+              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="firstDay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js">
+      <file leaf-file-name="playerDis.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="653">
-              <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+            <state relative-caret-position="318">
+              <caret line="120" column="21" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playerDis.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -36,7 +45,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>none</find>
       <find>session</find>
       <find>CIV</find>
       <find>c</find>
@@ -66,6 +74,7 @@
       <find>push</find>
       <find>sess</find>
       <find>afterLastWords</find>
+      <find>slide</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -89,7 +98,6 @@
         <option value="$PROJECT_DIR$/dynamic_page/playerDis.css" />
         <option value="$PROJECT_DIR$/dynamic_page/playerDis.html" />
         <option value="$PROJECT_DIR$/../JS.html" />
-        <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css" />
         <option value="$PROJECT_DIR$/static_page/task7-1.html" />
         <option value="$PROJECT_DIR$/dynamic_page/viewId/view.css" />
         <option value="$PROJECT_DIR$/dynamic_page/viewId/test.html" />
@@ -113,7 +121,6 @@
         <option value="$PROJECT_DIR$/dynamic_page/gameOver/gameOver.scss" />
         <option value="$PROJECT_DIR$/dynamic_page/gameOver/gameOver.JS" />
         <option value="$PROJECT_DIR$/dynamic_page/viewId/view.html" />
-        <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html" />
         <option value="$PROJECT_DIR$/dynamic_page/firstDay/firstDay.html" />
         <option value="$PROJECT_DIR$/dynamic_page/gameOver/gameOver.html" />
         <option value="$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.html" />
@@ -124,6 +131,8 @@
         <option value="$PROJECT_DIR$/dynamic_page/gameOver/gameOver.js" />
         <option value="$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js" />
         <option value="$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js" />
+        <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html" />
+        <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css" />
       </list>
     </option>
   </component>
@@ -136,7 +145,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="975" />
     <option name="y" value="71" />
     <option name="width" value="930" />
@@ -217,12 +226,12 @@
       <workItem from="1527381403060" duration="35981000" />
       <workItem from="1527468581036" duration="30213000" />
       <workItem from="1527553977942" duration="42118000" />
-      <workItem from="1527642890456" duration="9278000" />
+      <workItem from="1527642890456" duration="10551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="301389000" />
+    <option name="totallyTimeSpent" value="302662000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
@@ -324,13 +333,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="8" column="19" lean-forward="true" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -531,20 +533,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1002">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="50" column="26" lean-forward="true" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/gameOver/gameOver.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -559,17 +547,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js">
+    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="653">
-          <caret line="138" lean-forward="true" selection-start-line="138" selection-end-line="138" />
+        <state relative-caret-position="102">
+          <caret line="102" column="27" lean-forward="true" selection-start-line="102" selection-start-column="27" selection-end-line="102" selection-end-column="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.js">
+    <entry file="file://$PROJECT_DIR$/dynamic_page/firstDay/firstDay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="120" column="26" lean-forward="true" selection-start-line="120" selection-start-column="26" selection-end-line="120" selection-end-column="26" />
+        <state relative-caret-position="149">
+          <caret line="110" column="5" lean-forward="true" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="45" column="47" selection-start-line="45" selection-start-column="47" selection-end-line="45" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="120" column="21" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="21" />
         </state>
       </provider>
     </entry>
