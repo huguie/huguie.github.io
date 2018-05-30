@@ -60,6 +60,7 @@ playerId.click(function () {
     selected = 1;//被选中的角色加个标记
 });//在main之下获取所有的大格子，并绑定大格子事件
 
+
 if (murderOrVote == 'murder'){
     if  (JSON.parse(sessionStorage.getItem('afKillPush'))){
     playerStatus = JSON.parse(sessionStorage.getItem('playerStatusAfCli'))
@@ -124,6 +125,39 @@ confirmBtn.click(function() {
     sessionStorage.setItem('playerStatusAfCli',JSON.stringify(playerStatus));
 });}
 
+
+
+if (murderOrVote == 'dairy'){
+    title.text('法官日志')
+    ;
+    eyesOrVote.remove()
+    ;
+    $('.openeyes').remove()
+    ;
+    $('.header').css('margin-bottom','0')
+    ;
+    confirmBtn.click(function () {
+        window.location.href = '../firstDay/firstDay.html';
+    });
+    arrOfkilled = JSON.parse(sessionStorage.getItem('afKillPush'))
+    ;
+    playerStatus = JSON.parse(sessionStorage.getItem('playerStatusAfCli'))
+    ;
+    arrOfVoted = JSON.parse(sessionStorage.getItem('afVotePush'))
+    ;
+    for (i = 0 ; i < arrOfkilled.length ; i++){
+        $(playerId[arrOfkilled[i]]).css('background-color','#83b09a')
+        ;
+        $(playerNum[arrOfkilled[i]]).css('width','78px')
+        ;
+    }
+    for (i = 0 ; i < arrOfVoted.length ; i++){
+        $(playerId[arrOfVoted[i]]).css('background-color','#83b09a')
+        ;
+        $(playerNum[arrOfVoted[i]]).css('width','78px')
+        ;
+    }
+}
 
 if(murderOrVote == 'vote'){
     eyesOrVote.text('发言结束，请大家投票')

@@ -109,6 +109,15 @@ greenBackOne.click(function () {
     confirm('请进行游戏下一项活动')
     ;
 });
+$('#diary').click(function () {
+    murderOrVote.step = 'dairy'
+    ;
+    window.location.href='../murder&vote/murderVote.html'
+    ;
+    sessionStorage.setItem('murderOrVote', murderOrVote.step)
+    ;
+});
+
 
 
 daytimeMurder.click(function(){
@@ -184,23 +193,27 @@ if(lastWordsStatus.status == 'afterClick'){
 }//储存当前状态
 
 
-
 speak.click(function(){
-if (lastWordsStatus.status == 'afterClick'){
-  speakStatus.status = 'afterClick'
-    ;
-  speak.removeClass('murder')
-    ;
-  speak.addClass('greenBack')
-    ;
-  thirdTriangle.removeClass('left_triangle')
-    ;
-  sessionStorage.setItem('speakStatus',JSON.stringify(speakStatus))
-    ;
-  alert('玩家依次发言');
+if (speakStatus.status == 'click') {
+    if (lastWordsStatus.status == 'afterClick') {
+        speakStatus.status = 'afterClick'
+        ;
+        speak.removeClass('murder')
+        ;
+        speak.addClass('greenBack')
+        ;
+        thirdTriangle.removeClass('left_triangle')
+        ;
+        sessionStorage.setItem('speakStatus', JSON.stringify(speakStatus))
+        ;
+        alert('玩家依次发言');
+    }
+    else {
+        confirm('请按顺序操作');
+    }
 }
 else{
-    confirm('请按顺序操作');
+    alert('请进行游戏的下一项活动');
 }
 });
 

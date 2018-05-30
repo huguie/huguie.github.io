@@ -8,6 +8,12 @@ let returm = document.getElementById('return');
 let pageAlert = document.getElementById('pageAlert');
 
 
+function isNum(s){//是否为正整数
+    let re = /^[0-9]+$/ ;
+    return re.test(s)
+}
+
+
 function inputWord(){
 	if (word.value <= 18 && word.value >= 4) {}
 	else{
@@ -24,6 +30,8 @@ function rangeWord(){
     civilianNum.innerHTML = Math.ceil(word.value * 2 / 3);
     console.log(word.value);
 }//获取滑条value，并关联输入栏value。
+
+
 
  plus.onclick = function (){
     x.value++;
@@ -47,17 +55,24 @@ returm.onclick = function(){
     window.location.href= '../../static_page/task7-1.html'
 };
 
+
 document.getElementById("viewId").onclick = function(){
     sessionStorage.setItem("wordStorage",word.value);
     sessionStorage.setItem('killerNum',killerNum.innerHTML);
     sessionStorage.setItem('civilianNum',civilianNum.innerHTML);
+    if(isNum(word.value) === false){
+    alert('不是整数');
+    sessionStorage.clear();
+        word.value = '0';
+        killerNum.innerHTML = '0';
+        civilianNum.innerHTML = '0';
+    }
+    else{
     if  (word.value <= 18 && word.value >= 4){
     window.location.href="../viewId/view.html";
     }
     else {
         alert('请输入4-18以内的数字 ');
-    }
+    }}
 };//点击跳转事件
-
-
 
