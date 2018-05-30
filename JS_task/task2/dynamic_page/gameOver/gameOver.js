@@ -45,15 +45,14 @@ for (i = 0; i <= days; i++){
     ;
     footer.before(bigBox)
     ;
-    bigBox.append(dayNum)
-    ;
     if (parseInt(arrOfkilled[i])+1) {
+    bigBox.append(dayNum)
+        ;
     killNight = $('<span></span>')
-        .text('黑夜：' + (parseInt(arrOfkilled[i])+1) +'号被杀手杀死,真实身份是水民')
+        .text('黑夜：' + (parseInt(arrOfkilled[i])+1) +'号被杀手杀死,真实身份是平民')
     ;
     bigBox.append(killNight)
     ;}
-
     voteDay =  $('<span></span>')
         .text('白天：' + (parseInt(arrOfVoted[i])+1) + '号被投死了。真实身份是' + playerStatusAfCli[arrOfVoted[i]].role)
     ;

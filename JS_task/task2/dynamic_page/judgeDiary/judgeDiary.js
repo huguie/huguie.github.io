@@ -21,6 +21,14 @@ playerId.append(playerNum);
 main.append(playerId)
 ;}
 
+$('#closePage').on('click', function () {
+   let t = confirm('确定关闭游戏吗');
+   if (t === true){
+   sessionStorage.clear();
+   window.location.href='../playerdistribution/playerDis.html'
+   }
+});
+
 startGame.click(function(){
     window.location.href="../firstDay/firstDay.html"
 });

@@ -41,10 +41,7 @@ playerStatus[i] = {
     role: playerTotalNum[i],
     status : 'live',
     num : i+1 }//创建玩家状态.
-
     }//动态的将获取到的数组变成页面上的玩家数量
-
-
 
 let playerId = $('.player_box')
     ;//获取所有的大格子
@@ -63,11 +60,6 @@ playerId.click(function () {
     selected = 1;//被选中的角色加个标记
 });//在main之下获取所有的大格子，并绑定大格子事件
 
-
-
-
-
-
 if (murderOrVote == 'murder'){
     if  (JSON.parse(sessionStorage.getItem('afKillPush'))){
     playerStatus = JSON.parse(sessionStorage.getItem('playerStatusAfCli'))
@@ -84,7 +76,7 @@ if (murderOrVote == 'murder'){
     if (sessionStorage.getItem('killerNum')){
             killerNum = sessionStorage.getItem('killerNum');
     }
-        for (i = 0 ; i < arrOfVoted.length ; i++){
+    for (i = 0 ; i < arrOfVoted.length ; i++){
             $(playerId[arrOfVoted[i]]).css('background-color','#83b09a')
             ;
             $(playerNum[arrOfVoted[i]]).css('width','78px')
@@ -105,7 +97,7 @@ confirmBtn.click(function() {
     else if (playerStatus[index].role == '杀手'){
         confirm('自己人')
     }
-    else if (selected === 1){
+    else /*if (selected === 1) */{
             let kill = confirm("确定要杀掉他吗？");
             if (kill === true){
                 civilNum--;
@@ -123,15 +115,14 @@ confirmBtn.click(function() {
                 playerStatus[index].status = 'killed';
                 window.location.href = "../firstDay/firstDay.html";
                 }
-            }
-}}
+                sessionStorage.setItem('afKillPush',JSON.stringify(arrOfkilled));
+            }}}
+    else if (selected === 0 ){
+        alert('请选择要操作的玩家')
+    }
     sessionStorage.setItem('civilNum',civilNum);
-    // sessionStorage.setItem('murderIndex',index);
     sessionStorage.setItem('playerStatusAfCli',JSON.stringify(playerStatus));
-    sessionStorage.setItem('afKillPush',JSON.stringify(arrOfkilled));
 });}
-
-
 
 
 if(murderOrVote == 'vote'){
@@ -192,21 +183,14 @@ if(murderOrVote == 'vote'){
             window.location.href = "../firstDay/firstDay.html";
             }}
         else if (selected == 0) {
-            confirm('caiji');
+            confirm('请选择要操作的玩家');
         }
         sessionStorage.setItem('civilNum',civilNum);
         sessionStorage.setItem('killerNum',killerNum);
         sessionStorage.setItem('role',playerStatus[index].role);
-        // sessionStorage.setItem('voteIndex',index);
         sessionStorage.setItem('playerStatusAfCli',JSON.stringify(playerStatus));
         sessionStorage.setItem('afVotePush',JSON.stringify(arrOfVoted));
-}
-);
-}
-
-
-
-
+});}
 
 closePage.click(function(){
     let a = confirm('结束本轮游戏游戏吗？');

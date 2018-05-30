@@ -17,22 +17,23 @@ let day = $('.day'),
     murderOrVote = {step:'murder'},
     closePage = $('#close'),
     playerStatusAfCli = JSON.parse(sessionStorage.getItem('playerStatusAfCli')),
-    role = sessionStorage.getItem('role'),
+    // role = sessionStorage.getItem('role'),
     arrOfkilled = JSON.parse(sessionStorage.getItem('afKillPush')),
     arrOfVoted = JSON.parse(sessionStorage.getItem('afVotePush'));
 
-
-
 if (sessionStorage.getItem('afterVoteDays')){
-    days = sessionStorage.getItem('afterVoteDays');
-}
-
-closePage.click(function () {
-    let a = confirm('结束本轮游戏游戏吗？');
+    days = sessionStorage.getItem('afterVoteDays')
+    ;}
+closePage.onclick = function () {
+    let a = confirm('结束本轮游戏吗');
     if (a === true){
         sessionStorage.clear();
-        window.location.href="../../static_page/task7-1.html"}
-})
+        window.location.href='../../static_page/task7-1.html';
+    }};
+
+
+
+
 
 for (let i = 0; i <= days-1 ; i++ ) {
     day.before(
@@ -102,8 +103,6 @@ greenBackOne.click(function () {
 });
 
 
-
-
 daytimeMurder.click(function(){
     if (daytimeMurderStatus.status == 'click') {
   window.location.href="../murder&vote/murderVote.html"
@@ -115,12 +114,10 @@ daytimeMurder.click(function(){
   sessionStorage.setItem('murderOrVote',murderOrVote.step)
     ;
   sessionStorage.setItem('daytimeMurderStatus',JSON.stringify(daytimeMurderStatus))
-    ;
-    }
+    ;}
     else{
         confirm('请进行游戏下一项活动')
-        ;
-    }
+        ;}
 });//杀手杀人
 
 
@@ -154,7 +151,8 @@ lastWords.click(function(){
             ;
             secondTriangle.removeClass('left_triangle')
             ;
-        }
+            sessionStorage.setItem('lastWordsStatus',JSON.stringify(lastWordsStatus))
+            ;}
         else{
             confirm('请按顺序操作');
         }
@@ -163,6 +161,9 @@ lastWords.click(function(){
         alert('请进行游戏的下一项活动');
     }
 });//修改当前状态
+
+if (JSON.parse(sessionStorage.getItem('lastWordsStatus'))) {
+    lastWordsStatus = JSON.parse(sessionStorage.getItem('lastWordsStatus'));}
 
 
 if(lastWordsStatus.status == 'afterClick'){
@@ -175,6 +176,7 @@ if(lastWordsStatus.status == 'afterClick'){
 }//储存当前状态
 
 
+
 speak.click(function(){
 if (lastWordsStatus.status == 'afterClick'){
   speakStatus.status = 'afterClick'
@@ -185,12 +187,17 @@ if (lastWordsStatus.status == 'afterClick'){
     ;
   thirdTriangle.removeClass('left_triangle')
     ;
+  sessionStorage.setItem('speakStatus',JSON.stringify(speakStatus))
+    ;
   alert('玩家依次发言');
 }
 else{
     confirm('请按顺序操作');
 }
 });
+
+if (JSON.parse(sessionStorage.getItem('speakStatus'))) {
+    speakStatus = JSON.parse(sessionStorage.getItem('speakStatus'));}
 
 if(speakStatus.status == 'afterClick'){
   speakStatus.status = 'afterClick'
@@ -202,6 +209,7 @@ if(speakStatus.status == 'afterClick'){
   thirdTriangle.removeClass('left_triangle')
     ;
 }//储存当前状态
+
 
 vote.click(function(){
 if (speakStatus.status == 'afterClick'){
@@ -217,9 +225,13 @@ if (speakStatus.status == 'afterClick'){
       ;
     sessionStorage.setItem('afterVoteDays',days)
       ;
-    sessionStorage.removeItem('afterspeak');
+    // sessionStorage.removeItem('afterspeak');
+    //   ;
+    sessionStorage.removeItem('speakStatus')
       ;
-    sessionStorage.removeItem('afterLastWords')
+    // sessionStorage.removeItem('afterLastWords')
+    // ;
+    sessionStorage.removeItem('lastWordsStatus')
       ;
     sessionStorage.removeItem('afterDaytimeMurder')
       ;
