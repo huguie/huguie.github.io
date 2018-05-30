@@ -151,12 +151,13 @@ if (murderOrVote == 'dairy'){
         $(playerNum[arrOfkilled[i]]).css('width','78px')
         ;
     }
+    if  (JSON.parse(sessionStorage.getItem('afVotePush'))){
     for (i = 0 ; i < arrOfVoted.length ; i++){
         $(playerId[arrOfVoted[i]]).css('background-color','#83b09a')
         ;
         $(playerNum[arrOfVoted[i]]).css('width','78px')
         ;
-    }
+    }}
 }
 
 if(murderOrVote == 'vote'){

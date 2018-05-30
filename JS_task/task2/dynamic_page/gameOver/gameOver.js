@@ -53,10 +53,11 @@ for (i = 0; i <= days; i++){
     ;
     bigBox.append(killNight)
     ;}
+    if (playerStatusAfCli[arrOfVoted[i]]){
     voteDay =  $('<span></span>')
         .text('白天：' + (parseInt(arrOfVoted[i])+1) + '号被投死了。真实身份是' + playerStatusAfCli[arrOfVoted[i]].role)
     ;
     bigBox.append(voteDay)
-    ;
+    ;}
 }
 
