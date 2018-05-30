@@ -24,13 +24,21 @@ let day = $('.day'),
 if (sessionStorage.getItem('afterVoteDays')){
     days = sessionStorage.getItem('afterVoteDays')
     ;}
-closePage.onclick = function () {
+
+
+closePage.on('click',function () {
     let a = confirm('结束本轮游戏吗');
     if (a === true){
         sessionStorage.clear();
-        window.location.href='../../static_page/task7-1.html';
-    }};
+        window.location.href='../../static_page/task7-1.html'}
+})
 
+$('#gameOver').on('click',function () {
+    let a = confirm('结束本轮游戏吗');
+    if (a === true){
+        sessionStorage.clear();
+        window.location.href='../../static_page/task7-1.html'}
+})
 
 
 
