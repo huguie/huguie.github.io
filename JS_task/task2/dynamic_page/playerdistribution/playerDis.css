@@ -43,21 +43,22 @@ body{
 	  		font-size: 20px;
 	  		color: grey;
 	  		background-color: rgb(251,251,251);}
-	  	  .player_numbers>.player{
+	  	  .player_numbers>.player , .playerori{
 	  	  	display: flex;
 	  	  	align-items: center;
 	  	  	margin-left: 10%;
 	  	  	width: 35%;
-	  	  	height: 40px;}	
-	  	  	.player>div>span{
-	  	  		color: orange;}
-	  	  .orangebox,.bluebox{
+	  	  	height: 40px;}
+	  	  .orangebox,.bluebox,.whitebox{
 	  	  	width: 8px;
 	  	  	height: 8px;
 	  	  	background-color: orange;
 	  	  	margin-right: 10px;}
 	  	  .bluebox{
 	  	  	background-color: #69d1e9;}	
+		  .whitebox{
+			  background-color: rgb(251,251,251);
+		  }
 		.content>.setting{
 			height: 27px;
 			text-align: center;
