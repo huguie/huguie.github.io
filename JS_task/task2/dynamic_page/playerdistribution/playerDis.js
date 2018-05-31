@@ -71,36 +71,36 @@ returm.onclick = function(){
 
 
 
-setBtn.on('click',function () {
-if (player.length !== 0){
-    // for (let i = 0; i < player.length; i++){
-    //     allPlayer.remove();}
-    $('.player').remove();}
-
-player.length = 0;
-    for (let i = 0; i < parseInt(killerNum.innerHTML); i++){
-    player.push('杀  &nbsp;手 1人');}//获取动态杀手数量
-
-for (let i = 0; i < parseInt(civilianNum.innerHTML); i++){
-    player.push('平  &nbsp;民 1人');}//获取动态动态平民数量
-
-let w = player.length;
-let z,y;
-for( ; w ; ){
-    y = Math.floor(Math.random()*(w--));
-    z = player[w];
-    player[w] = player[y];
-    player[y] = z;}
-
-for (let i = 0; i < player.length; i++){
-allPlayer = $('<div class="player">\n' +
-    '<div class="whitebox">'  +'</div>\n' +
-    '    <div>' + player[i] + '</div>\n' +
-    '</div>\n');
-
-playerNum
-    .append(allPlayer);}
-});//洗牌算法，将数组打乱
+// setBtn.on('click',function () {
+// if (player.length !== 0){
+//     // for (let i = 0; i < player.length; i++){
+//     //     allPlayer.remove();}
+//     $('.player').remove();}
+//
+// player.length = 0;
+//     for (let i = 0; i < parseInt(killerNum.innerHTML); i++){
+//     player.push('杀  &nbsp;手 1人');}//获取动态杀手数量
+//
+// for (let i = 0; i < parseInt(civilianNum.innerHTML); i++){
+//     player.push('平  &nbsp;民 1人');}//获取动态动态平民数量
+//
+// let w = player.length;
+// let z,y;
+// for( ; w ; ){
+//     y = Math.floor(Math.random()*(w--));
+//     z = player[w];
+//     player[w] = player[y];
+//     player[y] = z;}
+//
+// for (let i = 0; i < player.length; i++){
+// allPlayer = $('<div class="player">\n' +
+//     '<div class="whitebox">'  +'</div>\n' +
+//     '    <div>' + player[i] + '</div>\n' +
+//     '</div>\n');
+//
+// playerNum
+//     .append(allPlayer);}
+// });//洗牌算法，将数组打乱
 
 
 

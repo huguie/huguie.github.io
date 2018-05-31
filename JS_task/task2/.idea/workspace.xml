@@ -17,35 +17,8 @@
       <file leaf-file-name="playerDis.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playerDis.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-42">
-              <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="playerDis.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="114" column="43" selection-start-line="114" selection-start-column="43" selection-end-line="114" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+            <state relative-caret-position="-234">
+              <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -140,8 +113,8 @@
         <option value="$PROJECT_DIR$/dynamic_page/gameOver/gameOver.scss" />
         <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css" />
         <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html" />
-        <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js" />
         <option value="$PROJECT_DIR$/dynamic_page/viewId/view.js" />
+        <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js" />
       </list>
     </option>
   </component>
@@ -155,10 +128,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="851" />
-    <option name="y" value="36" />
+    <option name="x" value="850" />
+    <option name="y" value="35" />
     <option name="width" value="1300" />
-    <option name="height" value="1048" />
+    <option name="height" value="1049" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -239,16 +212,15 @@
       <workItem from="1527468581036" duration="30213000" />
       <workItem from="1527553977942" duration="42118000" />
       <workItem from="1527642890456" duration="22976000" />
-      <workItem from="1527725304294" duration="7340000" />
+      <workItem from="1527725304294" duration="8198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="322427000" />
+    <option name="totallyTimeSpent" value="323285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756888" weight="0.5" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -571,13 +543,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -585,17 +550,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-42">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="372">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="89" column="40" lean-forward="true" selection-start-line="89" selection-start-column="40" selection-end-line="89" selection-end-column="40" />
+        <state relative-caret-position="-234">
+          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
         </state>
       </provider>
     </entry>
