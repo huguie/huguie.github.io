@@ -13,17 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="playerDis.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -65,9 +55,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../task12/task6/style.scss" />
-        <option value="$PROJECT_DIR$/../task12/task6/15641.css" />
-        <option value="$PROJECT_DIR$/reset.css" />
         <option value="$PROJECT_DIR$/common.scss" />
         <option value="$PROJECT_DIR$/style-1.scss" />
         <option value="$PROJECT_DIR$/task7-1.html" />
@@ -115,6 +102,10 @@
         <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html" />
         <option value="$PROJECT_DIR$/dynamic_page/viewId/view.js" />
         <option value="$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js" />
+        <option value="$PROJECT_DIR$/../task5/page/login/login.js" />
+        <option value="$PROJECT_DIR$/../task5/page/login/login.scss" />
+        <option value="$PROJECT_DIR$/../task5/page/login/login.html" />
+        <option value="$PROJECT_DIR$/../task5/page/login/login.css" />
       </list>
     </option>
   </component>
@@ -128,10 +119,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="850" />
-    <option name="y" value="35" />
+    <option name="x" value="345" />
+    <option name="y" value="25" />
     <option name="width" value="1300" />
-    <option name="height" value="1049" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -139,14 +130,29 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="task2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="task2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="task2" type="462c0819:PsiDirectoryNode" />
+              <item name="reset" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="C:/Ruby25-x64/bin/scss.bat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../task5/page/login/login.scss" />
     <property name="node.js.detected.package.prettier" value="true" />
     <property name="node.js.path.for.package.prettier" value="project" />
     <property name="node.js.selected.package.prettier" value="" />
@@ -154,6 +160,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\alpha\Documents\GitHub\huguie.github.io\JS_task\task5\page\login" />
       <recent name="C:\Users\alpha\Documents\GitHub\huguie.github.io\JS_task\task2\dynamic_page\murder&amp;vote" />
     </key>
   </component>
@@ -213,17 +220,30 @@
       <workItem from="1527553977942" duration="42118000" />
       <workItem from="1527642890456" duration="22976000" />
       <workItem from="1527725304294" duration="8198000" />
+      <workItem from="1527735266982" duration="584000" />
+      <workItem from="1527742664994" duration="1629000" />
+      <workItem from="1527751542530" duration="358000" />
+      <workItem from="1527751903378" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="323285000" />
+    <option name="totallyTimeSpent" value="325862000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1488" height="878" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49756888" weight="0.5" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49756888" visible="true" weight="0.5" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3287483" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.3741403" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
@@ -249,41 +269,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="11" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../JS.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerDis.js" />
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerDis.css" />
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerDis.html" />
-    <entry file="file://$PROJECT_DIR$/../../CSS_task/task14/common.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="18" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static_page/task7-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../CSS_task/task13/style-2.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="671">
-          <caret line="97" column="28" lean-forward="true" selection-start-line="97" selection-start-column="28" selection-end-line="97" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../CSS_task/task14/style-1.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-625">
@@ -405,9 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="1" column="195" lean-forward="true" selection-start-line="1" selection-start-column="195" selection-end-line="1" selection-end-column="195" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -426,13 +412,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/jquery3.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/judgeDiary/judgeDiary.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -456,13 +436,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/gameOver/jquery3.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/murder&amp;vote/murderVote.scss">
       <provider selected="true" editor-type-id="text-editor">
@@ -514,25 +488,12 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/jquery3.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="55" column="35" lean-forward="true" selection-start-line="55" selection-start-column="35" selection-end-line="55" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -550,24 +511,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="52" column="22" lean-forward="true" selection-start-line="52" selection-start-column="22" selection-end-line="52" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42">
-          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+        <state relative-caret-position="72">
+          <caret line="28" column="26" lean-forward="true" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dynamic_page/viewId/view.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        <state relative-caret-position="408">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dynamic_page/playerdistribution/playerDis.js">
+    <entry file="file://$PROJECT_DIR$/../../CSS_task/task14/common.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="74" column="28" lean-forward="true" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+        <state relative-caret-position="504">
+          <caret line="58" column="20" lean-forward="true" selection-start-line="19" selection-end-line="58" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../task5/page/login/login.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../task5/page/login/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../task5/page/login/login.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="20" lean-forward="true" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../task5/page/login/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="16" lean-forward="true" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reset/reset.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../task5/page/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="72" lean-forward="true" selection-start-line="5" selection-start-column="72" selection-end-line="5" selection-end-column="72" />
         </state>
       </provider>
     </entry>

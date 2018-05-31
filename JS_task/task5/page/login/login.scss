@@ -1,0 +1,54 @@
+@mixin flex($justify,$align) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;}
+@mixin img($width,$height,$url) {
+  width: $width;
+  height: $height;
+  background: $url no-repeat center;}
+@mixin position($position,$side1,$side1value,$side2,$side2value) {
+  position: $position;
+  #{$side1}: $side1value;
+  #{$side2}: $side2value;}
+@mixin font($fz,$cl){
+  font-size: $fz;
+  color: $cl;}
+@mixin box($width,$height,$bg){
+  width: $width;
+  height: $height;
+  background: $bg;}
+
+
+.starBack{
+  position: relative;
+  width: 100vw;
+  height: 100vh;}
+.loginBox{
+  @include position(absolute,left,calc(50% - 220px),top,calc(50% - 160px));
+  @include flex(flex-start,center);
+  flex-direction: column;
+  @include box(440px,320px,#d0d3d9); }
+  .loginTitle{
+    margin: 25px 0;
+    @include font(28px,#03a9f4);}
+  .userInputBox{
+    margin-bottom: 20px;
+    @include flex(flex-start,center);
+    @include box(360px,50px,white);}
+    .userIcon,.pwIcon{
+      margin-left: 16px;
+      border-right: 1px solid #d0d3d9;
+      @include box(34px,17px, url("../../images/2.png") no-repeat);}
+      .pwIcon{
+        @include box(34px,18px, url("../../images/3.png") no-repeat);}
+    .userInput{
+      margin-left: 20px;
+      width: 280px;
+      border: none;
+      outline: none;}
+  .loginBtn{
+    margin-top: 25px;
+    @include flex(center,center);
+    @include box(360px,50px,#03a9f4);
+    border-radius: 5px;
+    @include font(18px,white);}
