@@ -1,17 +1,50 @@
 <html>
 <head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="reset.css">
 	<script type="text/javascript" src="jquery.js"></script>
 	<script type="text/javascript" src="js.js"></script>
 </head>
+	<style>
+
+	</style>
 <body>
-<div>div</div>
-<p>p</p>
 
 <script src="jquery.js"></script>
+
 <script>
-    $("div").css("border", "2px solid red")
-        .add("p")
-        .css("background", "yellow");
+	let	user = {
+	 FName:'花花',
+	 LName:'王',
+	 fullName: function(){
+	     console.log(this);
+	 	return this.LName + this.FName //此时this代表user，就就是它父级的对象,但是如果将下面的console注释掉 this是是什么不取
+		 // 决于它所在的位置，而取决于它如何被调用,当function以方法形式调用，即加个点，就代表这个函数的父级元素
+	 }
+	};
+
+	let haha = user.fullName;
+	console.log(haha());
+	// console.log(user.fullName());
+
+
+
+	let	person = {
+	 fName:'花花',
+	 LName:'王',
+        fullName: function(){
+	 	return person.LName + person.fName
+	 }
+	};
+ 	// console.log(person.fullName());
+
+
+
+
+
+
+
+ 	
 </script>
 
 

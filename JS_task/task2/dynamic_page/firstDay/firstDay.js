@@ -31,14 +31,14 @@ closePage.on('click',function () {
     if (a === true){
         sessionStorage.clear();
         window.location.href='../../static_page/task7-1.html'}
-})
+});
 
 $('#gameOver').on('click',function () {
     let a = confirm('结束本轮游戏吗');
     if (a === true){
         sessionStorage.clear();
         window.location.href='../../static_page/task7-1.html'}
-})
+});
 
 
 
