@@ -20,7 +20,9 @@ let loginBtn = $('#loginBtn');
 //     xml.send();
 // });
 
-
+pwdFalse = $('<div></div>')
+    .text('密码错误')
+    .addClass('redWord');
 loginBtn.on('click',function () {
     userInput = $('#userInput').val();
     pwInput = $('#pwInput').val();
@@ -31,12 +33,16 @@ loginBtn.on('click',function () {
     },
     function(data){
         let loginData = JSON.parse(data);
-        console.log(loginData.message);
-        if  (loginData.message == '用户不存在'){
-            alert('真的打错用户名啦');
+        console.log(loginData);
+        if  (loginData.message == 'success'){
+            alert('登陆成功')
         }
         else if  (loginData.message == '密码错误'){
-            alert('密码输错啦');
+            loginBtn.before(pwdFalse);
+        }
+        else if (loginData.message == '用户不存在'){
+            pwdFalse.text('用户不存在');
+            loginBtn.before(pwdFalse);
         }
     });
 

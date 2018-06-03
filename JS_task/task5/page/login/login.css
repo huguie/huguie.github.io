@@ -59,4 +59,11 @@
   font-size: 18px;
   color: white; }
 
+.redWord {
+  position: absolute;
+  left: 40px;
+  bottom: 94px;
+  font-size: 16px;
+  color: red; }
+
 /*# sourceMappingURL=login.css.map */
