@@ -1,0 +1,37 @@
+
+<div class="backGround_rightContent">
+    <div class="artList_filter"></div>
+    <div class='artList_listContent'>
+        <div class="artList_compamyList">
+            <strong>公司列表</strong>
+        </div>
+        <div class="artList_list">
+            <table >
+                <tr>
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>发布时间</th>
+                    <th>修改时间</th>
+                    <th>发布者</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                <tr ng-repeat="x in lists">
+                    <td>{{x.id}}</td>
+                    <td>{{x.title}}</td>
+                    <td>{{x.type}}</td>
+                    <td>{{x.createAt | date : 'yyyy-MM-dd HH:mm:ss'}}</td>
+                    <td>{{x.updateAt | date : 'yyyy-MM-dd HH:mm:ss'}}</td>
+                    <td>{{x.author}}</td>
+                    <td>{{x.status}}</td>
+                    <td>{{x.status}}</td>
+                </tr>
+            </table>
+        </div>
+        <!--<ul>-->
+            <!--<li ng-repeat="x in lists">{{x.title + ',' +  x.author}}</li>-->
+        <!--</ul>-->
+    </div>
+</div>
+

@@ -1,7 +1,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<!--<link rel="stylesheet" type="text/css" href="reset.css">-->
+	<link rel="stylesheet" type="text/css" href="reset.css">
 </head>
 <style>
 	body{
@@ -10,8 +10,19 @@
 		line-height: 34px;
 		color: #666;
 	}
+    .father{
+        display: flex;
+    }
+    .son1,.son2{
+        width: 50%;
+        background: lightblue;
+    }
+    .son2{
+        height: 500px;
+        background: pink;
+    }
 </style>
-<body ng-app='routingDemoApp'>
+<body ng-app='routingDemoApp' ng-controller="control">
 
 <h2>AngularJS 路由应用</h2>
 <ul>
@@ -21,21 +32,42 @@
 	<li><a href="#/blabla">其他</a></li>
 </ul>
 
-<div ng-view></div>
-<script src="//apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
-<script src="//apps.bdimg.com/libs/angular-route/1.3.13/angular-route.js"></script>
+    <div class="father">
+        <div class="son1"></div>
+        <div class="son2"></div>
+    </div>
+
+
+
+<form name="loginForm" >
+    <div>
+        <div>用户名：</div>
+        <input type="text"
+               name="uname"
+               ng-model="ame"
+               ng-minlength=3
+               ng-maxlength=10
+               required />
+        <div ng-messages="loginForm.uname.$error" >
+            <div ng-message="required">用户名不能为空</div>
+            <div ng-message="minlength">用户名长度至少为3</div>
+            <div ng-message="maxlength">用户名长度不能超过10</div>
+        </div>
+        <button type="submit">提交</button>
+    </div>
+</form>
+
+
+
+<script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.js"></script>
+<script src="https://cdn.bootcss.com/angular-messages/1.7.0/angular-messages.js"></script>
+<script src="https://cdn.bootcss.com/angular-ui-router/1.0.18/angular-ui-router.js"></script>
 <script>
-    angular.module('routingDemoApp',['ngRoute'])
-        .config(['$routeProvider', function($routeProvider){
-            $routeProvider
-                .when('/',{template:'这是首页页面'})
-                .when('/computers',{template:'这是电脑分类页面'})
-                .when('/printers',{template:'这是打印机页面'})
-                .otherwise({redirectTo:'/'});
-        }]);
+   var app =  angular.module('routingDemoApp',['ui.router','ngMessages']);
+   app.controller('control',function () {
+   });
+
 </script>
-
-
 </body>
 </html>
 

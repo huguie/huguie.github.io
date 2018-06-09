@@ -1,32 +1,36 @@
- <div class="header">
-        <div class="title">萝卜多后台管理系统</div>
+ <div class="backGround_header">
+        <div class="backGround_title">萝卜多后台管理系统</div>
+        <div class="controlSite">
+         <div>管理员</div>
+         <span>|</span>
+         <div>admin</div>
+         <span>|</span>
+         <div class="glyphicon glyphicon-off" ui-sref='login'></div>
+        </div>
     </div>
-
-    <div class="leftSideBar">
-        <div class="paging">
-            <div class="IM">
+    <div class="cutOff">
+        <div class="backGround_leftSideBar">
+        <div class="backGround_paging">
+            <div class="backGround_IM">
                 <div class="fa fa-pencil "></div>
-                <div class="title">信息管理</div>
+                <div class="backGround_title">信息管理</div>
                 <div class="fa fa-angle-left fa-lg"></div>
             </div>
-            <div class="AM">
+            <div class="backGround_AM">
                 <div class="fa fa-pencil "></div>
-                <div class="title">Article管理</div>
+                <div class="backGround_title">Article管理</div>
                 <div class="fa fa-angle-left fa-lg"></div>
             </div>
-            <div class="AMHidCont">
-                <div class="AML">Article列表</div>
-                <div class="AMM">文章管理</div>
+            <div class="backGround_AMHidCont">
+                <a ui-sref="backGround.artList" class="backGround_AML">文章列表</a>
+                <div class="backGround_AMM">文章管理</div>
             </div>
-            <div class="UM">
+            <div class="backGround_UM">
                 <div class="fa fa-pencil "></div>
-                <div class="title">用户管理</div>
+                <div class="backGround_title">用户管理</div>
                 <div class="fa fa-angle-left fa-lg"></div>
             </div>
         </div>
     </div>
-    <div class="rightContent">
-        <div class="welcome">
-            <h1>Welcome!</h1>
-        </div>
+    <ui-view></ui-view>
     </div>
