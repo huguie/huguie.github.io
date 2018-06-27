@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+</head>
+
+<body ng-app="module1" ng-controller="ctl1">
+
+
+
+<div>{{content}}
+    <test-directive>这是原本的内容</test-directive>
+</div>
+
+
+
+
+<script src="https://cdn.bootcss.com/angular.js/1.7.0/angular.js"></script>
+<script src="https://cdn.bootcss.com/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.js"></script>
+<script>
+    var module1 = angular.module('module1',[]);
+
+    module1.controller('ctl1', function($scope) {
+        $scope.content = 'i\'m, module 1';
+        $scope.name = 'module1';
+        $scope.save = function() {
+            console.log('is function save');
+        };
+    });
+
+
+    // angular.bootstrap(document.body,['module1']);
+
+    module1.directive('testDirective', function() {
+        // 将对象return出去
+        return{
+            restrict: 'E',// 指令类型  E：element A：attribute M：comment C: class
+            templateUrl: 'testDirective.html',
+            replace: true, //使用模板替换原始标记  指令内原本的数据将被清空
+    }
+    });
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+

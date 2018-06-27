@@ -2,7 +2,7 @@ app.controller('loginController',function ($state,$scope,$http) {
     $scope.loginBtn = function () {
         $http({
             method:'POST',
-            url:'http://localhost:12/carrots-admin-ajax/a/login',
+            url:'/carrots-admin-ajax/a/login',
             params:{
                 name:$scope.userName,
                 pwd:$scope.pwd
@@ -13,7 +13,7 @@ app.controller('loginController',function ($state,$scope,$http) {
             console.log(messageState);
             if (messageState === 'success') {
                 alert('登陆成功');
-                $state.go('backGround');
+                $state.go('backGround.dashBoard');
             }
             // else if(messageState === '用户不存在'){
             //     alert('傻逼，用户名打错啦啦啦啦')

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+<input type="file" id="inputBox">
+<img src="" id="img">
+
+
+
+
+<script>
+    var inputBox = document.getElementById("inputBox");
+
+    inputBox.addEventListener("change",function(){
+        var reader = new FileReader();
+        reader.readAsDataURL(inputBox.files[0]);//发起异步请求
+        reader.onload = function(){
+//读取完成后，数据保存在对象的result属性中
+            img.src = this.result
+        }
+    })
+</script>
+</body>
+</html>
+
+
+
+
+
+

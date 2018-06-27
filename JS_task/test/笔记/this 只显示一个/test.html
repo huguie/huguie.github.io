@@ -11,8 +11,13 @@
 	<div class="div">444</div>
 </div>
 
+
 <script src="jquery.js"></script>
 <script>
+	var dateee = new Date();
+	console.log(Date.parse(dateee));
+
+
 	let pa = $('.pa');
 	let div = $('.div');
 	pa.find(div).click(function () {

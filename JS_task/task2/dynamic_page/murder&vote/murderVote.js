@@ -43,6 +43,8 @@ playerStatus[i] = {
     num : i+1 }//创建玩家状态.
     }//动态的将获取到的数组变成页面上的玩家数量
 
+
+
 let playerId = $('.player_box')
     ;//获取所有的大格子
 let playerNum = $('.player_num')

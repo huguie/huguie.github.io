@@ -14,5 +14,8 @@
     <orderEntry type="library" name="angular-ui-router" level="application" />
     <orderEntry type="library" name="angular-messages" level="application" />
     <orderEntry type="library" name="angular-route" level="application" />
+    <orderEntry type="library" name="datetime-picker" level="application" />
+    <orderEntry type="library" name="ui-bootstrap-tpls" level="application" />
+    <orderEntry type="library" name="bootbox" level="application" />
   </component>
 </module>
