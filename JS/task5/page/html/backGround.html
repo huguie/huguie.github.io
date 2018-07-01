@@ -1,0 +1,109 @@
+
+<div class="header">
+    <button  type="button" class="navbar-toggle navbar-toggle-button" data-toggle="collapse"
+            data-target="#accordion">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <div class="title">萝卜多后台管理系统</div>
+    <div class="manager">
+         <div>管理员</div>
+         <span>|</span>
+         <div>admin</div>
+         <span>|</span>
+         <div class="glyphicon glyphicon-off" ng-click="quit()"></div>
+        </div>
+    </div>
+
+
+    <div class="cutOff">
+        <div class="leftSideBar">
+            <ul id="accordion" class="collapse collapse-close margin-0">
+                <li class="first-level" ng-repeat="x in sidebar">
+                    <a ng-click="toggleList($index)" ng-class="{current: first == $index}" >
+                        <i class="fa fa-pencil"></i>
+                        {{x.firstLevel}}
+                        <span class="fa fa-angle-left fa-lg" ng-class="(first == $index)? 'fa-angle-down' : 'fa-angle-left'"></span>
+                    </a>
+                    <ul class="second-level" ng-show="first == $index" >
+                        <li ng-repeat="y in x.secondLevel ">
+                            <a ui-sref="{{y.url}}"
+                               ng-class="{active:second == y.title}"
+                               ng-click="currentList(y.title, $parent.$index)">{{y.title}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        <!--<div class="backGround_paging">-->
+            <!--<div id="accordion" class="collapse showInPc">-->
+                <!--<div class="panel panel-default backGround_Im">-->
+                    <!--<div data-toggle="collapse" data-parent="#accordion" href="#collapseOne">-->
+                        <!--<div class="backGround_IM" >-->
+                            <!--<div class="fa fa-pencil"></div>-->
+                            <!--<div class="backGround_title">信息管理</div>-->
+                            <!--<div class="fa fa-angle-left fa-lg"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div id="collapseOne" class="panel-collapse collapse">-->
+                        <!--<div class="backGround_AMHidCont panel-body">-->
+                            <!--<a ui-sref="backGround.artList" class="backGround_AML">公司列表</a>-->
+                            <!--<a ui-sref="backGround.artList" class="backGround_AML">职位列表</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="panel panel-default backGround_Im">-->
+                    <!--<div data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">-->
+                        <!--<div class="backGround_IM" >-->
+                            <!--<div class="fa fa-pencil"></div>-->
+                            <!--<div class="backGround_title">信息管理</div>-->
+                            <!--<div class="fa fa-angle-left fa-lg"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div id="collapseTwo" class="panel-collapse collapse">-->
+                        <!--<div class="backGround_AMHidCont panel-body">-->
+                            <!--<a ui-sref="backGround.artList" class="backGround_AML">公司列表</a>-->
+                            <!--<a ui-sref="backGround.artList" class="backGround_AML">职位列表</a>-->
+                            <!--<a ui-sref="backGround.artList" class="backGround_AML">职位列表</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="panel panel-default backGround_Im">-->
+                    <!--<div data-toggle="collapse" data-parent="#accordion" href="#collapseThree">-->
+                        <!--<div class="backGround_IM" >-->
+                            <!--<div class="fa fa-pencil"></div>-->
+                            <!--<div class="backGround_title">信息管理</div>-->
+                            <!--<div class="fa fa-angle-left fa-lg"></div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                    <!--<div id="collapseThree" class="panel-collapse collapse">-->
+                        <!--<div class="backGround_AMHidCont panel-body">-->
+                            <!--<a ui-sref="backGround.artList" class="backGround_AML">公司列表</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--<div class="sidebar-list navbar-collapse collapse">-->
+    <!--</div>-->
+        <!--<ul>-->
+            <!--<li class="first-level" ng-repeat="x in sidebar1">-->
+                <!--<a ng-click="openList(x)">-->
+                    <!--<i class="fa fa-pencil"></i>-->
+                    <!--{{x.firstList}}-->
+                    <!--<span class="fa fa-angle-left fa-lg" ng-class="(x.isShow)? 'fa-angle-down' : 'fa-angle-left'"></span>-->
+                <!--</a>-->
+                <!--<ul class="second-level" ng-show="x.isShow">-->
+                    <!--<li ng-repeat="x2 in x.secondList">-->
+                        <!--<a ui-sref="{{x2.url}}"-->
+                           <!--ng-class="{active:state.includes(x2.urls)}">{{x2.title}}</a>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    </div>
+        <div class="rightContent" >
+            <ui-view></ui-view>
+        </div>
+    </div>
+

@@ -4,26 +4,26 @@ app.config(function ($stateProvider ) {
     $stateProvider
     .state('login',{
         url:'/login',
-        templateUrl:'login.html',
+        templateUrl:'html/login.html',
         controller:'loginController'
     })
     .state('backGround',{
         url:'/backGround',
-        templateUrl:'backGround.html',
+        templateUrl:'html/backGround.html',
         controller:'backController'
     })
     .state('backGround.dashBoard',{
         url:'/dashBoard',
-        templateUrl:'dashBoard.html'
+        templateUrl:'html/dashBoard.html'
     })
     .state('backGround.artList',{
         url:'/artList?startAt&endAt&type&status&size&page&id',
-        templateUrl:'artList.html',
+        templateUrl:'html/artList.html',
         controller:'artList',
     })
     .state('backGround.articleDetail',{
         url:'/articleDetail?id',
-        templateUrl:'articleDetail.html',
+        templateUrl:'html/articleDetail.html',
         controller:'articleDetail',
     })
 

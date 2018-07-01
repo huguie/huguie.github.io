@@ -1,0 +1,149 @@
+
+<!--<div class="backGround_rightContent">-->
+<form class="form-horizontal panel panel-default">
+    <div class="panel-body">
+           <div class="row">
+               <div class="col-md-4">
+                   <div class="form-group">
+                   <label class="control-label col-md-4">发布时间</label>
+                       <div class="col-md-8">
+                       <input type="text"
+                              class="form-control"
+                              readonly="readonly"
+                              uib-datepicker-popup="{{format}}"
+                              datepicker-options="{maxDate:endAt,showweeks:false}"
+                              ng-model="createAt"
+                              is-open="popup1.opened"
+                              ng-required="false"
+                              close-text="关闭"
+                              clear-text="清空"
+                              current-text="今天"
+                              alt-input-formats="altInputFormats"
+                              ng-click="open1()"/>
+                       </div>
+                   <!--<input class="artList_search" type="date" ng-model="selectedStartTime">-->
+                   </div>
+               </div>
+               <div class="col-md-4 ">
+                   <div class="form-group">
+                   <label class="control-label col-md-4 text-center">—</label>
+                       <div class="col-md-8">
+                   <input type="text"
+                          class="form-control"
+                          readonly="readonly"
+                          uib-datepicker-popup="{{format}}"
+                          datepicker-options="{minDate:createAt,showweeks:false}"
+                          ng-model="endAt"
+                          is-open="popup2.opened"
+                          ng-required="false"
+                          close-text="关闭"
+                          clear-text="清空"
+                          current-text="今天"
+                          alt-input-formats="altInputFormats"
+                          ng-click="open2()"/>
+                       </div>
+                   <!--<input class="artList_search" type="date" ng-model="selectedEndTime" >-->
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="form-group">
+                   <label  class="control-label col-md-4 word-spacing-25">类 型</label>
+                       <div class="col-md-8">
+                            <!--<select class="form-control" ng-model="selectedType" ng-options="x.changed for x in selectType" >-->
+                           <!--</select>-->
+                           <select class="form-control" ng-model="selectedType" >
+                               <option value="">全部</option>
+                               <option ng-repeat="(x,y) in Type" value="{{x}}">{{y}}</option>
+                            </select>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="row">
+               <div class=" col-md-4">
+                   <div class="form-group">
+                   <label class="control-label col-md-4 word-spacing-25">状 态</label>
+                       <div class="col-md-8">
+                            <!--<select class="form-control" ng-model="selectedStatus" ng-options="x.changed for x in selectStatus">-->
+                       <!--&lt;!&ndash;<option value="">全部</option>&ndash;&gt;-->
+                            <!--</select>-->
+                           <select class="form-control" ng-model="selectedStatus">
+                               <option value="">全部</option>
+                               <option ng-repeat="(x,y) in Status" value="{{x}}">{{y}}</option>
+                           </select>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           <div class="pull-right">
+           <button class="btn btn-success" ng-click="selectedSearch()">搜索</button>
+           <button class="btn btn-danger" ng-click="selectedClear()">清空</button>
+           </div>
+    </div>
+</form>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Article列表</strong>
+        <button class="pull-right btn btn-xs btn-success addArt" ng-click="addArt()">+新增</button>
+    </div>
+    <div class="panel-body table-responsive">
+            <table class="table table-striped add-table-border">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>名称</th>
+                    <th>类型</th>
+                    <th>发布时间</th>
+                    <th>修改时间</th>
+                    <th>发布者</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tr ng-repeat="x in lists">
+                    <td>{{$index + 1}}</td>
+                    <td>{{x.title}}</td>
+                    <td>{{Type[x.type]}}</td>
+                    <td>{{x.createAt | date : 'yyyy-MM-dd HH:mm:ss'}}</td>
+                    <td>{{x.updateAt | date : 'yyyy-MM-dd HH:mm:ss'}}</td>
+                    <td>{{x.author}}</td>
+                    <td>{{Status[x.status]}}</td>
+                    <td>
+                        <!--<a type="button" class="btn btn-sm" ng-click="draOrPub(x.id,x.status)">{{x.status | draOrpub}}</a>-->
+                        <a type="button" class="btn btn-sm" ng-click="draOrPub(x.id,x.status)">{{Line[x.status]}}</a>
+                        <a type="button" class="btn btn-sm" ng-click="editArt(x.id)">编辑</a>
+                        <a type="button" class="btn btn-sm" ng-click="deleteArt(x.id)">删除</a>
+
+                    </td>
+                </tr>
+            </table>
+    </div>
+</div>
+
+<ul>
+    <div class="pull-left">
+        <span>每页显示</span>
+        <input class="paginationGo text-center" type="text" ng-model="pageSize">
+        <span>条</span>
+    </div>
+    <ul class="pull-left margin-0 margin-row-20" uib-pagination
+        total-items="totalItems"
+        ng-model="currentPage"
+        max-size="3"
+        first-text="首页"
+        previous-text="上一页"
+        next-text="下一页"
+        last-text="末页"
+        boundary-link-numbers="true"
+        boundary-links="true"
+        ng-click="artPagination()"></ul>
+    <div class="pull-left">
+        <span>去第</span>
+        <input class="paginationGo text-center" type="text" ng-model="pageGo">
+        <span>页</span>
+        <button class="btn btn-info" ng-click="pageConfirm()">确定</button>
+    </div>
+</ul>
+<!--</div>-->
+

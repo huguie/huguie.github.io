@@ -1,0 +1,54 @@
+<div class="col-md-10 padding-0">
+    <div class="col-md-12">
+        <label for="choice" class="btn btn-primary">选择文件</label>
+        <input style="display: none;"
+               type="file" id="choice"
+               accept="image/*"
+               onchange="angular.element(this).scope().fileChanged(this)"
+               required>
+        <div>预览：</div>
+    </div>
+
+    <div class="col-md-12"><img class="img-responsive" ng-src="{{src}}"  id="img"></div>
+    <div class="col-md-8">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>图片名</th>
+                <th>文件大小</th>
+                <th>进度</th>
+                <th>操作</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-if="fileName">
+                <td>{{fileName}}</td>
+                <td>{{fileSize | number:2;}}MB</td>
+                <td>
+                    <div class="progress">
+                        <div style="width: {{progress + '%'}};" class="progress-bar"></div>
+                    </div>
+                </td>
+                <td>
+                    <span ng-show="uploadStatus">
+                        <i class="glyphicon glyphicon-ok"></i>
+                    </span>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-success btn-xs" ng-click="uploadArt()">
+                        <span class="glyphicon glyphicon-upload"></span>
+                        上传
+                    </button>
+
+                    <button type="button" class="btn btn-danger btn-xs" ng-click="delete()">
+                        <span class="glyphicon glyphicon-trash"></span>
+                        删除
+                    </button>
+
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
